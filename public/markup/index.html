@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Public Works Home</title>
+    <link rel="stylesheet" href="/styles/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
+    <link rel="shortcut icon" href="images/pw_favicon.png">
+  </head>
+
+  <body id="body">
+
+    <!-- HEADER -->
+    <div id="header-spacer"></div>
+    <div class="section" id="header">
+
+      <a id="home-link" href="/"><svg version="1.1" id="header-logo" xmlns="http://www.w3.org/2000/svg"      xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 454.2 43.9" height="18px" style="enable-background:new 0 0 454.2 43.9;" xml:space="preserve">
+
+        <style>
+          #header-logo {
+            fill:#FFFFFF;
+            stroke:#FFFFFF;
+            stroke-width:0.25;
+            stroke-miterlimit:1;
+            margin-top: 15px;
+            margin-left: 60px;
+            transition: fill 0.3s, stroke 0.3s;
+            }
+        </style>
+
+        <script>
+
+          const homeLink = document.getElementById("home-link");
+          const headerLogo = document.getElementById("header-logo");
+
+          homeLink.addEventListener("mouseenter", changeColor);
+          homeLink.addEventListener("mouseleave", changeColor);
+
+          function changeColor() {
+
+            const logoStyle = window.getComputedStyle(headerLogo);
+            const logoColor = logoStyle.getPropertyValue("fill");
+
+            if (logoColor == "rgb(255, 255, 255)") {
+              headerLogo.style.fill = "rgb(236,68,35)";
+              headerLogo.style.stroke = "rgb(236,68,35)";
+            } else {
+              headerLogo.style.fill = "rgb(255, 255, 255)";
+              headerLogo.style.stroke = "rgb(255, 255, 255)";
+            }
+          }
+
+        </script>
+
+        <g>
+          <rect x="164.2" y="0.7" width="9" height="42.5"/>
+          <path d="M38.7,25.1c0,6,1.8,10.7,5,13.9c1.2,1.2,2.5,2.1,4.1,2.8V0.7h-9C38.7,0.7,38.7,25.1,38.7,25.1z"/>
+          <rect x="127.8" y="0.7" width="9" height="42.5"/>
+          <path d="M213.6,13.3l0.7,0.7l5.8-6.7l-0.6-0.6c-3.9-3.8-8.9-6.5-16.4-6.6c-12.7-0.1-21.9,10-22,22c-0.1,7.6,3.7,14.2,9.4,18.1V21.8
+            c0-7.5,5.2-13.3,12.4-13.3C207.2,8.5,210.4,10.4,213.6,13.3z"/>
+          <path d="M28.8,4.7c-2.9-2.6-7-4-11.9-4H0l0,42.5h9V9.1h7.4c4.9,0.1,7.7,2.2,7.8,6.3v0.1c0,3.6-2.8,6.2-7.8,6.3h-2.7v8.3h2.5
+            c9.2-0.1,17.2-5.1,17.2-14.8v-0.1l0-0.1l0,0C33.3,10.9,31.7,7.2,28.8,4.7z"/>
+          <path d="M66.3,25.1c-0.1,7-3.4,10.3-9.3,10.3c-1.8-0.1-3.3-0.4-4.6-1.1v9.1c1.4,0.3,2.9,0.5,4.5,0.5c0,0,0,0,0,0c0,0,0,0,0,0
+            s0,0,0,0c5.4,0,10.1-1.6,13.3-4.8c3.3-3.3,5-8.1,5-14.3v-24h-9V25.1z"/>
+          <path d="M114.7,21.6l-1.1-0.6l0.9-0.8c2-1.8,3.5-4.3,3.5-7.9c0,0,0-0.2,0-0.3c0-2.9-1.1-5.4-3-7.3c-2.6-2.6-6.5-3.9-11.3-3.9H84.6
+            v42.5h8.9V8.9h9.3c2.2,0.1,3.6,0.4,4.7,1.2c1.1,0.7,1.5,1.9,1.5,3v0.1c0,1.4-0.5,2.6-1.7,3.4c-1.2,0.7-2.7,1.1-5,1.1h-4.1v7.9
+            l5.7,0c2.7,0.1,4.5,0.5,5.7,1.2c1.2,0.8,1.7,2.1,1.7,3.3v0.1c0,1.3-0.5,2.6-1.7,3.4c-1.2,0.8-2.8,1.1-5.2,1.2h-6.2v8.2h6.2
+            c9.2-0.1,15.9-4.2,16-12c0,0,0-0.3,0-0.4C120.3,26.3,117.9,23.4,114.7,21.6z"/>
+          <rect x="141.6" y="34.8" width="16.6" height="8.4"/>
+          <path d="M213.9,30.4c-3.4,3.2-6.3,5-11,5c-3,0-5.6-1-7.7-2.8v9.8c2.3,0.9,4.9,1.4,7.5,1.4c7.7,0,12.8-3,17-7.5l0.6-0.7l-5.9-6
+            L213.9,30.4z"/>
+          <path d="M310.2,0c-12.9,0-22.1,10.1-22.2,21.9c-0.1,7.4,3.6,14,9.4,18V21.8c0-7.4,5.2-13.4,12.7-13.4c7.5,0,12.8,6.2,12.8,13.6
+            c0,7.4-5.2,13.4-12.7,13.4c-3.1,0-5.9-1.1-8-2.9v9.9c2.4,0.9,5.1,1.4,7.9,1.4c12.9,0,22.1-10.1,22.2-21.9C332.3,10,323.1,0,310.2,0
+            z"/>
+          <polygon points="233,0.7 223.2,0.7 235,34.7 239.5,21 	"/>
+          <polygon points="263.6,41.9 264.1,43.5 271.6,43.5 286.4,0.7 276.9,0.7 	"/>
+          <polygon points="258.6,0.6 251.2,0.6 237.6,42.2 238,43.5 245.5,43.5 254.8,16.3 261,34.4 265.4,21.1 	"/>
+          <path d="M365.4,27.4l1-0.4c4.7-2.1,8.1-6.2,8.1-12.2c0-0.1,0-0.1,0-0.2v-0.1c0,0,0,0,0-0.1c0-3.7-1.3-7-3.6-9.3
+            c-2.8-2.8-7.1-4.4-12.4-4.4h-19v1v41.5h9V9.1l9.5,0c2.5,0.1,4.3,0.5,5.5,1.5c1.3,1,1.8,2.5,1.9,4.3V15c0,3.5-2.7,5.8-7.4,5.8h-4.8
+            V29h2.8l10,14.1h10.7L366,28.3L365.4,27.4z"/>
+          <polygon points="420.1,0.7 408.7,0.7 395.4,14.7 395.4,24.6 409.5,43.2 420.5,43.2 402.2,19.2 	"/>
+          <rect x="381.7" y="0.7" width="9" height="42.5"/>
+          <path d="M431.6,24.5c0,0,0-11.9,0-12.3c0-0.6,0.2-1,0.2-1c0.5-1.5,2.3-2.8,5.5-2.8c3.5,0,6.9,1.3,10.4,4l0.8,0.6l4.9-6.9l-0.7-0.6
+            c-4.2-3.4-9.2-5.3-15.2-5.3v0l0,0h-0.1C429,0.2,422.6,5.5,422.5,13C422.5,19.1,426,22.4,431.6,24.5z"/>
+          <path d="M440.5,17.8L440.5,17.8c-1.7-0.4-3-0.8-4.2-1.2v9.3c0.2,0,0.3,0.1,0.5,0.1c3.9,1,5.8,1.7,7,2.4c1.2,0.8,1.4,2.1,1.4,2.9
+            c0,2.3-2.2,4.1-6.2,4.2c-4.8,0-8.4-1.8-12.2-5l-0.7-0.6l-5.5,6.5l0.7,0.6c5,4.5,11.1,6.7,17.5,6.7h0.1c8.8-0.1,15.4-5,15.4-13.2
+            C454.3,23.4,449,19.7,440.5,17.8z"/>
+        </g>
+      </svg></a>
+
+      <div id="nav-container">
+        <a href="/staff"><button class="nav-button">Staff</button></a>
+        <a href="/contact"><button class="nav-button">Contact</button></a>
+        <a href="/about"><button class="nav-button">About</button></a>
+        <a href="/events"><button class="nav-button">Events</button></a>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="section" id="hero">
+      <img id="icon" height="130px" src="images/pw_logo_icon.svg" alt="pw_logo_icon.svg"></img>
+    </div>
+
+    <!-- STATEMENT -->
+    <div class="section" id="statement">
+      <div id="marquee-container">
+        <h3 id="statement-text">Giving the people what they want.</h3>
+      </div>
+    </div>
+
+    <!-- IN THE WORKS -->
+    <div class="section" id="intheworks">
+
+      <h2 id="intheworks-header">In The Works</h2>
+
+      <div id="event-flexbox-featured">
+
+        <!-- EVENT 1 -->
+        <div class="featured-event">
+          <div class="featured-image" id="featured-image-left"></div>
+          <div class="featured-text" id="featured-text-left">
+            <h4 class="featured-date">Friday, March 2nd</h4>
+            <h3 class="featured-act">Rodriguez Jr.</h3>
+            <h3 class="featured-act">Patrice Bämual</h3>
+            <h3 class="featured-act">Thomas Von Party</h3>
+          </div>
+
+          <button class="featured-button" id="button-left">More Info</button>
+        </div>
+
+        <!-- EVENT 2 -->
+        <div class="featured-event">
+            <div class="featured-image" id="featured-image-middle"></div>
+            <div class="featured-text" id="featured-text-middle">
+              <h4 class="featured-date">Saturday, March 3rd</h4>
+              <h3 class="featured-act">Robata Oblongata</h3>
+              <h3 class="featured-act">SF Burnal Equinox</h3>
+            </div>
+
+            <button class="featured-button" id="button-middle">More Info</button>
+          </div>
+
+        <!-- EVENT 3 -->
+        <div class="featured-event">
+            <div class="featured-image" id="featured-image-right"></div>
+            <div class="featured-text" id="featured-text-right">
+              <h4 class="featured-date">Tuesday, March 6th</h4>
+              <h3 class="featured-act">Odd Salon</h3>
+            </div>
+
+            <button class="featured-button" id="button-right">More Info</button>
+          </div>
+
+      </div>
+
+      <button class="button" id="view-all-events">View All Events</button>
+
+    </div>
+
+    <!-- FOOTER -->
+    <div class="section" id="footer">
+
+      <!-- NEWSLETTER -->
+      <!-- <div class="footer-half" id="index-newsletter">
+        <h5 id="join-our-newsletter">Join Our Newsletter</h5>
+        <form id="newsletter-signup-form">
+          <input type="text" value="useremail420@mail.com">
+        </form>
+        <button class="submit-button">Submit</button>
+      </div> -->
+
+      <!-- CONTACT -->
+      <div class="footer-half" id="contact">
+          <img id="footer-logo" height="20px" src="images/pw_logo_type_black.svg" alt="pw_logo_type_black.svg"/>
+          <h6 id="address">161 Erie St, San Francisco, CA</h6>
+          <div id="socials-flexbox">
+            <img width="25px" class="social-icon" id="facebook-icon" src="images/facebook_icon.svg" alt="">
+            <img width="25px" class="social-icon" id="twitter-icon" src="images/twitter_icon.svg" alt="">
+            <img width="25px" class="social-icon" id="instagram-icon" src="images/instagram_icon.svg" alt="">
+            <img width="25px" class="social-icon" id="email-icon" src="images/email_icon.svg" alt="">
+          </div>
+      </div>
+
+    </div>
+
+    <script src="/scripts/auto-scroll.js"></script>
+    <script src="/scripts/hero-resize.js"></script>
+
+  </body>
+
+</html>

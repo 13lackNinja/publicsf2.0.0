@@ -1,0 +1,35 @@
+/* ABOUT */
+
+/* schematics */
+#legend {
+  font-family: arial;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5em;
+}
+
+#schematics-container {
+  display: grid;
+  grid-template-columns: 2;
+}
+
+#first-floor-schematic {
+  grid-column: 1 / 1;
+  justify-self: end;
+  width: 480px;
+}
+
+#second-floor-schematic {
+  grid-column: 2 / 2;
+  width: 480px;
+}
+
+/* about */
+#about-text {
+  font-family: Oswald;
+  font-size: 30px;
+  width: 50%;
+  text-align: center;
+  margin: 50px auto;
+}
