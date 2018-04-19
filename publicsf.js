@@ -3,7 +3,7 @@
 
 const express = require('express');
 const app = express();
-const publicsf = require('publicsf');
+const publicsf = require('./router');
 
 // Middlewear
 
