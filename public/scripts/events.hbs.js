@@ -3,7 +3,9 @@
 templates['events.hbs'] = template({"compiler":[7,">= 4.0.0"],"main":function(container,depth0,helpers,partials,data) {
     var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=helpers.helperMissing, alias3="function", alias4=container.escapeExpression;
 
-  return "<div class=\"event-module\">\n  <div class=\"event-image\" style=\"background-image: url("
+  return "<div class=\"event-module\" id=\""
+    + alias4(((helper = (helper = helpers.eventbriteID || (depth0 != null ? depth0.eventbriteID : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"eventbriteID","hash":{},"data":data}) : helper)))
+    + "\">\n  <div class=\"event-image\" style=\"background-image: url("
     + alias4(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"image","hash":{},"data":data}) : helper)))
     + ")\"></div>\n  <h4 class=\"text event-date\">"
     + alias4(((helper = (helper = helpers.start || (depth0 != null ? depth0.start : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"start","hash":{},"data":data}) : helper)))

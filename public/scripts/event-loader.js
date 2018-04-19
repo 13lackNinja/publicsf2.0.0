@@ -1,3 +1,6 @@
+// EVENT LOADER
+// Populate event module template with event data
+// and add page jump to the nav links on the left.
 
 function loadEvents() {
 
@@ -8,13 +11,19 @@ function loadEvents() {
     if (this.readyState == 4 && this.status == 200 ) {
 
       const allEvents = JSON.parse(this.responseText);
-      allEvents.forEach((e) => {
-        const eventContext = e;
-        const eventTemplate = Handlebars.templates["events.hbs"];
-        const eventHTML = eventTemplate(eventContext);
-        document.getElementById('event-list').innerHTML += eventHTML;
-        document.getElementById('event-nav').innerHTML += '<h4 class="event-nav-item">' + e.title + '</h4>';
 
+      // Loop through each event and populate event module and nav
+      allEvents.forEach((e) => {
+
+        // Define variables
+        const eventContext = e;
+        const eventTemplate = Handlebars.templates['events.hbs'];
+        const eventHTML = eventTemplate(eventContext);
+
+        // Insert template content
+        document.getElementById('event-list').innerHTML += eventHTML;
+
+        // Create Eventbrite Button
         function loadButton() {
           var exampleCallback = function() {
               console.log('Order complete!');

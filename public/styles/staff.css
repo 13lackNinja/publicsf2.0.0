@@ -25,6 +25,7 @@
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #ededed;
 }
 
 .input-field {
@@ -33,10 +34,11 @@
   font-size: 14px;
   width: 100%;
   height: 30px;
-  border: solid black 2px;
-  background-color: #EF4423;
+  border: solid #ededed 2px;
+  background-color: transparent;
   padding: 0px 10px;
   margin: 10px 0px;
+  color: #ededed;
 }
 
 #description-input-field {

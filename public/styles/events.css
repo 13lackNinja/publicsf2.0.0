@@ -1,56 +1,29 @@
 /* EVENTS */
 
 body {
-  background-color: #ededed;
+  background-color: #111111;
   height: auto;
-  /* filter: sepia(11%); */
-}
-
-#event-container {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-}
-
-#event-nav {
-  grid-column: 1 / 1;
-  position: fixed;
-  width: 275px;
-  margin-top: 25px;
-  color: #111111;
 }
 
 #event-list {
-  grid-column: 2 / 2;
+  margin: auto;
+  width: 1000px;
   height: 100%;
 }
 
-#in-the-works {
-  color: #111111;
-  font-size: 48px;
-  text-transform: uppercase;
-}
-
-/* event nav */
-.event-nav-item {
-  margin-left: 50px;
-  margin-bottom: 25px;
-}
-
-
 /* event module */
 .event-module {
-  box-sizing: content-box;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
   align-items: center;
-  width: 800px;
-  height: 200px;
-  border-top: #111111 solid 2px;
-  border-bottom: #111111 solid 2px;
-  margin: 25px auto 35px 50px;
-  padding: 15px 40px 15px 20px;
+  width: 900px;
+  height: 240px;
+  border: #111111 solid 2px;
+  border-radius: 10px;
+  margin: 25px 50px;
+  padding: 15px 40px;
   font-family: "Arial";
   color: white;
   background-color: #ededed;
@@ -67,7 +40,7 @@ body {
 }
 
 .event-artist {
-  text-shadow: 0 0 3px #d1d1d1;
+  text-shadow: 0 0 3px #ededed;
   grid-row: 2 / 2;
   grid-column: 2 / 4;
 }
@@ -96,6 +69,7 @@ body {
   height: 100%;
   filter: grayscale(100%);
   background-position: center;
+  border-radius: 10px;
 }
 
 .button {
@@ -109,6 +83,7 @@ body {
   text-transform: uppercase;
   padding: 6px 12px;
   border: none;
+  border-radius: 5px;
   color: black;
   width: 225px;
   justify-self: right;
@@ -130,21 +105,4 @@ body {
   width: 70px;
   position: relative;
   left: 20px;
-}
-
-/* imagery */
-#pw-manhole-white {
-  display: block;
-  margin: 50px auto;
-}
-
-#contact-background-image {
-  position: fixed;
-  top: 0;
-  opacity: .3;
-  width: 100%;
-  height: 100%;
-  object-fit: fill;
-  z-index: 0;
-  pointer-events: none;
 }
