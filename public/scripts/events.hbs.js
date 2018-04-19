@@ -17,7 +17,7 @@ templates['events.hbs'] = template({"compiler":[7,">= 4.0.0"],"main":function(co
     + alias4(((helper = (helper = helpers.room || (depth0 != null ? depth0.room : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"room","hash":{},"data":data}) : helper)))
     + "<h4>\n  <h4 class=\"text event-price\">"
     + alias4(((helper = (helper = helpers.price || (depth0 != null ? depth0.price : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"price","hash":{},"data":data}) : helper)))
-    + "</h4>\n  <img class=\"barcode\" src=\"../images/barcode.png\" alt=\"barcode.png\">\n  <button class=\"button\" id="
+    + "</h4>\n  <img class=\"barcode\" src=\"./images/barcode.png\" alt=\"barcode.png\">\n  <button class=\"button\" id="
     + alias4(((helper = (helper = helpers.eventbriteID || (depth0 != null ? depth0.eventbriteID : depth0)) != null ? helper : alias2),(typeof helper === alias3 ? helper.call(alias1,{"name":"eventbriteID","hash":{},"data":data}) : helper)))
     + " type=\"button\">Get Tickets</button>\n</div>\n";
 },"useData":true});

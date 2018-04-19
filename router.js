@@ -1,7 +1,6 @@
 // Modules
 
 const express = require('express');
-const app = express();
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const fs = require('fs');
@@ -10,8 +9,8 @@ const router = express.Router();
 
 // Middlewear
 
-app.use(express.static('public'));
-app.use(bodyParser.urlencoded({extended: true}));
+router.use(express.static('public'));
+router.use(bodyParser.urlencoded({extended: true}));
 
 
 // Connect to database
@@ -41,27 +40,27 @@ const Event = mongoose.model('Event', eventSchema);
 
 // Routing
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
     res.sendFile('/markup/index.html', {root: './public'});
 });
 
-app.get('/events', (req, res) => {
+router.get('/events', (req, res) => {
   res.sendFile('/markup/events.html', {root: './public'});
 });
 
-app.get('/about', (req, res) => {
+router.get('/about', (req, res) => {
   res.sendFile('/markup/about.html', {root: './public'});
 });
 
-app.get('/contact', (req, res) => {
+router.get('/contact', (req, res) => {
   res.sendFile('/markup/contact.html', {root: './public'});
 });
 
-app.get('/staff', (req, res) => {
+router.get('/staff', (req, res) => {
   res.sendFile('/markup/staff.html', {root: './public'});
 });
 
-app.get('/allevents', (req, res) => {
+router.get('/allevents', (req, res) => {
   async function getEvents() {
     const allEvents = await Event.find().select({ _id: 0 });
     res.json(allEvents);
@@ -72,7 +71,7 @@ app.get('/allevents', (req, res) => {
 
 // Form handling
 
-app.post('/registration', (req, res) => {
+router.post('/registration', (req, res) => {
   console.log(req.body);
   const event = new Event(req.body);
   event.save((err, event) => {
