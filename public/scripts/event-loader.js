@@ -42,7 +42,7 @@ function loadEvents() {
       });
     }
   }
-  xhttp.open('GET', 'http://localhost:8090/publicsf/allevents', true);
+  xhttp.open('GET', '/publicsf/allevents', true);
   xhttp.send();
 }
 
