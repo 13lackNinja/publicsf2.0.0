@@ -5,6 +5,14 @@ body {
   height: auto;
 }
 
+#event-container {
+  width: 100%;
+}
+
+#add-event-container {
+  text-align: center;
+}
+
 #event-list {
   margin: auto;
   width: 1000px;
@@ -29,6 +37,32 @@ body {
   background-color: #ededed;
 }
 
+.event-edit-module {
+  width: 900px;
+  height: 240px;
+  border: #111111 solid 2px;
+  border-radius: 10px;
+  margin: auto;
+  padding: 15px 40px;
+  font-family: "Arial";
+  color: white;
+  background-color: #ededed;
+}
+
+.event-submission-form {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.event-edit-form > input {
+  height: 25px;
+}
+
 .text {
   color: #111111;
 }
@@ -45,10 +79,15 @@ body {
   grid-column: 2 / 4;
 }
 
+.edit-event-artist {
+  text-shadow: 0 0 3px #ededed;
+  grid-row: 2 / 2;
+  grid-column: 2 / 4;
+}
+
 .event-date {
   grid-row: 1 / 1;
   grid-column: 2 / 4;
-
 }
 
 .event-room {
@@ -57,13 +96,39 @@ body {
   text-align: left;
 }
 
+.edit-event-room {
+  grid-row: 3 / 3;
+  grid-column: 2 / 2;
+  text-align: left;
+  width: 120px;
+  display: inline-block;
+}
+
 .event-price {
   grid-row: 3 / 3;
   grid-column: 2 / 2;
   text-align: right;
 }
 
+.edit-event-price {
+  grid-row: 3 / 3;
+  grid-column: 2 / 2;
+  text-align: right;
+  justify-self: right;
+  height: 20px;
+  width: 120px;
+}
+
 .event-image {
+  grid-row: 1 / 4;
+  grid-column: 1 / 1;
+  height: 100%;
+  filter: grayscale(100%);
+  background-position: center;
+  border-radius: 10px;
+}
+
+.edit-event-image {
   grid-row: 1 / 4;
   grid-column: 1 / 1;
   height: 100%;
@@ -96,13 +161,35 @@ body {
   background-color: #070707;
 }
 
-.barcode {
+.edit-button {
   grid-row: 1 / 1;
   grid-column: 3 / 3;
-  transform: rotate(.75turn);
   justify-self: right;
-  height: 40px;
-  width: 70px;
+  height: 25px;
+  width: 25px;
+  border: none;
+  background-color: transparent;
+  background-image: url('../images/edit-button.svg');
+}
+
+.delete-button {
+  grid-row: 1 / 1;
+  grid-column: 3 / 3;
   position: relative;
-  left: 20px;
+  right: 35px;
+  justify-self: right;
+  height: 25px;
+  width: 25px;
+  border: none;
+  background-color: transparent;
+  background-image: url('../images/delete-button.svg');
+}
+
+edit-button > img {
+  width: 100%;
+}
+
+/* manhole */
+.manhole {
+  margin-bottom: 15px;
 }

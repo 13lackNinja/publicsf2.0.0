@@ -3,11 +3,18 @@
 
 const express = require('express');
 const app = express();
-const publicsf = require('./router');
+const pages = require('./routes/pages');
+const mongoose = require('mongoose');
+
+// Connect to database
+
+mongoose.connect('mongodb://localhost/publicsf')
+  .then(() => console.log('Connected to publicsf database'))
+  .catch(err => console.log(err));
 
 // Middlewear
 
-app.use('/publicsf', publicsf);
+app.use('/publicsf', pages);
 
 // Port
 

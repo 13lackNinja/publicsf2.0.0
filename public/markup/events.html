@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Public Works Home</title>
+    <title>Public Works Events</title>
     <link rel="stylesheet" href="./styles/master.css">
     <link rel="stylesheet" href="./styles/events.css">
-    <link rel="stylesheet" href="./styles/droplet.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
@@ -72,48 +71,102 @@
         </g>
       </svg></a>
 
+      <!-- NAV -->
       <div id="nav-container">
-        <a href="./staff"><button class="nav-button">Staff</button></a>
-        <a href="./contact"><button class="nav-button">Contact</button></a>
-        <a href="./about"><button class="nav-button">About</button></a>
+        <a href="./connect"><button class="nav-button">Connect</button></a>
         <a href="./events"><button class="nav-button">Events</button></a>
+        <a href="./local161"><button class="nav-button">Local 161</button></a>
       </div>
+
     </div>
 
     <!-- EVENTS -->
     <h1 id="in-the-works">In the works</h1>
     <div id="event-container">
+      <div id="add-event-container">
+        <button class="nav-button" id="add-event-button" onclick="displayAddEventModule()">Add Event</button>
+        <div id="add-event-module-container"></div>
+      </div>
       <div id="event-list"></div>
     </div>
-    <img id="pw-manhole-white" src="./images/pw_manhole_white.png" alt="pw_manhole_white.png">
+
+    <!-- MANHOLE -->
+    <img class="manhole" src="./images/pw_manhole_white.png" alt="pw_manhole_white.png">
 
     <!-- FOOTER -->
-    <div class="section" id="footer">
-
-      <!-- CONTACT -->
-      <div id="footer">
-        <div class="footer-half" id="contact">
-          <img id="footer-logo" height="20px" src="images/pw_logo_type_black.svg" alt="pw_logo_type_black.svg"/>
-          <h6 id="address">161 Erie St, San Francisco, CA</h6>
-          <div id="socials-flexbox">
-            <img width="25px" class="social-icon" id="facebook-icon" src="images/facebook_icon.svg" alt="">
-            <img width="25px" class="social-icon" id="twitter-icon" src="images/twitter_icon.svg" alt="">
-            <img width="25px" class="social-icon" id="instagram-icon" src="images/instagram_icon.svg" alt="">
-            <img width="25px" class="social-icon" id="email-icon" src="images/email_icon.svg" alt="">
-          </div>
-        </div>
+    <div class="footer">
+      <img class="footer-logo" height="20px" src="images/pw_logo_type_black.svg" alt="pw_logo_type_black.svg"/>
+      <p class="address">161 Erie St, San Francisco, CA</p>
+      <div class="socials-flexbox">
+        <img width="25px" class="social-icon" id="facebook-icon" src="images/facebook_icon.svg" alt="">
+        <img width="25px" class="social-icon" id="twitter-icon" src="images/twitter_icon.svg" alt="">
+        <img width="25px" class="social-icon" id="instagram-icon" src="images/instagram_icon.svg" alt="">
+        <img width="25px" class="social-icon" id="email-icon" src="images/email_icon.svg" alt="">
       </div>
     </div>
 
     <!-- GRIT -->
     <img id="grit" src="./images/grit_5.png" alt="grit_5.png">
 
+    <!-- Handlebars Templates -->
+    <script id="event-template" type="text/x-handlebars-template">
+      <div class="event-module" id=event-module{{eventbriteID}}>
+        <div class="event-image" style="background-image: url({{image}})"></div>
+        <h4 class="text event-date">{{start}}</h4>
+        <h2 class="text event-artist">{{artists}}</h2>
+        <h4 class="text event-room">{{room}}<h4>
+        <h4 class="text event-price">{{price}}</h4>
+        <button type="button" class="edit-button" id="edit-button-{{eventbriteID}}" onclick="editEvent(event)"></button>
+        <button type="button" class="delete-button" id="delete-button-{{eventbriteID}}" onclick="deleteEvent(event)"></button>
+        <button class="purchase button" id={{eventbriteID}} type="button">Get Tickets</button>
+      </div>
+    </script>
+
+    <script id="add-event-template" type="text/x-handlebars-template">
+      <form class="event-submission-form" id="event-add-form">
+        <div class="edit-event-image" style='{{image}}'></div>
+        <input class="edit-event-date" type="datetime-local" name="start" placeholder="date">
+        <input class="edit-event-eventbriteID" type="text" name="eventbriteID" placeholder="eventbriteID">
+        <input class="edit-event-artist" type="text" name="artists" placeholder="artists">
+        <input class="edit-event-room" type="text" name="room" placeholder="room">
+        <input class="edit-event-price" type="text" name="price" placeholder="price">
+        <button class="button" id={{eventbriteID}} type="button" onclick="addEvent()">Add Event</button>
+      </form>
+    </script>
+
+    <script id="event-contents-template" type="text/x-handlebars-template">
+      <div class="event-image" style="background-image: url({{image}})"></div>
+      <h4 class="text event-date">{{start}}</h4>
+      <h2 class="text event-artist">{{artists}}</h2>
+      <h4 class="text event-room">{{room}}<h4>
+      <h4 class="text event-price">{{price}}</h4>
+      <button type="button" class="delete-button" id="delete-button-{{eventbriteID}}" onclick="deleteEvent(event)"></button>
+      <button type="button" class="edit-button" id="edit-button-{{eventbriteID}}" onclick="editEvent(event)"></button>
+      <button class="purchase button" id={{eventbriteID}} type="button">Get Tickets</button>
+    </script>
+
+    <script id="event-edit-template" type="text/x-handlebars-template">
+      <form class="event-submission-form" id="event-edit-form-{{eventbriteID}}">
+        <div class="edit-event-image" style='{{image}}'></div>
+        <input class="edit-event-date" type="datetime-local" name="start" value={{start}}>
+        <input class="edit-event-artist" type="text" name="artists" value={{artists}}>
+        <input class="edit-event-room" type="text" name="room" value={{room}}>
+        <input class="edit-event-price" type="text" name="price" value="{{price}}">
+        <button class="button" id={{eventbriteID}} type="button" onclick="updateEvent()">Update Event</button>
+      </form>
+    </script>
+
+
     <!-- SCRIPTS -->
     <script type="text/javascript" src="./scripts/handlebars-v4.0.11.js"></script>
     <script type="text/javascript" src="./scripts/events.hbs.js"></script>
     <script type="text/javascript" src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
     <script type="text/javascript" src="./scripts/event-loader.js"></script>
+    <script type="text/javascript" src="./scripts/add-event.js"></script>
+    <script type="text/javascript" src="./scripts/edit-event.js"></script>
+    <script type="text/javascript" src="./scripts/delete-event.js"></script>
     <script type="text/javascript" src="./scripts/logo-hover-color.js"></script>
+
   </body>
 
 </html>

@@ -4,6 +4,10 @@
 
 function loadEvents() {
 
+  // Define and compile the event module template
+  const eventTemplateSource = document.getElementById('event-template').innerHTML;
+  const eventTemplate = Handlebars.compile(eventTemplateSource);
+
   xhttp = new XMLHttpRequest();
 
   xhttp.onreadystatechange = function() {
@@ -17,7 +21,6 @@ function loadEvents() {
 
         // Define variables
         const eventContext = e;
-        const eventTemplate = Handlebars.templates['events.hbs'];
         const eventHTML = eventTemplate(eventContext);
 
         // Insert template content
@@ -39,10 +42,13 @@ function loadEvents() {
 
         loadButton(e);
 
+        // Add listener for the edit Button
+
+
       });
     }
   }
-  xhttp.open('GET', '/publicsf/allevents', true);
+  xhttp.open('GET', '/publicsf/events/manage/allevents', true);
   xhttp.send();
 }
 
