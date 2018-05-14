@@ -3,11 +3,6 @@
 // and add page jump to the nav links on the left.
 
 function loadEvents() {
-
-  // Define and compile the event module template
-  const eventTemplateSource = document.getElementById('event-template').innerHTML;
-  const eventTemplate = Handlebars.compile(eventTemplateSource);
-
   xhttp = new XMLHttpRequest();
 
   xhttp.onreadystatechange = function() {
@@ -26,11 +21,11 @@ function loadEvents() {
         // Insert template content
         document.getElementById('event-list').innerHTML += eventHTML;
 
-        // Create Eventbrite Button
-        function loadButton() {
-          var exampleCallback = function() {
-              console.log('Order complete!');
-          };
+        // Create Eventbrite Widget
+        var exampleCallback = function() {
+            console.log('Order complete!');
+        };
+        requestAnimationFrame(() => {
           window.EBWidgets.createWidget({
               widgetType: 'checkout',
               eventId: e.eventbriteID.toString(),
@@ -38,13 +33,7 @@ function loadEvents() {
               modalTriggerElementId: e.eventbriteID.toString(),
               onOrderComplete: exampleCallback
           });
-        }
-
-        loadButton(e);
-
-        // Add listener for the edit Button
-
-
+        });
       });
     }
   }
@@ -52,4 +41,4 @@ function loadEvents() {
   xhttp.send();
 }
 
-loadEvents();
+document.addEventListener('DOMContentLoaded', loadEvents);

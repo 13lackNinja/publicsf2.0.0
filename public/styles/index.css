@@ -1,0 +1,11 @@
+#welcome-to-public-works {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -180%);
+}
+
+.stamp {
+  top: 35%;
+  left: 50%;
+}
