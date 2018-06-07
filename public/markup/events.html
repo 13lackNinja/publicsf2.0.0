@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Public Works Events</title>
     <link rel="stylesheet" href="./styles/master.css">
+    <link rel="stylesheet" href="./styles/topnav.css">
     <link rel="stylesheet" href="./styles/events.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/imagery.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
@@ -17,23 +20,10 @@
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header-spacer"></div>
-    <div class="section" id="header">
-
-      <a id="home-link" href="/publicsf"><svg version="1.1" id="header-logo" xmlns="http://www.w3.org/2000/svg"      xmlns:xlink="http://www.w3.org/1999/xlink"
+    <!-- Topnav -->
+    <div class="topnav" id="topnav">
+      <a class="home-link" href="/publicsf"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"      xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 454.2 43.9" height="18px" style="enable-background:new 0 0 454.2 43.9;" xml:space="preserve">
-
-        <style>
-          #header-logo {
-            fill:#FFFFFF;
-            stroke:#FFFFFF;
-            stroke-width:0.25;
-            stroke-miterlimit:1;
-            margin-top: 15px;
-            margin-left: 60px;
-            }
-        </style>
 
         <g>
           <rect x="164.2" y="0.7" width="9" height="42.5"/>
@@ -70,41 +60,59 @@
             C454.3,23.4,449,19.7,440.5,17.8z"/>
         </g>
       </svg></a>
-
-      <!-- NAV -->
-      <div id="nav-container">
-        <a href="./connect"><button class="nav-button">Connect</button></a>
-        <a href="./events"><button class="nav-button">Events</button></a>
-        <a href="./local161"><button class="nav-button">Local 161</button></a>
-      </div>
-
+      <a href="./connect" class="nav-link"><button class="nav-button" id="connect-nav">Connect</button></a>
+      <a href="./events" class="nav-link"><button class="nav-button" id="events-nav">Events</button></a>
+      <a href="./local161" class="nav-link"><button class="nav-button" id="local161-nav">Local 161</button></a>
+      <a class="menu-icon">
+        <img id="menu-icon" src="./images/menu_icon.svg" alt="menu_icon.svg" onclick="openMenu()">
+      </a>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div class="main-content">
-      <!-- EVENTS -->
-      <h1 id="in-the-works">In the works</h1>
-      <div id="add-event-module-container"></div>
+    <!-- Body -->
+    <div id="body">
+
+      <!-- Events -->
+      <h1>In the works</h1>
+      <img id="title-stamp" class="stamp" src="./images/white_stamp.png" alt="white_stamp.png">
       <div id="event-list"></div>
-      <!-- STAMP -->
-      <img class="stamp" src="./images/white_stamp.png" alt="white_stamp.png">
-      <!-- MANHOLE -->
       <img class="manhole" src="./images/pw_manhole_white.png" alt="pw_manhole_white.png">
+
     </div>
 
-    <!-- FOOTER -->
-    <div class="footer">
-      <img class="footer-logo" src="./images/pw_logo_type_white.svg" alt="pw_logo_type_white.svg"/>
-      <p class="address">161 Erie St, San Francisco, CA</p>
-      <div class="socials-flexbox">
-        <img width="25px" class="social-icon" id="facebook-icon" src="./images/facebook_icon.svg" alt="">
-        <img width="25px" class="social-icon" id="twitter-icon" src="./images/twitter_icon.svg" alt="">
-        <img width="25px" class="social-icon" id="instagram-icon" src="./images/instagram_icon.svg" alt="">
-        <img width="25px" class="social-icon" id="email-icon" src="./images/email_icon.svg" alt="">
+    <!-- Footer -->
+    <div id="footer">
+      <div class="footer-box" id="footer-box-1">
+        <img id="footer-logo" src="./images/pw_logo_type_white.svg" alt="pw_logo_type_white.svg"/>
+        <p class="footer-text">Public Works is an arts and music community center located in the heart of San Francisco's Mission District.</p>
+        <p class="footer-text">We work with our SF neighbors to create impactful opportunities for the public to engage with art.</p>
+        <p class="footer-text" id="footer-address">161 Erie St<br>San Francisco, CA 94103</p>
+        <p id="copyright">PW &copy 2018</p>
+      </div>
+      <div class="footer-box" id="footer-box-2">
+        <h5 class="footer-title">Information</h5>
+        <h6 class="footer-link">Contact</h6>
+        <h6 class="footer-link">FAQ</h6>
+        <h6 class="footer-link">Local 161</h6>
+        <h6 class="footer-link">Booking</h6>
+        <a class="footer-link" href="./rentals">
+          <h6>Rentals</h6>
+        </a>
+        <p id="by">Site by 13lackCloud Web Apps</p>
+      </div>
+      <div class="footer-box" id="footer-box-3">
+        <h5 class="footer-title">Connect with us</h5>
+        <div id="socials-flexbox">
+          <img width="25px" class="social-icon" id="facebook-icon" src="./images/facebook_icon.svg" alt="">
+          <img width="25px" class="social-icon" id="twitter-icon" src="./images/twitter_icon.svg" alt="">
+          <img width="25px" class="social-icon" id="instagram-icon" src="./images/instagram_icon.svg" alt="">
+          <img width="25px" class="social-icon" id="email-icon" src="./images/email_icon.svg" alt="">
+        </div>
+        <h5 class="footer-title">Join the ranks</h5>
+        <input id="footer-email-box" type="text">
       </div>
     </div>
 
-    <!-- GRIT -->
+    <!-- Grit -->
     <img id="grit" src="./images/grit_5.png" alt="grit_5.png">
 
     <!-- Handlebars Templates -->
@@ -120,11 +128,11 @@
     </script>
 
     <!-- SCRIPTS -->
+    <script type="text/javascript" src="./scripts/hamburger-menu.js"></script>
     <script type="text/javascript" src="./scripts/handlebars-v4.0.11.js"></script>
     <script type="text/javascript" src="./scripts/handlebars-templates.js"></script>
     <script type="text/javascript" src="./scripts/events.hbs.js"></script>
     <script type="text/javascript" src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
-    <!-- <script type="text/javascript" src="./scripts/event-loader.js"></script> -->
     <script type="text/javascript" src="./scripts/eventbrite.js"></script>
     <script type="text/javascript" src="./scripts/logo-hover-color.js"></script>
 

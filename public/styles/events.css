@@ -1,25 +1,5 @@
-/* EVENTS */
-
-/* General */
-body {
-  background-color: #111111;
-  height: auto;
-}
-
 #event-list {
   position: relative;
-  transition: transform 1s;
-}
-
-/* Main Content */
-.main-content {
-  height: 100%;
-}
-
-/* Add Event Button */
-#add-event-button {
-  display: block;
-  margin: auto;
 }
 
 /* Event Module */
@@ -98,18 +78,12 @@ body {
 }
 
 /* Stamp */
-.stamp {
-  top: -80px;
+#title-stamp {
+  top: -70px;
   left: 45%;
 }
 
 /* manhole */
 .manhole {
   margin-bottom: 15px;
-}
-
-/* Footer */
-.footer {
-  display: block;
-  position: static;
 }

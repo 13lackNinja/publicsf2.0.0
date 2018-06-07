@@ -1,0 +1,97 @@
+#footer {
+  width: 100%;
+  height: 350px;
+  background: #111111;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-box {
+  position: relative;
+  padding: 30px 10px 30px 60px;
+}
+
+/* Footer Grid Boxes */
+#footer-box-1 {
+  grid-column: 1;
+}
+
+#footer-box-2 {
+  grid-column: 2;
+}
+
+#footer-box-3 {
+  grid-column: 3;
+}
+
+#footer-logo {
+  display: block;
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+#socials-flexbox {
+  margin-bottom: 40px;
+}
+
+.footer-text {
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.footer-title {
+  /* font-family: 'Oswald'; */
+  margin-bottom: 40px;
+}
+
+.footer-link {
+  color: #ededed;
+  margin-bottom: 8px;
+}
+
+.social-icon {
+  margin-right: 5px;
+}
+
+#footer-email-box {
+  background: transparent;
+  width: 80%;
+  height: 30px;
+  border: solid #ededed 2px;
+  border-radius: 5px;
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+/* Byline */
+#footer-byline {
+  display: block;
+  margin-left: 60px;
+}
+
+#copyright {
+  font-size: 10px;
+  padding-bottom: 30px;
+}
+
+#by {
+  font-size: 10px;
+  padding-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 750px) {
+  #footer {
+    height: auto;
+    display: block;
+  }
+  .footer-box {
+    display: block;
+    padding-left: 40px;
+  }
+  #footer-byline {
+    margin-left: 40px;
+  }
+}

@@ -1,0 +1,42 @@
+/* Dividers */
+.divider {
+  position: relative;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+}
+
+.divider-image {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  filter: brightness(20%);
+}
+
+.text {
+  color: #ededed;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.up-arrow-button {
+  display: block;
+  position: absolute;
+  width: 40px;
+  z-index: 1;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.down-arrow-button {
+  display: block;
+  position: absolute;
+  width: 40px;
+  z-index: 1;
+  bottom: 25px;;
+  left: 50%;
+  transform: translateX(-50%);
+}

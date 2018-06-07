@@ -25,6 +25,9 @@ router.get('/connect', (req, res) => {
   res.sendFile('/markup/connect.html', {root: './public'});
 });
 
+router.get('/rentals', (req, res) => {
+  res.sendFile('/markup/rentals.html', {root: './public'});
+});
 
 // Exports
 module.exports = router;

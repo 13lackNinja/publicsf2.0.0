@@ -1,29 +1,101 @@
-/* ABOUT */
-
-/* Content */
-#about-text {
-  font-family: arial;
-  font-size: 18px;
-  text-align: center;
-  position: absolute;
-  top: 200px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #ededed;
-  display: inline-block;
-  width: 400px;
-  line-height: 2em;
+/* General */
+.text {
+  width: 260px;
 }
 
-#section-title {
+.text > h1 {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.text > p {
+  text-align: justify;
+}
+
+/* Logo */
+#logo-content {
   position: absolute;
-  top: 550px;
+  z-index: 1;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
+}
+
+#central-container {
+  position: relative;;
+  margin: auto;
+  width: 310px;
+  height: 310px;
+  white-space: nowrap;
+}
+
+#local-161-logo {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border: solid #ededed 5px;
+  border-radius: 10px;
+  margin: 0;
   color: #ededed;
+  font-family: 'Oswald';
+  line-height: 1.3em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#local {
+  font-size: 40px;
+  margin: 30px 0px 40px 0px;
+}
+
+#number {
+  font-size: 80px;
+  margin: 0;
+}
+
+#local-161-tagline {
+  position: relative;
+  font-family: 'Oswald';
+  font-size: 18px;
+  top: 260px;
+  right: 1px;
 }
 
 .stamp {
-  top: 70%;
-  left: 50%;
+  position: relative;
+  top: 10px;
+  left: 70px;
+}
+
+/* Email Submission Form */
+#email-input-box {
+  display: block;
+  width: 320px;
+  height: 30px;
+  border: 2px solid #ededed;
+  border-radius: 4px;
+  background: transparent;
+  color: #ededed;
+  font-family: Arial;
+  margin: 20px auto;
+}
+
+#email-submit-button {
+  display: block;
+  box-sizing: content-box;
+  font-size: 18px;
+  margin: auto;
+  padding-bottom: 5px;
+}
+
+/* Background Image */
+#background-image {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  filter: brightness(20%);
+  z-index: -1;
 }

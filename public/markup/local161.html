@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Public Works About</title>
+  <title>Public Works Local 161</title>
   <link rel="stylesheet" href="styles/master.css">
+  <link rel="stylesheet" href="styles/topnav.css">
   <link rel="stylesheet" href="styles/local161.css">
+  <link rel="stylesheet" href="styles/dividers.css">
+  <link rel="stylesheet" href="styles/imagery.css">
+  <link rel="stylesheet" href="styles/footer.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
@@ -16,46 +20,10 @@
 
 <body>
 
-  <!-- HEADER -->
-  <div id="header-spacer"></div>
-  <div class="section" id="header">
-
-    <a id="home-link" href="/publicsf"><svg version="1.1" id="header-logo" xmlns="http://www.w3.org/2000/svg"      xmlns:xlink="http://www.w3.org/1999/xlink"
+  <!-- Topnav -->
+  <div class="topnav" id="topnav">
+    <a class="home-link" href="/publicsf"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"      xmlns:xlink="http://www.w3.org/1999/xlink"
     viewBox="0 0 454.2 43.9" height="18px" style="enable-background:new 0 0 454.2 43.9;" xml:space="preserve">
-
-      <style>
-        #header-logo {
-          fill:#FFFFFF;
-          stroke:#FFFFFF;
-          stroke-width:0.25;
-          stroke-miterlimit:1;
-          margin-top: 15px;
-          margin-left: 60px;
-          }
-      </style>
-
-      <script>
-
-        const homeLink = document.getElementById("home-link");
-        const headerLogo = document.getElementById("header-logo");
-
-        homeLink.addEventListener("mouseenter", changeColor);
-        homeLink.addEventListener("mouseleave", changeColor);
-
-        function changeColor() {
-
-          const logoStyle = window.getComputedStyle(headerLogo);
-          const logoColor = logoStyle.getPropertyValue("fill");
-
-          if (logoColor == "rgb(255, 255, 255)") {
-            headerLogo.style.fill = "rgb(236,68,35)";
-            headerLogo.style.stroke = "rgb(236,68,35)";
-          } else {
-            headerLogo.style.fill = "rgb(255, 255, 255)";
-          }
-        }
-
-      </script>
 
       <g>
         <rect x="164.2" y="0.7" width="9" height="42.5"/>
@@ -92,47 +60,106 @@
           C454.3,23.4,449,19.7,440.5,17.8z"/>
       </g>
     </svg></a>
+    <a href="./connect" class="nav-link"><button class="nav-button" id="connect-nav">Connect</button></a>
+    <a href="./events" class="nav-link"><button class="nav-button" id="events-nav">Events</button></a>
+    <a href="./local161" class="nav-link"><button class="nav-button" id="local161-nav">Local 161</button></a>
+    <a class="menu-icon">
+      <img id="menu-icon" src="./images/menu_icon.svg" alt="menu_icon.svg" onclick="openMenu()">
+    </a>
+  </div>
 
-    <!-- NAV -->
-    <div id="nav-container">
-      <a href="./connect"><button class="nav-button">Connect</button></a>
-      <a href="./events"><button class="nav-button">Events</button></a>
-      <a href="./local161"><button class="nav-button">Local 161</button></a>
+  <!-- Body -->
+  <div id="body">
+
+    <!-- Logo -->
+    <div class="divider" id="logo">
+      <div id="logo-content">
+        <div id="central-container">
+          <div id="local-161-logo">
+            <h1 id="local">Local</h1>
+            <h1 id="number">161</h1>
+          </div>
+          <img class="stamp" src="./images/white_stamp.png" alt="white_stamp.png">
+          <h2 id="local-161-tagline">The Official Community</h2>
+        </div>
+      </div>
+      <img class="down-arrow-button" src="./images/double_down_arrow.svg" alt="double_down_arrow.svg">
     </div>
 
+    <!-- Intro -->
+    <div class="divider" id="intro">
+      <img class="up-arrow-button" src="./images/double_up_arrow.svg" alt="double_up_arrow.svg">
+      <div class="text" id="intro-text">
+        <h1>Who We Are:</h1>
+        <p>Public Works is a rich community of artists, promoters, explorers, experience-creators, music-lovers and party goers, all working towards the common goal of building a better San Francisco through engagement in the arts.</p>
+        <h1>What We Do:</h1>
+        <p>We have the honor of being a prime destination for exceptional artistic talent, made available to the public.</p>
+        <h1>Local 161:</h1>
+        <p>Our Local 161 Newsletter is your portal into a new and enriching world of artistic engagement.
+        By subscribing, you get early access to shows, discounts and exclusive offers on swag, and other special content made with love just for you by the Public Works team.</p>
+      </div>
+      <img class="down-arrow-button" src="./images/double_down_arrow.svg" alt="double_down_arrow.svg">
+    </div>
+
+    <!-- Call to Action -->
+    <div class="divider" id="call-to-action">
+      <img class="up-arrow-button" src="./images/double_up_arrow.svg" alt="double_up_arrow.svg">
+      <div class="text" id="call-to-action-text">
+        <h1>Join the Ranks:</h1>
+        <form action="">
+          <input id="email-input-box" type="text">
+          <button class="nav-button" id="email-submit-button" type="button">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Manhole -->
+    <img class="manhole" src="./images/pw_manhole_white.png" alt="pw_manhole.png">
+
   </div>
 
-
-  <!-- MAIN CONTENT -->
-  <div class="main-content">
-    <!-- ABOUT -->
-    <p id="about-text">Public Works is a music, arts and community space located in the heart of San Francisco's Mission District.</p>
-    <!-- SECTION TITLE -->
-    <h1 id="section-title">Giving the people what they want</h1>
-    <!-- STAMP -->
-    <img class="stamp" src="./images/white_stamp.png" alt="white_stamp.png">
-  </div>
-
-  <!-- BACKGROUND IMAGE -->
-  <img class="background-image" src="./images/bg2.jpg" alt="bg2.jpg">
-
-  <!-- FOOTER -->
-  <div class="footer">
-    <img class="footer-logo" src="./images/pw_logo_type_white.svg" alt="pw_logo_type_white.svg"/>
-    <p class="address">161 Erie St, San Francisco, CA</p>
-    <div class="socials-flexbox">
-      <img width="25px" class="social-icon" id="facebook-icon" src="./images/facebook_icon.svg" alt="">
-      <img width="25px" class="social-icon" id="twitter-icon" src="./images/twitter_icon.svg" alt="">
-      <img width="25px" class="social-icon" id="instagram-icon" src="./images/instagram_icon.svg" alt="">
-      <img width="25px" class="social-icon" id="email-icon" src="./images/email_icon.svg" alt="">
+  <!-- Footer -->
+  <div id="footer">
+    <div class="footer-box" id="footer-box-1">
+      <img id="footer-logo" src="./images/pw_logo_type_white.svg" alt="pw_logo_type_white.svg"/>
+      <p class="footer-text">Public Works is an arts and music community center located in the heart of San Francisco's Mission District.</p>
+      <p class="footer-text">We work with our SF neighbors to create impactful opportunities for the public to engage with art.</p>
+      <p class="footer-text" id="footer-address">161 Erie St<br>San Francisco, CA 94103</p>
+      <p id="copyright">PW &copy 2018</p>
+    </div>
+    <div class="footer-box" id="footer-box-2">
+      <h5 class="footer-title">Information</h5>
+      <h6 class="footer-link">Contact</h6>
+      <h6 class="footer-link">FAQ</h6>
+      <h6 class="footer-link">Local 161</h6>
+      <h6 class="footer-link">Booking</h6>
+      <a class="footer-link" href="./rentals">
+        <h6>Rentals</h6>
+      </a>
+      <p id="by">Site by 13lackCloud Web Apps</p>
+    </div>
+    <div class="footer-box" id="footer-box-3">
+      <h5 class="footer-title">Connect with us</h5>
+      <div id="socials-flexbox">
+        <img width="25px" class="social-icon" id="facebook-icon" src="./images/facebook_icon.svg" alt="">
+        <img width="25px" class="social-icon" id="twitter-icon" src="./images/twitter_icon.svg" alt="">
+        <img width="25px" class="social-icon" id="instagram-icon" src="./images/instagram_icon.svg" alt="">
+        <img width="25px" class="social-icon" id="email-icon" src="./images/email_icon.svg" alt="">
+      </div>
+      <h5 class="footer-title">Join the ranks</h5>
+      <input id="footer-email-box" type="text">
     </div>
   </div>
 
-  <!-- GRIT -->
+  <!-- Background Image -->
+  <img class="background-image" src="./images/bg9.jpg" alt="bg16.jpg">
+
+  <!-- Grit -->
   <img id="grit" src="./images/grit_5.png" alt="grit_5.png">
 
-  <!-- SCRIPTS -->
-  <script src="./scripts/body-to-fold.js"></script>
+  <!-- Scripts -->
+  <script src="./scripts/scroll-button.js"></script>
+  <script src="./scripts/hamburger-menu.js"></script>
 
 </body>
 </html>
