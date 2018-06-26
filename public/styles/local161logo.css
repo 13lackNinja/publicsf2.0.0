@@ -1,0 +1,55 @@
+/* Logo */
+#logo-content {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#central-container {
+  position: relative;;
+  margin: auto;
+  width: 310px;
+  height: 310px;
+  white-space: nowrap;
+}
+
+#local-161-logo {
+  position: absolute;
+  width: 170px;
+  height: 170px;
+  border: solid #ededed 5px;
+  border-radius: 10px;
+  margin: 0;
+  color: #ededed;
+  font-family: 'Oswald';
+  line-height: 1.3em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#local {
+  font-size: 40px;
+  margin: 30px 0px 40px 0px;
+}
+
+#number {
+  font-size: 80px;
+  margin: 0;
+}
+
+#local-161-tagline {
+  position: relative;
+  font-family: 'Oswald';
+  font-size: 18px;
+  top: 260px;
+  right: 1px;
+}
+
+.stamp {
+  position: relative;
+  top: 10px;
+  left: 70px;
+}

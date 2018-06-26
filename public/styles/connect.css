@@ -15,6 +15,19 @@ h3 {
   padding-bottom: 10px;
 }
 
+/* Contact Intro */
+#contact-intro-wrapper {
+  width: 60%;
+  margin: auto;
+}
+
+#contact-intro-wrapper > p {
+  font-family: 'Rajdhani';
+  margin: 100px 0 50px 0;
+  line-height: 2em;
+  text-align: center;
+}
+
 /* FAQs */
 #faq-container {
   display: block;
@@ -32,7 +45,7 @@ h3 {
   width: auto;
 }
 
-.faq-down-arrow {
+.dropdown-arrow {
   position: absolute;
   top: -2px;
   right: 0;
@@ -81,12 +94,26 @@ h3 {
   border-radius: 5px;
 }
 
-#contact-form > select {
-  display: block;
-  margin: 20px;
+#poc-dropdown {
+  position: relative;
+  height: 30px;
+  border-top: 2px #ededed solid;
+  padding-top: 5px;
+  margin: 20px 20px 40px 20px;
 }
 
-#contact-form > textarea, input {
+#poc-dropdown > p {
+  font-size: 16px;
+}
+
+#poc-dropdown-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5px;
+}
+
+#contact-form > textarea, #contact-form > input {
   display: block;
   color: #ededed;
   font-family: Arial;
@@ -102,6 +129,23 @@ h3 {
   margin: 20px;
 }
 
+#contact-form > button {
+  width: calc(100% - 40px);
+  margin: 20px;
+  display: block;
+}
+
+.menu-option {
+  font-family: 'Rajdhani';
+  text-transform: uppercase;
+  display: block;
+}
+
+.menu-option:hover {
+  background: #e8513a;
+  color: #111111;
+}
+
 #email-input {
   width: calc(100% - 40px);
   height: 30px;
@@ -110,11 +154,6 @@ h3 {
 #message-box {
   width: calc(100% - 40px);
   height: 100px;
-}
-
-.action-button {
-  display: block;
-  margin: 20px auto;
 }
 
 /* Imagery */

@@ -1,77 +1,96 @@
 /* General */
 .text {
-  width: 260px;
+  text-align: center;
 }
 
 .text > h1 {
-  text-align: left;
+  text-align: center;
   margin-bottom: 15px;
 }
 
-.text > p {
-  text-align: justify;
+p {
+  display: inline;
+  margin: 5px;
 }
 
-/* Logo */
-#logo-content {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#central-container {
-  position: relative;;
-  margin: auto;
-  width: 310px;
-  height: 310px;
-  white-space: nowrap;
-}
-
-#local-161-logo {
-  position: absolute;
-  width: 170px;
-  height: 170px;
-  border: solid #ededed 5px;
-  border-radius: 10px;
-  margin: 0;
-  color: #ededed;
+/* We Are */
+#artists {
   font-family: 'Oswald';
-  line-height: 1.3em;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size: 32px;
 }
 
-#local {
-  font-size: 40px;
-  margin: 30px 0px 40px 0px;
+#explorers {
+  font-size: 20px;
+  letter-spacing: .1em;
+  font-weight: 600;
 }
 
-#number {
-  font-size: 80px;
-  margin: 0;
+#creators {
+  font-family: 'Rajdhani';
+  font-size: 36px;
+  text-transform: uppercase;
 }
 
-#local-161-tagline {
-  position: relative;
+#music-lovers {
+  font-family: 'Open Sans';
+  font-size: 20px;
+  letter-spacing: .05em;
+}
+
+#party-goers {
   font-family: 'Oswald';
+  font-size: 26px;
+}
+
+#one-mission {
+  font-family: 'Oswald';
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 4em;
+}
+
+#mission-statement {
   font-size: 18px;
-  top: 260px;
-  right: 1px;
+  width: 400px;
+  letter-spacing: .02em;
 }
 
-.stamp {
-  position: relative;
-  top: 10px;
-  left: 70px;
+/* Our Vision */
+#is-a {
+  font-size: 18px;
+}
+
+#san-francisco-community {
+  font-family: 'Oswald';
+  font-size: 28px;
+  text-transform: uppercase;
+  line-height: 3em;
+}
+
+#strengthened {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 22px;
+}
+
+#unified {
+  font-family: 'Rajdhani';
+  font-size: 34px;
+  text-transform: uppercase;
+}
+
+#engagement {
+  font-size: 18px;
+  width: 400px;
+  letter-spacing: .02em;
+  line-height: 4em;
 }
 
 /* Email Submission Form */
 #email-input-box {
   display: block;
-  width: 320px;
+  width: 310px;
   height: 30px;
   border: 2px solid #ededed;
   border-radius: 4px;
@@ -86,16 +105,6 @@
   box-sizing: content-box;
   font-size: 18px;
   margin: auto;
-  padding-bottom: 5px;
-}
-
-/* Background Image */
-#background-image {
-  position: fixed;
-  top: 50px;
-  width: 100%;
-  min-width: 100%;
-  min-height: 100%;
-  filter: brightness(20%);
-  z-index: -1;
+  width: 310px;
+  height: 40px;
 }

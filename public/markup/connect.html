@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./styles/topnav.css">
   <link rel="stylesheet" href="./styles/connect.css">
   <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/local161banner.css">
   <link rel="stylesheet" href="./styles/imagery.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600" rel="stylesheet">
@@ -59,7 +60,7 @@
           C454.3,23.4,449,19.7,440.5,17.8z"/>
       </g>
     </svg></a>
-    <a href="./connect" class="nav-link"><button class="nav-button" id="connect-nav">Connect</button></a>
+    <a href="./connect" class="nav-link"><button class="nav-button" id="connect-nav">Contact</button></a>
     <a href="./events" class="nav-link"><button class="nav-button" id="events-nav">Events</button></a>
     <a href="./local161" class="nav-link"><button class="nav-button" id="local161-nav">Local 161</button></a>
     <a class="menu-icon">
@@ -73,13 +74,19 @@
     <h1>Connect with us</h1>
     <img class="stamp" id="title-stamp" src="./images/white_stamp.png" alt="white_stamp.png">
 
+    <div class="contact-section" id="contact-intro">
+      <div id="contact-intro-wrapper">
+        <p>Please check the FAQs below before submitting your message.</p>
+      </div>
+    </div>
+
     <!-- FAQ -->
     <div class="contact-section" id="faq-container">
       <h4 id="faq-header">FAQs:</h4>
       <div class="faq-item">
         <div class="question-box text-container" id="question-box-1">
           <p class="faq-text question-text">How can I check for my lost items?</p>
-          <img src="./images/down_arrow.svg" alt="down_arrow.svg" class="faq-down-arrow" id="faq-expand-1">
+          <img src="./images/down_arrow.svg" alt="down_arrow.svg" class="dropdown-arrow" id="faq-expand-1">
         </div>
         <div class="answer-box text-container" id="answer-box-1">
           <p class="faq-text answer-text" >Please use our contact form to check our lost and found. In your submission, please describe your lost item(s) in detail. We typically respond within one or two business days.</p>
@@ -88,7 +95,7 @@
       <div class="faq-item">
         <div class="question-box text-container" id="question-box-2">
           <p class="faq-text question-text">Do you provide bottle service?</p>
-          <img src="./images/down_arrow.svg" alt="down_arrow.svg" class="faq-down-arrow" id="faq-expand-2">
+          <img src="./images/down_arrow.svg" alt="down_arrow.svg" class="dropdown-arrow" id="faq-expand-2">
         </div>
         <div class="answer-box text-container"  id="answer-box-2">
           <p class="faq-text answer-text">We do not provide bottle service at Public Works</p>
@@ -97,7 +104,7 @@
       <div class="faq-item">
         <div class="question-box text-container" id="question-box-3">
           <p class="faq-text question-text">Do you have any job openings?</p>
-          <img src="./images/down_arrow.svg" alt="down_arrow.svg" class="faq-down-arrow" id="faq-expand-3">
+          <img src="./images/down_arrow.svg" alt="down_arrow.svg" class="dropdown-arrow" id="faq-expand-3">
         </div>
         <div class="answer-box text-container" id="answer-box-3">
           <p class="faq-text answer-text">We are always on the lookout for talented and versatile individuls with a passion for live events. If this is you, please use our contact form to submit a resume and cover letter.</p>
@@ -109,16 +116,14 @@
     <div id="contact-form-container">
       <h4 id="contact-form-header">Contact Form:</h4>
       <form id="contact-form" action="">
-        <p>Point of Contact:</p>
-        <select name="poc">
-          <option value="General Info">General Info</option>
-          <option value="Booking">Booking</option>
-          <option value="Rentals">Rentals</option>
-          <option value="Lost & Found">Lost & Found</option>
-        </select>
-        <p>Your Email:</p>
+        <p class="question-text">Point of Contact:</p>
+        <div id="poc-dropdown">
+          <p>Select POC...</p>
+          <img src="./images/down_arrow.svg" alt="down_arrow.svg" class="dropdown-arrow" id="poc-dropdown-arrow">
+        </div>
+        <p class="question-text">Your Email:</p>
         <input type="text" id="email-input">
-        <p>How can we help you?</p>
+        <p class="question-text">How can we help you?</p>
         <textarea id="message-box"></textarea>
         <button class="action-button">Submit</button>
       </form>
@@ -129,6 +134,13 @@
 
   </div>
 
+  <!-- Local 161 Banner -->
+  <div id="local161-banner">
+    <div id="local161-banner-text-wrapper">
+      <div class="local161-banner-text">Local 161 | Join the Ranks</div>
+    </div>
+  </div>
+
   <!-- Footer -->
   <div id="footer">
     <div class="footer-box" id="footer-box-1">
@@ -136,7 +148,6 @@
       <p class="footer-text">Public Works is an arts and music community center located in the heart of San Francisco's Mission District.</p>
       <p class="footer-text">We work with our SF neighbors to create impactful opportunities for the public to engage with art.</p>
       <p class="footer-text" id="footer-address">161 Erie St<br>San Francisco, CA 94103</p>
-      <p id="copyright">PW &copy 2018</p>
     </div>
     <div class="footer-box" id="footer-box-2">
       <h5 class="footer-title">Information</h5>
@@ -144,10 +155,7 @@
       <h6 class="footer-link">FAQ</h6>
       <h6 class="footer-link">Local 161</h6>
       <h6 class="footer-link">Booking</h6>
-      <a class="footer-link" href="./rentals">
-        <h6>Rentals</h6>
-      </a>
-      <p id="by">Site by 13lackCloud Web Apps</p>
+      <h6 class="footer-link">Rentals</h6>
     </div>
     <div class="footer-box" id="footer-box-3">
       <h5 class="footer-title">Connect with us</h5>
@@ -160,6 +168,10 @@
       <h5 class="footer-title">Join the ranks</h5>
       <input id="footer-email-box" type="text">
     </div>
+    <div id="footer-byline">
+      <p id="copyright">&copy 2018</p>
+      <p id="by">Developed by Jonathan Crawford</p>
+    </div>
   </div>
 
   <!-- Grit -->
@@ -168,6 +180,7 @@
   <!-- Scripts -->
   <script src="./scripts/faq.js"></script>
   <script src="./scripts/hamburger-menu.js"></script>
+  <script src="./scripts/poc-dropdown-menu.js"></script>
 
 </body>
 </html>

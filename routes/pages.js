@@ -29,5 +29,9 @@ router.get('/rentals', (req, res) => {
   res.sendFile('/markup/rentals.html', {root: './public'});
 });
 
+router.get('/specs', (req, res) => {
+  res.sendFile('/markup/specs.html', {root: './public'});
+});
+
 // Exports
 module.exports = router;
