@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Rajdhani:400,600" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,600" rel="stylesheet">
     <link rel="shortcut icon" href="images/pw_favicon.png">
-    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/topnav.css">
     <link rel="stylesheet" href="./styles/master.css">
     <link rel="stylesheet" href="./styles/rental.css">
     <link rel="stylesheet" href="./styles/dividers.css">
@@ -15,46 +15,10 @@
   </head>
   <body>
 
-    <!-- Header -->
-    <div id="header-spacer"></div>
-    <div class="section" id="header">
-
-      <a id="home-link" href="/publicsf"><svg version="1.1" id="header-logo" xmlns="http://www.w3.org/2000/svg"      xmlns:xlink="http://www.w3.org/1999/xlink"
+    <!-- Topnav -->
+    <div class="topnav" id="topnav">
+      <a class="home-link" href="/publicsf"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"      xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 454.2 43.9" height="18px" style="enable-background:new 0 0 454.2 43.9;" xml:space="preserve">
-
-        <style>
-          #header-logo {
-            fill:#FFFFFF;
-            stroke:#FFFFFF;
-            stroke-width:0.25;
-            stroke-miterlimit:1;
-            margin-top: 15px;
-            margin-left: 60px;
-            }
-        </style>
-
-        <script>
-
-          const homeLink = document.getElementById("home-link");
-          const headerLogo = document.getElementById("header-logo");
-
-          homeLink.addEventListener("mouseenter", changeColor);
-          homeLink.addEventListener("mouseleave", changeColor);
-
-          function changeColor() {
-
-            const logoStyle = window.getComputedStyle(headerLogo);
-            const logoColor = logoStyle.getPropertyValue("fill");
-
-            if (logoColor == "rgb(255, 255, 255)") {
-              headerLogo.style.fill = "rgb(236,68,35)";
-              headerLogo.style.stroke = "rgb(236,68,35)";
-            } else {
-              headerLogo.style.fill = "rgb(255, 255, 255)";
-            }
-          }
-
-        </script>
 
         <g>
           <rect x="164.2" y="0.7" width="9" height="42.5"/>
@@ -91,73 +55,73 @@
             C454.3,23.4,449,19.7,440.5,17.8z"/>
         </g>
       </svg></a>
-
-      <!-- NAV -->
-      <div id="nav-container">
-        <a href="./connect"><button class="nav-button">Connect</button></a>
-        <a href="./events"><button class="nav-button">Events</button></a>
-        <a href="./local161"><button class="nav-button">Local 161</button></a>
-      </div>
-
+      <a href="./connect" class="nav-link"><button class="nav-button" id="connect-nav">Connect</button></a>
+      <a href="./events" class="nav-link"><button class="nav-button" id="events-nav">Events</button></a>
+      <a href="./local161" class="nav-link"><button class="nav-button" id="local161-nav">Local 161</button></a>
+      <a class="menu-icon">
+        <img id="menu-icon" src="./images/menu_icon.svg" alt="menu_icon.svg" onclick="openMenu()">
+      </a>
     </div>
 
-    <!-- Intro -->
-    <div class="divider" id="intro">
-      <div class="text" id="intro-text">
-        <h1>Designed To Adapt</h1>
-        <h2>Public Works is a fully-equipped community and events space in the heart of San Francisco's Mission District.</h2>
-        <h2>As a trusted partner with some of SF's leading organizations throughout technology and the arts, we take the stress out of creating a memorable experience for your audience.</h2>
+    <div id="body">
+      <!-- Intro -->
+      <div class="divider" id="intro">
+        <div class="text" id="intro-text">
+          <h1>Designed To Adapt</h1>
+          <h2>Public Works is a fully-equipped community and events space in the heart of San Francisco's Mission District.</h2>
+          <h2>As a trusted partner with some of SF's leading organizations throughout technology and the arts, we take the stress out of creating a memorable experience for your audience.</h2>
+        </div>
+        <img class="down-arrow-button" src="./images/double_down_arrow.svg" alt="double_down_arrow.svg">
+        <img class="divider-image" src="./images/info-header.png" alt="info-header.png">
       </div>
-      <img class="down-arrow-button" src="./images/double_down_arrow.svg" alt="double_down_arrow.svg">
-      <img class="divider-image" src="./images/info-header.png" alt="info-header.png">
-    </div>
 
-    <!-- Main Room -->
-    <div class="divider" id="main-room">
-      <img class="up-arrow-button" src="./images/double_up_arrow.svg" alt="double_up_arrow.svg">
-      <div class="text" id="main-room-text">
-        <ul>
-          <h3>Main Room</h3>
-          <li>5000 Square Feet</li>
-          <li>700 Standing, 160 Seated Capacity</li>
-          <li>World Class Funktion One Sound System</li>
-          <li>Immersive 2-Wall Projector System</li>
-          <li>Flexible Breakout Areas</li>
-          <li>Full-Service Bar</li>
-        </ul>
+      <!-- Main Room -->
+      <div class="divider" id="main-room">
+        <img class="up-arrow-button" src="./images/double_up_arrow.svg" alt="double_up_arrow.svg">
+        <div class="text" id="main-room-text">
+          <ul>
+            <h3>Main Room</h3>
+            <li>5000 Square Feet</li>
+            <li>700 Standing, 160 Seated Capacity</li>
+            <li>World Class Funktion One Sound System</li>
+            <li>Immersive 2-Wall Projector System</li>
+            <li>Flexible Breakout Areas</li>
+            <li>Full-Service Bar</li>
+          </ul>
+        </div>
+        <img class="down-arrow-button" src="./images/double_down_arrow.svg" alt="double_down_arrow.svg">
+        <img class="divider-image" src="./images/mainroom.png" alt="mainroom.png">
       </div>
-      <img class="down-arrow-button" src="./images/double_down_arrow.svg" alt="double_down_arrow.svg">
-      <img class="divider-image" src="./images/mainroom.png" alt="mainroom.png">
-    </div>
 
-    <!-- Loft -->
-    <div class="divider" id="loft">
-      <img class="up-arrow-button" src="./images/double_up_arrow.svg" alt="double_up_arrow.svg">
-      <div class="text" id="loft-text">
-        <h3>Loft</h3>
-        <ul>
-          <li>1645 Square Feet</li>
-          <li>206 Standing, 80 Seated Capacity</li>
-          <li>World Class Funktion One Sound System</li>
-          <li>Two Projectors</li>
-          <li>Full-Service Bar</li>
-        </ul>
+      <!-- Loft -->
+      <div class="divider" id="loft">
+        <img class="up-arrow-button" src="./images/double_up_arrow.svg" alt="double_up_arrow.svg">
+        <div class="text" id="loft-text">
+          <h3>Loft</h3>
+          <ul>
+            <li>1645 Square Feet</li>
+            <li>206 Standing, 80 Seated Capacity</li>
+            <li>World Class Funktion One Sound System</li>
+            <li>Two Projectors</li>
+            <li>Full-Service Bar</li>
+          </ul>
+        </div>
+        <img class="down-arrow-button" src="./images/double_down_arrow.svg" alt="double_down_arrow.svg">
+        <img class="divider-image" src="./images/loft.png" alt="loft.png">
       </div>
-      <img class="down-arrow-button" src="./images/double_down_arrow.svg" alt="double_down_arrow.svg">
-      <img class="divider-image" src="./images/loft.png" alt="loft.png">
-    </div>
 
-    <!-- Booking Contact -->
-    <div class="divider" id="booking-info">
-      <img class="up-arrow-button" src="./images/double_up_arrow.svg" alt="double_up_arrow.svg">
-      <div class="text" id="footer-text">
-        <h3 id="footer-title">To book an event or schedule a tour, please contact:</h3>
-        <p>info@publicsf.com</p>
-        <p>161 Erie St, CA 94103</p>
-        <p>(415) 999-6314</p>
+      <!-- Booking Contact -->
+      <div class="divider" id="booking-info">
+        <img class="up-arrow-button" src="./images/double_up_arrow.svg" alt="double_up_arrow.svg">
+        <div class="text" id="footer-text">
+          <h3 id="footer-title">To book an event or schedule a tour, please contact:</h3>
+          <p>info@publicsf.com</p>
+          <p>161 Erie St, CA 94103</p>
+          <p>(415) 999-6314</p>
+        </div>
       </div>
     </div>
-
+  
     <!-- Footer -->
     <div id="footer">
       <div class="footer-box" id="footer-box-1">

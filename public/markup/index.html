@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./styles/master.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/topnav.css">
+    <link rel="stylesheet" href="./styles/carousel.css">
+    <link rel="stylesheet" href="./styles/local161hero.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/imagery.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
@@ -69,17 +71,54 @@
 
     <!-- Body -->
     <div id="body">
-      <img class="cross-thing" id="cross-thing-top" src="./images/cross-thing.svg" alt="cross-thing.svg">
-      <img class="cross-thing" id="cross-thing-bottom" src="./images/cross-thing.svg" alt="cross-thing.svg">
-      <img class="cross-thing" id="cross-thing-left" src="./images/cross-thing.svg" alt="cross-thing.svg">
-      <img class="cross-thing" id="cross-thing-right" src="./images/cross-thing.svg" alt="cross-thing.svg">
-      <div id="logo-container">
-        <img id="local161-logo" src="./images/local161-logo-subtext.svg" alt="local161-logo-subtext.svg">
-        <div id="shake-container">
-          <button class="action-button" id="action-button-home">Join the ranks</button>
+
+      <!-- Carousel -->
+      <div id="carousel-container">
+        <div id="carousel">
+          <div class="image-container" id="image-container-1">
+            <div id="logo-container">
+              <img src="./images/local161-logo-subtext.svg" alt="local161-logo-subtext">
+              <a href="./local161">
+                <button class="action-button-black">Join the ranks</button>
+              </a>
+            </div>
+          </div>
+          <div class="image-container" id="image-container-2"></div>
+          <div class="image-container" id="image-container-3"></div>
+          <div class="image-container" id="image-container-4">
+            <div id="logo-container">
+              <img src="./images/local161-logo-subtext.svg" alt="local161-logo-subtext">
+              <a href="./local161">
+                <button class="action-button-black">Join the ranks</button>
+              </a>
+            </div>
+          </div>
         </div>
-        <img id="logo-stamp" src="./images/pw_manhole.png" alt="pw_manhole.png">
+        <div id="circles-container">
+          <svg class="circle-svg">
+            <circle id="0"></circle>
+          </svg>
+          <svg class="circle-svg">
+            <circle id="1"></circle>
+          </svg>
+          <svg class="circle-svg">
+            <circle id="2"></circle>
+          </svg>
+        </div>
       </div>
+
+      <!-- About Statement -->
+      <div id="about-container">
+        <h1 id="about-header">Giving the people what they want</h1>
+      </div>
+
+      <!-- Feature Events -->
+      <div id="featured-events-container">
+        <div class="featured-event" id="featured-event-1"></div>
+        <div class="featured-event" id="featured-event-2"></div>
+        <div class="featured-event" id="featured-event-3"></div>
+      </div>
+
     </div>
 
     <!-- Footer -->
@@ -92,11 +131,17 @@
       </div>
       <div class="footer-box" id="footer-box-2">
         <h5 class="footer-title">Information</h5>
-        <h6 class="footer-link">Contact</h6>
+        <a href="./connect">
+          <h6 class="footer-link">Contact</h6>
+        </a>
         <h6 class="footer-link">FAQ</h6>
-        <h6 class="footer-link">Local 161</h6>
+        <a href="./local161">
+          <h6 class="footer-link">Local 161</h6>
+        </a>
         <h6 class="footer-link">Booking</h6>
-        <h6 class="footer-link">Rentals</h6>
+        <a href="./rentals">
+          <h6 class="footer-link">Rentals</h6>
+        </a>
       </div>
       <div class="footer-box" id="footer-box-3">
         <h5 class="footer-title">Connect with us</h5>
@@ -120,6 +165,7 @@
 
     <!-- Scripts -->
     <script src='./scripts/hamburger-menu.js'></script>
+    <script src='./scripts/carousel.js'></script>
 
   </body>
 

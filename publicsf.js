@@ -2,30 +2,19 @@
 // Modules
 
 const express = require('express');
+const path = require('path');
 const app = express();
-const pages = require('./routes/pages');
-const bs = require('browser-sync').create();
 
 // Middlewear
 
-app.use('/publicsf', pages);
+app.use(express.static(path.join(__dirname, 'build')));
+
+// Routes
+
+app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 // Port
 
 app.listen(8090);
-
-// Browser sync
-
-const bsOptions = {
-  proxy: 'localhost:8090/publicsf',
-  files: [
-    './public/markup/*.html',
-    './public/styles/*.css',
-    './public/scrips/*.js',
-    '.public/images/*.jpg'
-  ]
-};
-
-bs.init(bsOptions);
-
-bs.reload('*.html', '*.css', '*.js');

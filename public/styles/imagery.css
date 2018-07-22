@@ -4,7 +4,11 @@
   filter: opacity(40%);
 }
 
-.background-image {
+.divider {
+  height: calc(100vh - 50px);
+}
+
+.divider-image {
   object-fit: cover;
   max-width: 100%;
   min-height: 100%;

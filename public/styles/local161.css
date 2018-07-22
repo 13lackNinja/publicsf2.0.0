@@ -1,90 +1,43 @@
 /* General */
-.text {
-  text-align: center;
-}
 
 .text > h1 {
-  text-align: center;
+  margin-bottom: 0;
+}
+
+.text > p, ul {
+  display: block;
+  margin-bottom: 20px;
+  font-family: courier;
+  line-height: 1.4em;
+}
+
+.text > img {
+  display: block;
+  margin: auto;
+  width: 100px;
+  padding-top: 30px;
+}
+
+li {
   margin-bottom: 15px;
 }
 
-p {
-  display: inline;
-  margin: 5px;
-}
-
-/* We Are */
-#artists {
-  font-family: 'Oswald';
-  font-size: 32px;
-}
-
-#explorers {
-  font-size: 20px;
-  letter-spacing: .1em;
+.arial-bold-text {
+  font-family: arial;
+  font-size: 16px;
   font-weight: 600;
 }
 
-#creators {
-  font-family: 'Rajdhani';
-  font-size: 36px;
-  text-transform: uppercase;
+/* Action Button */
+#action-button-local161 {
+  background: #e06736;
+  color: #111111;
+  width: 100%;
 }
 
-#music-lovers {
-  font-family: 'Open Sans';
-  font-size: 20px;
-  letter-spacing: .05em;
-}
-
-#party-goers {
-  font-family: 'Oswald';
-  font-size: 26px;
-}
-
-#one-mission {
-  font-family: 'Oswald';
-  font-size: 28px;
-  text-transform: uppercase;
-  font-weight: 600;
-  line-height: 4em;
-}
-
-#mission-statement {
-  font-size: 18px;
-  width: 400px;
-  letter-spacing: .02em;
-}
-
-/* Our Vision */
-#is-a {
-  font-size: 18px;
-}
-
-#san-francisco-community {
-  font-family: 'Oswald';
-  font-size: 28px;
-  text-transform: uppercase;
-  line-height: 3em;
-}
-
-#strengthened {
-  font-family: 'Open Sans';
-  font-weight: 600;
-  font-size: 22px;
-}
-
-#unified {
-  font-family: 'Rajdhani';
-  font-size: 34px;
-  text-transform: uppercase;
-}
-
-#engagement {
-  font-size: 18px;
-  width: 400px;
-  letter-spacing: .02em;
-  line-height: 4em;
+#action-button-local161:hover {
+  background: #111111;
+  color: #e06736;
 }
 
 /* Email Submission Form */
@@ -98,13 +51,4 @@ p {
   color: #ededed;
   font-family: Arial;
   margin: 20px auto;
-}
-
-#email-submit-button {
-  display: block;
-  box-sizing: content-box;
-  font-size: 18px;
-  margin: auto;
-  width: 310px;
-  height: 40px;
 }
