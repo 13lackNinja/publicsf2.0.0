@@ -1,0 +1,29 @@
+#client-links-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100vw / 2);
+  background: red;
+}
+
+.client-link-button {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  filter: saturate(100%);
+  transition: filter .7s;
+}
+
+.client-link-button:hover {
+  filter: saturate(0%);
+}
+
+#client-link-intheworks {
+  grid-column: 0;
+}
+
+#client-link-corporate {
+  grid-column: 1;
+}

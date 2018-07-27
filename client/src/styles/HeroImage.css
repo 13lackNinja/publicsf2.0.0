@@ -1,0 +1,14 @@
+#hero-image-container {
+  position: relative;
+  height: calc(100vh - 50px);
+  background-position: center;
+  background-size: cover;
+}
+
+#hero-image-container > h1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 40px;
+}

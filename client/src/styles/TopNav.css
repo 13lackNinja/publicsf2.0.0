@@ -1,0 +1,38 @@
+#topnav {
+  position: fixed;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background: #111111;
+  transition: height .7s;
+  z-index: 1;
+}
+
+#topnav button {
+  position: relative;
+  float: right;
+  height: 20px;
+  padding: 15px 0;
+  margin: 0 50px;
+  font-family: "Rajdhani";
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ededed;
+  border: none;
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #111111;
+  background: transparent;
+  cursor: pointer;
+  transition: border-bottom .3s;
+  animation: fadein .7s .7s both;
+}
+
+Link {
+  text-decoration: none;
+}
+
+#topnav button:hover {
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #ff5524;
+}

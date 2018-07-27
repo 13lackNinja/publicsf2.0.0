@@ -1,0 +1,43 @@
+#carousel-container {
+  position: relative;
+  height: calc(100vh - 50px);
+  overflow: hidden;
+  background: #111111;
+}
+
+#image-container {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  background-position: center;
+  background-size: contain;
+  opacity: 1;
+  transition: opacity 3s;
+}
+
+/* Position Buttons */
+
+#circle-container {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 20px;
+}
+
+.circle-svg {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.circle-svg > circle {
+  width: 10px;
+  height: 10px;
+  cx: 10;
+  cy: 10;
+  r: 5;
+  transition: fill 1s;
+}

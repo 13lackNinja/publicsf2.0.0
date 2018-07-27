@@ -1,0 +1,42 @@
+.typelogo-nav {
+  float: left;
+  fill:#ededed;
+  stroke:#ededed;
+  stroke-width: 0.25;
+  stroke-miterlimit: 1;
+  margin-top: 15px;
+  margin-left: 60px;
+  transition: fill 0.3s, stroke 0.3s;
+  width: 180px;
+}
+
+.typelogo-footer {
+  display: block;
+  float: left;
+  fill:#ededed;
+  stroke:#ededed;
+  stroke-width: 0.25;
+  stroke-miterlimit: 1;
+  margin-bottom: 40px;
+  transition: fill 0.3s, stroke 0.3s;
+  width: 180px;
+}
+
+.typelogo-about {
+  display: block;
+  position: relative;
+  top: 40px;
+  fill: #111111;
+  stroke: #111111;
+  stroke-width: 0.25;
+  stroke-miterlimit: 1;
+  width: 300px;
+  margin: auto;
+}
+
+.typelogo-white {
+  fill: #ededed;
+  stroke: #ededed;
+  stroke-width: 0.25;
+  stroke-miterlimit: 1;
+}

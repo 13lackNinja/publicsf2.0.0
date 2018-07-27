@@ -1,0 +1,19 @@
+#marquee {
+  position: relative;
+  height: 180px;
+  background: #e75e26;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee-text {
+  position: absolute;
+  top: 50%;
+  left: 100vw;
+  font-family: 'Oswald';
+  font-size: 100px;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0;
+  transform: translateY(-50%);
+}

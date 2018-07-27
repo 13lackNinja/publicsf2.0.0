@@ -1,0 +1,87 @@
+#contact-form-container {
+  width: 60%;
+  margin: auto;
+  background: #111111;
+  margin-bottom: 40px;
+}
+
+#contact-form {
+  display: block;
+  margin: 0px auto 20px auto;
+  border: 2px solid #ededed;
+  border-radius: 5px;
+  color: #ededed;
+}
+
+#contact-form h2 {
+  margin: 20px;
+  font-family: 'Oswald';
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+#subject-dropdown {
+  position: relative;
+  height: 30px;
+  border-top: 2px #ededed solid;
+  padding-top: 5px;
+  margin: 20px 20px 40px 20px;
+}
+
+#subject-dropdown > p {
+  font-family: arial;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+#poc-dropdown-arrow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 5px;
+}
+
+#contact-form > textarea, #contact-form > input {
+  display: block;
+  color: #ededed;
+  font-family: Arial;
+  font-size: 14px;
+  margin: 20px;
+  background: transparent;
+  border: 2px solid #ededed;
+  border-radius: 5px;
+}
+
+#contact-form > button {
+  display: block;
+  margin: 20px auto;
+}
+
+.menu-option {
+  font-family: 'Rajdhani';
+  text-transform: uppercase;
+  display: block;
+}
+
+.menu-option:hover {
+  background: #e8513a;
+  color: #111111;
+}
+
+.text-container {
+  margin: 10px 0px 15px 0px;
+}
+
+.answer-box {
+  display: none;
+}
+
+#email-input {
+  width: calc(100% - 40px);
+  height: 30px;
+}
+
+#message-box {
+  width: calc(100% - 40px);
+  height: 100px;
+}

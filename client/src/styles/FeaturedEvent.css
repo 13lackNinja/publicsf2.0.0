@@ -1,0 +1,52 @@
+.featured-event {
+  position: relative;
+  width: 270px;
+  min-width: 270px;
+  height: 420px;
+  border: 4px solid #ededed;
+  padding: 15px;
+  margin: 0 15px;
+  color: #ededed;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.featured-event-image {
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.featured-event-artists {
+  font-family: 'Oswald';
+  letter-spacing: .06em;
+}
+
+.featured-event-date {
+  font-family: 'Rajdhani';
+  margin: 15px;
+}
+
+.event-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  background: #e75e26;
+  border: none;
+  width: calc(100% - 30px);
+  font-family: 'Rajdhani';
+  font-size: 18px;
+  font-weight: 600;
+  color: #111111;
+  text-transform: uppercase;
+  height: 30px;
+  margin: 15px auto;
+  transition: background-color .2s, color .7s;
+}
+
+.event-button:hover {
+  background-color: #111111;
+  color: #e75e26;
+}
