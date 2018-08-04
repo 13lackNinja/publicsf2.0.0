@@ -25,13 +25,12 @@
 .typelogo-about {
   display: block;
   position: relative;
-  top: 40px;
   fill: #111111;
   stroke: #111111;
   stroke-width: 0.25;
   stroke-miterlimit: 1;
-  width: 300px;
-  margin: auto;
+  width: 200px;
+  margin: 20px auto;
 }
 
 .typelogo-white {

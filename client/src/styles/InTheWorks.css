@@ -1,5 +1,4 @@
 #in-the-works {
-  height: 700px;
   background: #111111;
   overflow: auto;
 }
@@ -11,8 +10,8 @@
 #featured-events-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
-  height: 450px;
   background: #111111;
 }
 

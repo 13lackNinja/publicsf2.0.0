@@ -12,3 +12,17 @@ h1 {
   text-transform: uppercase;
   text-align: center;
 }
+
+h2 {
+  color: #ededed;
+}
+
+h4 {
+  font-family: 'Oswald';
+  color: #ededed;
+}
+
+p {
+  font-family: arial;
+  color: #ededed;
+}

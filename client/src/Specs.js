@@ -1,73 +1,91 @@
 import React from 'react'
-import HeroImage from './HeroImage'
 import NewsletterSignUp from './NewsletterSignUp.js'
 
 import './styles/Specs.css'
 
-import floorPlanImage from './images/pw_floorplan.jpg'
-import mainRoomImage from './images/pw_mainroom.png'
-import loftImage from './images/pw_loft.png'
-import galleryImage from './images/pw_gallery.png'
-
-const SpecsHeader = () => (
-  <div id="specs-header">
-    <h1>Specs</h1>
-  </div>
-)
-
-const SpecsImage = (props) => (
-  <div
-    id={`specs-image-${props.index}`}
-    className="specs-image"
-    image={props.image}
-    style={{ backgroundImage: `url(${props.image})` }}
-  ></div>
-)
-
 const SpecsInfo = () => (
-  <div id="specs-info">
-    <div className="specs-text" id="specs-text-1">
-      <h2>The Main Room</h2>
-      <ul>
-        <li>5000 sq. feet</li>
-        <li>700 standing, 160 sitting</li>
-        <li>Function One soundsystem</li>
-        <li>Immersive projector display</li>
-        <li>Turnkey video system</li>
-        <li>Flexible breakout areas</li>
-        <li>Full-service bar</li>
-      </ul>
-    </div>
-    <SpecsImage index={1} image={mainRoomImage} />
-    <div className="specs-text" id="specs-text-2">
-      <h2>The Loft</h2>
-      <ul>
-        <li>1645 sq. feet</li>
-        <li>206 standing, 80 seated</li>
-        <li>Function One soundsystem</li>
-        <li>Double projector display</li>
-        <li>Full-service bar</li>
-      </ul>
-    </div>
-    <SpecsImage index={2} image={loftImage} />
-    <div className="specs-text" id="specs-text-3">
-      <h2>The Gallery</h2>
-      <ul>
-        <li>1645 sq. feet</li>
-        <li>206 standing, 80 seated</li>
-        <li>Function One soundsystem</li>
-        <li>Double projector display</li>
-        <li>Full-service bar</li>
-      </ul>
-    </div>
-    <SpecsImage index={3} image={galleryImage} />
+  <div id="specs">
+    <h1>Specifications</h1>
+
+    <p className="spec-paragraph">Public Works is a diverse and adaptable event space in San Francisco’s Mission District. The venue features state of the art audio, video, and production capabilities suitable for all types of events.</p>
+
+    <p className="spec-paragraph">Whether you’re looking to host a corporate event with slideshow-style presentations featuring crisp text and rich graphics or promote a cutting-edge music event, Public Works has everything you need to create an immersive, eye-popping visual experience.</p>
+
+    <h2>Main Room</h2>
+
+    <h4>Video</h4>
+
+    <ul>
+      <li>(3) Viewsonic PJL7211 2.2k lumen projectors (1024×768 native resolution) [covering side & rear walls of the venue]</li>
+      <li>(1) Panasonic D5600U 5k lumen projector (1024×768 native resolution, support up to 1080i) [rear wall coverage only]</li>
+      <li>(1) Extron 8×8 VGA Switcher</li>
+      <li>(1) Matrox Triplehead (feeds the (3) PJL7211s projectors to create a continuous 3072×768
+      projection covering rear & side walls)</li>
+      <li>(2) LG Blu-Ray Players (capable of DVD, Blu-Ray, MP2, MP4, JPEG playback via optical disc
+      & USB)</li>
+      <li>(1) custom built PC video server running Windows 7, Resolume Arena 4, Nvidia GTX 750
+      (capable of ~45 FPS @ 3072×768)</li>
+      <li>XLR stereo audio feed, adapters available</li>
+      <li>various HDMI, VGA, DVI, mini-DisplayPort, and composite video converters/adapters
+      Main Room Video Matrix Connection Diagram:</li>
+    </ul>
+
+
+    <h4>Outputs</h4>
+
+    <ul>
+      <li>Stage VGA</li>
+      <li>Desk VGA</li>
+      <li>Desk HDMI</li>
+      <li>HDMI 2</li>
+      <li>Triplehead #1</li>
+      <li>Triplehead #2</li>
+      <li>Triplehead #3</li>
+      <li>Loft Out</li>
+    </ul>
+
+    <h4>Inputs</h4>
+
+    <ul>
+      <li>PJL7211 #1</li>
+      <li>PJL7211 #2</li>
+      <li>PJL7211 #3</li>
+      <li>D5600U</li>
+      <li>Loft Matrix In</li>
+      <li>Computer Monitor</li>
+    </ul>
+
+
+    <h2>Loft</h2>
+
+
+    <h4>Video</h4>
+
+    <ul>
+      <li>(2) NEC NP-M300XS 3k lumen projectors (1024×768 native resolution, support up to 1080p)</li>
+      <li>(1) HDMI to VGA adapter – Extron 4×4 VGA Matrix</li>
+    </ul>
+
+    <h4>Outputs</h4>
+
+    <ul>
+      <li>Side Wall NP-M300XS</li>
+      <li>Rear Wall NP-M300XS</li>
+    </ul>
+
+    <h4>Inputs</h4>
+
+    <ul>
+      <li>Main Room Feed</li>
+      <li>LG Blu-Ray Player</li>
+      <li>Aux VGA 1</li>
+      <li>Aux VGA 2</li>
+    </ul>
   </div>
 )
 
 const Specs = () => (
   <div id="specs">
-    <SpecsHeader />
-    <HeroImage image={floorPlanImage} />
     <SpecsInfo />
     <NewsletterSignUp />
   </div>

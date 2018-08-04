@@ -1,19 +1,26 @@
+/* TopNav */
 #topnav {
   position: fixed;
   top: 0;
   height: 50px;
   width: 100%;
   background: #111111;
-  transition: height .7s;
-  z-index: 1;
+  transition: height .7s, display .7s .7s;
+  z-index: 10;
+}
+
+#topnav-position-div {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 #topnav button {
   position: relative;
   float: right;
   height: 20px;
-  padding: 15px 0;
-  margin: 0 50px;
+  margin-top: 15px;
+  margin-right: 40px;
   font-family: "Rajdhani";
   font-size: 14px;
   letter-spacing: 2px;
@@ -35,4 +42,39 @@ Link {
 #topnav button:hover {
   border-top: 1px solid #111111;
   border-bottom: 1px solid #ff5524;
+}
+
+/* Responsive Design */
+@media (max-width: 908px) {
+  #topnav button {
+    display: none;
+  }
+
+  #hamburger-menu {
+    display: block;
+    position: absolute;
+    margin-right: 40px;
+    margin-bottom: 80px;
+    top: 9px;
+    right: 0px;
+    transition: transform .7s;
+  }
+
+  #topnav.expanded {
+    height: 230px;
+  }
+
+  #topnav.expanded button {
+    display: block;
+    position: relative;
+    top: 10px;
+    width: 100%;
+    margin-top: 20px;
+    text-align: right;
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }

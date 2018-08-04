@@ -1,7 +1,9 @@
 import React from 'react'
 import HeroImage from './HeroImage'
+import Marquee from './Marquee.js'
 import ContactForm from './ContactForm.js'
 import NewsletterSignUp from './NewsletterSignUp.js'
+import Grit from './Grit.js'
 
 import './styles/Corporate.css'
 
@@ -11,14 +13,6 @@ import corporateImage1 from './images/corporate1.jpg'
 import corporateImage2 from './images/corporate2.jpg'
 import corporateImage3 from './images/corporate3.jpg'
 import corporateImage4 from './images/corporate4.jpg'
-
-const Prompt = () => (
-  <div id="prompt">
-    <p>
-      Take the "office" out of your office party
-    </p>
-  </div>
-)
 
 const CorporateImage = (props) => (
   <div
@@ -39,31 +33,14 @@ const CorporateInfo = () => (
         id="corporate-info-text-1"
       >
         <h2>
-          Public Works is a ground-breaking event space in san francisco's mission district. It may be the game-changer you're looking for:
+          Public Works is a multi-purpose arts and event space located in the heart of San Francisco's Mission District.
         </h2>
-        <ul>
-          <li>
-            Dedicated, in-house event support
-          </li>
-          <li>
-            Multiple bars with skilled mixologists at your disposal (non-alcohol options available)
-          </li>
-          <li>
-            Proven, diverse network of caterers, from gourmet, seated courses to irreverent street food trucks
-          </li>
-          <li>
-            Art direction and design services to fully customize or "brand" your event
-          </li>
-          <li>
-            Eclectic entertainment roster to create a memorable experience or set the mood for your guests
-          </li>
-          <li>
-            Shuttle or Party Bus to/from anywhere in the Bay Area
-          </li>
-          <li>
-            Secure, on-site bike parking
-          </li>
-        </ul>
+        <p>
+          We host corporate events, galas, birthdays, team outings, film screenings, holiday parties, seminars, retreats and more ranging from 15 to 800 people.
+        </p>
+        <p>
+          You can rent the, main room, the loft, or the entire venue, and our decicated in-house support team will work with you to create a memorable experience for your audience.
+        </p>
       </div>
       <div
         className="corporate-image-container"
@@ -100,18 +77,16 @@ const CorporateInfo = () => (
         className="corporate-info-text"
         id="corporate-info-text-2"
       >
-        <h2>Showcase your company, organization or art in our unique space. Public Works is an ideal location for:</h2>
+        <h2>Our venue features:</h2>
         <ul>
-          <li>Board Meetings</li>
-          <li>Birthdays</li>
-          <li>Conferences</li>
-          <li>Dance / Movement Performance</li>
-          <li>Film Screenings</li>
-          <li>Fundraisers</li>
-          <li>Galas</li>
-          <li>Holiday Parties</li>
-          <li>Retreats</li>
-          <li>Seminars</li>
+          <li>Professional and experienced event staff</li>
+          <li>Top of the line audio and visual production including our world-class Funktion One sound system</li>
+          <li>Multiple bars with skilled mixologists at your service</li>
+          <li>Vibrant interior design featuring artisan-made furniture and local artwork</li>
+          <li>Sprung hardwood dance floor</li>
+          <li>Diverse network of caterers, from gourmet cuisine to irreverent food trucks</li>
+          <li>Convenient access from public transportation</li>
+          <li>Art direction and design services to fully customize your event</li>
         </ul>
       </div>
     </div>
@@ -126,14 +101,24 @@ const FormInstructions = () => (
   </div>
 )
 
+const FinalNote = () => (
+  <div id="final-note">
+    <h2>
+      As part of our commitment to the community, we donate a portion of event proceeds to local non-profits such as <a href="">Root Division</a>, an organization that provides art classes for under-funded San Francisco schools. We also offer a special rate to non-profits.
+    </h2>
+  </div>
+)
+
 const Corporate = () => (
   <div id="corporate">
     <HeroImage image={mainroomImage} text="Corporate"/>
-    <Prompt />
+    <Marquee text="Take the 'office' out of your office party" />
     <CorporateInfo />
     <FormInstructions />
     <ContactForm />
+    <FinalNote />
     <NewsletterSignUp />
+    <Grit />
   </div>
 )
 

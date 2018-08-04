@@ -6,8 +6,8 @@ class Marquee extends Component {
   render() {
     return(
       <div id="marquee">
-        <h1 className="marquee-text" id="marquee-text-1">Giving the people what they want</h1>
-        <h1 className="marquee-text" id="marquee-text-2">Giving the people what they want</h1>
+        <h1 className="marquee-text" id="marquee-text-1">{this.props.text}</h1>
+        <h1 className="marquee-text" id="marquee-text-2">{this.props.text}</h1>
       </div>
     )
   }

@@ -69,9 +69,6 @@
   .topnav a.nav-link {
     display: none;
   }
-  /* .topnav a > button {
-    color: transparent;
-  } */
   .topnav a.menu-icon {
     display: block;
     position: absolute;
@@ -94,12 +91,8 @@
     display: block;
     text-align: right;
   }
-  /* .topnav.responsive a >button {
-    color: transparent;
-  } */
 }
 
-/* Fade-in animation */
 @keyframes fadein {
   from { opacity: 0; }
   to { opacity: 1; }

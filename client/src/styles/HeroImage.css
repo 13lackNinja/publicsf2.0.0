@@ -10,5 +10,12 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 100px;
   margin-bottom: 40px;
+}
+
+@media (max-width: 820px) {
+  #hero-image-container > h1 {
+    font-size: 50px;
+  }
 }
