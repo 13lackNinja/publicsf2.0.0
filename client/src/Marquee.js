@@ -27,9 +27,11 @@ class Marquee extends Component {
     const textWidth = m1.offsetWidth;
     let pos1 = m1.getBoundingClientRect().left;
 
+    const clear1 = new Event('clear1');
+
     const timerID = setInterval(() => {
-      if (pos1 === Math.floor(-(textWidth / 2))) {
-        const clear1 = new Event('clear1');
+      let rightEdge = m1.getBoundingClientRect().right;
+      if (Math.floor(rightEdge) === Math.floor((window.innerWidth / 2))) {
         window.dispatchEvent(clear1);
         pos1 --;
         m1.style.left = `${pos1}px`;
@@ -49,9 +51,11 @@ class Marquee extends Component {
     const textWidth = m2.offsetWidth;
     let pos2 = m2.getBoundingClientRect().left;
 
+    const clear2 = new Event('clear2');
+
     const timerID = setInterval(() => {
-      if (pos2 === Math.floor(-(textWidth / 2))) {
-        const clear2 = new Event('clear2');
+      let rightEdge = m2.getBoundingClientRect().right;
+      if (Math.floor(rightEdge) === Math.floor((window.innerWidth / 2))) {
         window.dispatchEvent(clear2);
         pos2 --;
         m2.style.left = `${pos2}px`;

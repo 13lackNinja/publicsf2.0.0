@@ -1,14 +1,30 @@
 import React from 'react'
 import HeroImage from './HeroImage.js'
 import Marquee from './Marquee.js'
-import ClientLinks from './ClientLinks.js'
 import NewsletterSignUp from './NewsletterSignUp.js'
 import Grit from './Grit.js'
 import TypeLogo from './TypeLogo.js'
 
 import './styles/About.css'
 
+import djImage from './images/dj6.jpg'
+import corporateImage from './images/info-header.png'
 import crowd3 from './images/crowd3.jpg'
+
+const ClientLinks = () => (
+  <div id="client-links">
+    <a href="/intheworks">
+      <button style={{ backgroundImage: `url(${djImage})` }}>
+        <h1>In the works</h1>
+      </button>
+    </a>
+    <a href="/corporate">
+      <button style={{ backgroundImage: `url(${corporateImage})` }}>
+        <h1>Corporate</h1>
+      </button>
+    </a>
+  </div>
+)
 
 const AboutDescription = () => (
   <div id="about-description">

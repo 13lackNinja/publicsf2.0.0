@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from './Carousel.js'
 import Marquee from './Marquee.js'
-import InTheWorks from './InTheWorks.js'
+import FeaturedEvents from './FeaturedEvents.js'
 import NewsletterSignUp from './NewsletterSignUp.js'
 import Grit from './Grit.js'
 import TypeLogo from './TypeLogo'
@@ -9,6 +9,9 @@ import TypeLogo from './TypeLogo'
 import './styles/Home.css'
 
 import manholeImage from './images/pw_manhole.png'
+import crowd4 from './images/crowd4.jpg'
+import scan20 from './images/scan20.jpg'
+import scan22 from './images/scan22.jpg'
 
 const AboutStatement = () => (
   <div id="about-statement">
@@ -22,10 +25,17 @@ const AboutStatement = () => (
 
 const Home = () => (
   <div id="home">
-    <Carousel />
+    <Carousel
+      images={[
+        crowd4,
+        scan20,
+        scan22
+      ]}
+      showLastAnnounced={true}
+    />
     <Marquee text="Giving the people what they want"/>
     <AboutStatement />
-    <InTheWorks />
+    <FeaturedEvents />
     <NewsletterSignUp />
     <Grit />
   </div>

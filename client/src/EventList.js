@@ -5,6 +5,7 @@ class EventList extends Component {
   render() {
     return (
       <div id="event-list">
+        <h1>All Events</h1>
         <EventModule />
         <EventModule />
         <EventModule />

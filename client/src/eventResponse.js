@@ -1,5 +1,7 @@
 // Dummy response from Ticketfly using the propertiess I care about
 
+import cooldjImage from './images/cooldj.jpg'
+
 const eventResponse = {
   'events': [
     {
@@ -7,9 +9,9 @@ const eventResponse = {
       'published': true,
       'name': null,
       'headlinersName': 'Lovestrukk (Nico Stojan & Holmar), Okaxy, Geju & Betelgeize',
-      'image': 'https://image-ticketfly.imgix.net/00/02/98/44/76-og.jpg?w=500&h=334&fit=crop&crop=top',
+      'image': cooldjImage,
       'supportsName': null,
-      'startDate': '2018-12-03 13:40:33',
+      'startDate': new Date('2018-12-03 13:40:33'),
       'promoterName': 'Public Works, On&On + Below Radar',
       'additionalInfo': 'Post Playa Shenanigans',
       'ticketPurchaseURL': 'https://ticketfly.com',

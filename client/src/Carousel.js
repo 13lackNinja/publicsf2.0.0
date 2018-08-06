@@ -1,10 +1,20 @@
 import React, { Component } from 'react'
+import eventResponse from './eventResponse.js'
 
 import './styles/Carousel.css'
 
-import crowdDaze from './images/crowd_daze.jpg'
-import scan20 from './images/scan20.jpg'
-import scan22 from './images/scan22.jpg'
+const LastAnnounced = () => {
+  const event = eventResponse.events[0];
+
+  return (
+    <div id="last-announced">
+      <h2>Last Announced:</h2>
+      <h3>{event.headlinersName}</h3>
+      <h4>{event.promoterName}</h4>
+      <p>{event.startDate.toString()}</p>
+    </div>
+  )
+}
 
 const Slide = (props) => (
   <div
@@ -38,17 +48,11 @@ class Carousel extends Component {
   constructor(props) {
     super(props)
     this.state = { position: 1 }
-    this.images = [
-      scan20,
-      crowdDaze,
-      scan22
-    ];
+    this.images = props.images
   }
 
   componentDidMount() {
-    this.timerID = setInterval(
-      () => this.rotate(), 16000
-    );
+    this.timerID = setInterval(() => this.rotate(), 16000);
   }
 
   componentWillUnmount() {
@@ -56,7 +60,6 @@ class Carousel extends Component {
   }
 
   rotate() {
-    // Define Variables
     const imageContainer = document.getElementById('image-container');
     let position = this.state.position;
 
@@ -81,16 +84,30 @@ class Carousel extends Component {
   }
 
   render() {
-    return (
-      <div id="carousel-container">
-        <Slide image={this.images[this.state.position - 1]} />
-        <div id="circle-container">
-          <Circle index={1} position={this.state.position}/>
-          <Circle index={2} position={this.state.position}/>
-          <Circle index={3} position={this.state.position}/>
+    if (this.props.showLastAnnounced) {
+      return (
+        <div id="carousel-container">
+          <Slide image={this.images[this.state.position - 1]} />
+          <div id="circle-container">
+            <Circle index={1} position={this.state.position}/>
+            <Circle index={2} position={this.state.position}/>
+            <Circle index={3} position={this.state.position}/>
+          </div>
+          <LastAnnounced />
         </div>
-      </div>
-    )
+      )
+    } else {
+      return (
+        <div id="carousel-container">
+          <Slide image={this.images[this.state.position - 1]} />
+          <div id="circle-container">
+            <Circle index={1} position={this.state.position}/>
+            <Circle index={2} position={this.state.position}/>
+            <Circle index={3} position={this.state.position}/>
+          </div>
+        </div>
+      )
+    }
   }
 }
 

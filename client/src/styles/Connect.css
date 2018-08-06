@@ -2,3 +2,39 @@
   background: #111111;
   overflow: hidden;
 }
+
+#newsletter-text {
+  background: #ededed;
+  padding: 40px auto;
+  overflow: hidden;
+}
+
+#newsletter-text h1 {
+  color: #111111;
+}
+
+#newsletter-text p {
+  display: block;
+  color: #111111;
+  font-family: 'Rajdhani';
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  width: 60%;
+  margin: 20px auto;
+  background: #ededed;
+}
+
+#newsletter-text input {
+  display: block;
+  margin: 20px auto;
+  width: 400px;
+  height: 30px;
+  border: 1px #111111 solid;
+  background: none;
+  text-align: center;
+  font-family: 'Rajdhani';
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #111111;
+}

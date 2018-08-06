@@ -4,6 +4,7 @@
   background: #e75e26;
   white-space: nowrap;
   overflow: hidden;
+  transition: background-color .3s;
 }
 
 .marquee-text {
@@ -16,4 +17,13 @@
   text-transform: uppercase;
   margin: 0;
   transform: translateY(-50%);
+  transition: color .7s;
+}
+
+#marquee:hover {
+  background: #111111;
+}
+
+#marquee:hover .marquee-text {
+  color: #e75e26;
 }

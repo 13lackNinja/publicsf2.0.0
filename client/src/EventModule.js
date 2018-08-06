@@ -14,7 +14,7 @@ const EventModule = () => (
     </img>
     <div className="event-module-text">
       <h3 className="event-module-date">
-        {eventResponse.events[0].startDate}
+        {eventResponse.events[0].startDate.toDateString()}
       </h3>
       <h4 className="event-module-promoter">
         {eventResponse.events[0].promoterName + 'presents'}
@@ -23,9 +23,7 @@ const EventModule = () => (
         {eventResponse.events[0].headlinersName}
       </h2>
       <a href={eventResponse.events[0].ticketPurchaseURL}>
-        <button className="event-module-button">
-          Buy Tickets
-        </button>
+        <button>Buy Tickets</button>
       </a>
     </div>
   </div>

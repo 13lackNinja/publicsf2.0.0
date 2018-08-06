@@ -1,9 +1,9 @@
 import React from 'react'
 import {Switch, Route } from 'react-router-dom';
 import Home from './Home.js'
-import Events from './Events.js'
+import InTheWorks from './InTheWorks.js'
 import About from './About.js'
-import Corporate from './Corporate.js'
+import PrivateEvents from './PrivateEvents.js'
 import Connect from './Connect.js'
 import Specs from './Specs.js'
 
@@ -13,9 +13,9 @@ const MainContent = () => (
   <div id="main-content">
     <Switch>
       <Route exact path="/" component={Home}></Route>
-      <Route path="/intheworks" component={Events}></Route>
+      <Route path="/intheworks" component={InTheWorks}></Route>
       <Route path="/about" component={About}></Route>
-      <Route path="/corporate" component={Corporate}></Route>
+      <Route path="/privateevents" component={PrivateEvents}></Route>
       <Route path="/connect" component={Connect}></Route>
       <Route path="/specs" component={Specs}></Route>
     </Switch>

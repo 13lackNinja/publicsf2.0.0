@@ -101,7 +101,7 @@ class TopNav extends Component {
               <TypeLogo type="nav"/>
             </Link>
             <MyNavLink path="connect" text="connect"></MyNavLink>
-            <MyNavLink path="corporate" text="corporate"></MyNavLink>
+            <MyNavLink path="privateevents" text="private events"></MyNavLink>
             <MyNavLink path="about" text="about"></MyNavLink>
             <MyNavLink path="intheworks" text="in the works"></MyNavLink>
           </div>
@@ -117,7 +117,7 @@ class TopNav extends Component {
             </Link>
             <MyNavLink path="intheworks" text="in the works"></MyNavLink>
             <MyNavLink path="about" text="about"></MyNavLink>
-            <MyNavLink path="corporate" text="corporate"></MyNavLink>
+            <MyNavLink path="privateevents" text="private events"></MyNavLink>
             <MyNavLink path="connect" text="connect"></MyNavLink>
             <HamburgerMenu isVisible={this.state.isResponsive}/>
           </div>

@@ -1,3 +1,43 @@
+#in-the-works {
+  background: #111111;
+  overflow: auto;
+}
+
+#in-the-works h1 {
+  margin: 40px;
+}
+
+#featured-events-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background: #111111;
+}
+
+#view-all-events {
+  display: block;
+  text-align: center;
+  font-family: 'Rajdhani';
+  font-size: 24px;
+  text-transform: uppercase;
+  border: none;
+  background: none;
+  color: #ededed;
+  margin: 20px auto;
+  letter-spacing: .1em;
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #111111;
+  transition: color .3s, border-bottom .7s;
+}
+
+#view-all-events:hover {
+  color: #ff5524;
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #ff5524;
+}
+
+/* FeaturedEvent */
 .featured-event {
   position: relative;
   width: 270px;
