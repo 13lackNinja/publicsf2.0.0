@@ -15,6 +15,12 @@ app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
+app.get('/events', (req, res) => {
+  res.JSON(
+    fetch()
+  )
+});
+
 // Port
 
 app.listen(8090);

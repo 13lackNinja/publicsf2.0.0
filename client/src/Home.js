@@ -9,7 +9,8 @@ import TypeLogo from './TypeLogo'
 import './styles/Home.css'
 
 import manholeImage from './images/pw_manhole.png'
-import crowd4 from './images/crowd4.jpg'
+import pwhomeImage from './images/pwhome.jpg'
+import jointheranksImage from './images/jointheranks.jpg'
 import scan20 from './images/scan20.jpg'
 import scan22 from './images/scan22.jpg'
 
@@ -27,9 +28,9 @@ const Home = () => (
   <div id="home">
     <Carousel
       images={[
-        crowd4,
+        jointheranksImage,
         scan20,
-        scan22
+        pwhomeImage
       ]}
       showLastAnnounced={true}
     />
