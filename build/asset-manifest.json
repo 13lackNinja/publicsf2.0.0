@@ -1,10 +1,9 @@
 {
-  "main.css": "static/css/main.d087af7a.css",
-  "main.css.map": "static/css/main.d087af7a.css.map",
-  "main.js": "static/js/main.7eeccdc9.js",
-  "main.js.map": "static/js/main.7eeccdc9.js.map",
+  "main.css": "static/css/main.3bcb4616.css",
+  "main.css.map": "static/css/main.3bcb4616.css.map",
+  "main.js": "static/js/main.9bf77bae.js",
+  "main.js.map": "static/js/main.9bf77bae.js.map",
   "static/media/8yr.jpg": "static/media/8yr.2fb40d57.jpg",
-  "static/media/cooldj.jpg": "static/media/cooldj.fe83b3a2.jpg",
   "static/media/corporate1.jpg": "static/media/corporate1.e3ec5a88.jpg",
   "static/media/corporate2.jpg": "static/media/corporate2.6efa795e.jpg",
   "static/media/corporate3.jpg": "static/media/corporate3.326f4e41.jpg",
@@ -29,6 +28,5 @@
   "static/media/robota_oblongata.jpg": "static/media/robota_oblongata.534d17ef.jpg",
   "static/media/rod_jr.jpg": "static/media/rod_jr.524f03e1.jpg",
   "static/media/scan20.jpg": "static/media/scan20.61490863.jpg",
-  "static/media/scan22.jpg": "static/media/scan22.08f334b2.jpg",
   "static/media/twitter_icon.svg": "static/media/twitter_icon.845d25ec.svg"
 }
