@@ -1,19 +1,36 @@
 import React, {Component} from 'react'
+import eventURL from './eventURL'
 
 import './styles/Marquee.css'
 
 class Marquee extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      justAnnounced: ''
+    }
+  }
+
   render() {
     return(
       <div id="marquee">
-        <h1 className="marquee-text" id="marquee-text-1">{this.props.text}</h1>
-        <h1 className="marquee-text" id="marquee-text-2">{this.props.text}</h1>
+        <h1 className="marquee-text" id="marquee-text-1">
+          {this.props.text + this.state.justAnnounced}
+        </h1>
+        <h1 className="marquee-text" id="marquee-text-2">
+          {this.props.text + this.state.justAnnounced}
+        </h1>
       </div>
     )
   }
 
-  componentDidMount() {
-    this.rotate();
+  getEvents(i) {
+   fetch(eventURL.base + eventURL.token)
+    .then(res => res.json())
+    .then(resJSON => resJSON.events[0].name.text)
+    .then((name) => {
+      this.setState({ justAnnounced: `${name}` });
+    });
   }
 
   rotate() {
@@ -22,14 +39,21 @@ class Marquee extends Component {
     window.addEventListener('clear2', this.move1);
   }
 
+  componentDidMount() {
+    this.rotate();
+    if (this.props.showAPI) {
+      this.getEvents();
+    }
+  }
+
   move1() {
     const m1 = document.getElementById('marquee-text-1');
-    const textWidth = m1.offsetWidth;
     let pos1 = m1.getBoundingClientRect().left;
 
     const clear1 = new Event('clear1');
 
     const timerID = setInterval(() => {
+      const textWidth = m1.offsetWidth;
       let rightEdge = m1.getBoundingClientRect().right;
       if (Math.floor(rightEdge) === Math.floor((window.innerWidth / 2))) {
         window.dispatchEvent(clear1);
@@ -43,17 +67,17 @@ class Marquee extends Component {
         m1.style.left = '100vw';
         return;
       }
-    }, 7);
+    }, 9);
   }
 
   move2() {
     const m2 = document.getElementById('marquee-text-2');
-    const textWidth = m2.offsetWidth;
     let pos2 = m2.getBoundingClientRect().left;
 
     const clear2 = new Event('clear2');
 
     const timerID = setInterval(() => {
+      const textWidth = m2.offsetWidth;
       let rightEdge = m2.getBoundingClientRect().right;
       if (Math.floor(rightEdge) === Math.floor((window.innerWidth / 2))) {
         window.dispatchEvent(clear2);
@@ -67,7 +91,7 @@ class Marquee extends Component {
         m2.style.left = '100vw';
         return;
       }
-    }, 7);
+    }, 9);
   }
 
 }

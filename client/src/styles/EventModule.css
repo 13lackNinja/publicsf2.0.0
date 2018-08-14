@@ -1,9 +1,13 @@
+.event-module-link {
+  text-decoration: none;
+}
+
 .event-module-container {
   display: flex;
   flex-direction: row;
   width: 70%;
   height: 200px;
-  margin: 40px auto;
+  margin: 80px auto;
   background: #111111;
 }
 

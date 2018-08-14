@@ -73,7 +73,7 @@ class FeaturedEvents extends Component {
             event={this.featuredEvents.oddSalon}
           />
         </div>
-        <button id="view-all-events">View all events</button>
+        <button className="button-underline" id="view-all-events">View all events</button>
       </div>
     )
   }

@@ -18,9 +18,9 @@ const ClientLinks = () => (
         <h1>In the works</h1>
       </button>
     </a>
-    <a href="/corporate">
+    <a href="/privateevents">
       <button style={{ backgroundImage: `url(${corporateImage})` }}>
-        <h1>Corporate</h1>
+        <h1>Private Events</h1>
       </button>
     </a>
   </div>

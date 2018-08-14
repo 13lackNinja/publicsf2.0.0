@@ -1,87 +1,70 @@
+/* General */
 #contact-form-container {
   width: 60%;
+  border: 2px #ededed solid;
+  border-radius: 5px;
   margin: auto;
-  background: #111111;
-  margin: 80px auto;
+  padding: 20px;
 }
 
-#contact-form {
-  display: block;
-  margin: 0px auto 20px auto;
-  border: 2px solid #ededed;
-  border-radius: 5px;
-  color: #ededed;
+#contact-form-container h1 {
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
-#contact-form h2 {
-  margin: 20px;
-  font-family: 'Oswald';
-  font-size: 24px;
-  text-transform: uppercase;
-}
-
-#subject-dropdown {
+/* Dropdown */
+#dropdown {
   position: relative;
-  height: 30px;
-  border-top: 2px #ededed solid;
-  padding-top: 5px;
-  margin: 20px 20px 40px 20px;
+  margin-bottom: 20px;
 }
 
-#subject-dropdown > p {
+#dropdown button, a {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
   font-family: arial;
-  font-size: 16px;
-  text-transform: uppercase;
-}
-
-#poc-dropdown-arrow {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-top: 5px;
-}
-
-#contact-form > textarea, #contact-form > input {
-  display: block;
   color: #ededed;
-  font-family: Arial;
-  font-size: 14px;
-  margin: 20px;
-  background: transparent;
-  border: 2px solid #ededed;
-  border-radius: 5px;
-}
-
-#contact-form > button {
-  display: block;
-  margin: 20px auto;
-}
-
-.menu-option {
-  font-family: 'Rajdhani';
+  text-align: left;
   text-transform: uppercase;
-  display: block;
+  font-size: 14px;
+  text-decoration: none;
 }
 
-.menu-option:hover {
-  background: #e8513a;
+#dropdown button:hover, a:hover {
+  background: #e75e26;
   color: #111111;
 }
 
-.text-container {
-  margin: 10px 0px 15px 0px;
+#dropdown img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
 }
 
-.answer-box {
-  display: none;
+/* Form */
+form {
+  font-family: arial;
+  font-size: 14px;
+  color: #ededed;
 }
 
-#email-input {
-  width: calc(100% - 40px);
-  height: 30px;
+form input, textarea {
+  display: block;
+  background: none;
+  border: 1px #ededed solid;
+  border-radius: 5px;
+  width: 100%;
 }
 
-#message-box {
-  width: calc(100% - 40px);
-  height: 100px;
+form input {
+  height: 25px;
+  margin-bottom: 20px;
+}
+
+form button {
+  display: block;
+  margin: auto;
 }

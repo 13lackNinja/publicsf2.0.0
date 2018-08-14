@@ -38,36 +38,4 @@
   r: 5;
   transition: fill 1s;
 }
-
-/* LastAnnounced */
-#last-announced {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  color: #ededed;
-  padding: 20px;
-}
-
-#last-announced h2 {
-  font-family: 'Oswald';
-  font-size: 24px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-}
-
-#last-announced h3 {
-  font-family: arial;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-#last-announced h4 {
-  font-family: courier;
-  font-size: 14px;
-  margin-bottom: 5px;
-}
-
-#last-announced p {
-  font-family: courier;
-  font-size: 14px;
-}
+ 

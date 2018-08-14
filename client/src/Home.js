@@ -4,7 +4,7 @@ import Marquee from './Marquee.js'
 import FeaturedEvents from './FeaturedEvents.js'
 import NewsletterSignUp from './NewsletterSignUp.js'
 import Grit from './Grit.js'
-import TypeLogo from './TypeLogo'
+import TypeLogo from './TypeLogo.js'
 
 import './styles/Home.css'
 
@@ -12,7 +12,6 @@ import manholeImage from './images/pw_manhole.png'
 import pwhomeImage from './images/pwhome.jpg'
 import jointheranksImage from './images/jointheranks.jpg'
 import scan20 from './images/scan20.jpg'
-import scan22 from './images/scan22.jpg'
 
 const AboutStatement = () => (
   <div id="about-statement">
@@ -32,9 +31,8 @@ const Home = () => (
         scan20,
         pwhomeImage
       ]}
-      showLastAnnounced={true}
     />
-    <Marquee text="Giving the people what they want"/>
+    <Marquee text={`Just Announced: `} showAPI={true}/>
     <AboutStatement />
     <FeaturedEvents />
     <NewsletterSignUp />

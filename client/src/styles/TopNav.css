@@ -44,7 +44,7 @@ Link {
   border-bottom: 1px solid #ff5524;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 908px) {
   #topnav button {
     display: none;
