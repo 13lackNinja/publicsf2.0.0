@@ -19,7 +19,7 @@
   margin-bottom: 20px;
 }
 
-#dropdown button, a {
+#dropdown button, #dropdown a {
   display: block;
   width: 100%;
   background: none;
@@ -32,7 +32,7 @@
   text-decoration: none;
 }
 
-#dropdown button:hover, a:hover {
+#dropdown button:hover, #dropdown a:hover {
   background: #e75e26;
   color: #111111;
 }
@@ -61,7 +61,8 @@ form input, textarea {
 
 form input {
   height: 25px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 
 form button {
