@@ -7,8 +7,6 @@ const BuyButton = (props) => {
     console.log('Order complete!');
   }
 
-  console.log(props.id);
-
   requestAnimationFrame(() => {
     window.EBWidgets.createWidget({
       widgetType: 'checkout',
