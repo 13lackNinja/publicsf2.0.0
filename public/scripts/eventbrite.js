@@ -2,7 +2,7 @@
 // Populates the page with Eventbrite data
 
 async function getEvents() {
-  const responseObject = await fetch('https://www.eventbriteapi.com/v3/users/120489291103/owned_events/?token=ERFEQJEEON2FACT5JLUH')
+  const responseObject = await fetch('https://www.eventbriteapi.com/v3/users/120489291103/owned_events/?token=')
     .then((response) => {
       return response.json();
     });

@@ -7,12 +7,16 @@ const BuyButton = (props) => {
     console.log('Order complete!');
   }
 
-  window.EBWidgets.createWidget({
-    widgetType: 'checkout',
-    eventId: props.id,
-    modal: true,
-    modalTriggerElementId: `eventbrite-widget-modal-trigger-${props.id}`,
-    onOrderComplete: exampleCallback
+  console.log(props.id);
+
+  requestAnimationFrame(() => {
+    window.EBWidgets.createWidget({
+      widgetType: 'checkout',
+      eventId: props.id,
+      modal: true,
+      modalTriggerElementId: `eventbrite-widget-modal-trigger-${props.id}`,
+      onOrderComplete: exampleCallback
+    });
   });
 
   return (
