@@ -27,22 +27,11 @@ p {
   color: #ededed;
 }
 
-.button-underline {
-  font-family: 'Rajdhani';
-  font-size: 24px;
-  text-transform: uppercase;
-  border: none;
-  background: none;
-  color: #ededed;
-  margin: 20px auto;
-  letter-spacing: .1em;
-  border-top: 1px solid #111111;
-  border-bottom: 1px solid #111111;
-  transition: color .3s, border-bottom .7s;
+button {
+  cursor: pointer;
 }
 
-.button-underline:hover {
-  color: #ff5524;
-  border-top: 1px solid #111111;
-  border-bottom: 1px solid #ff5524;
+a {
+  text-decoration: none;
+  color: inherit;
 }

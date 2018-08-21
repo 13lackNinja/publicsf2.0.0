@@ -2,6 +2,7 @@
   position: relative;
   overflow: hidden;
   background: #111111;
+  cursor: pointer;
 }
 
 #image-container {
@@ -38,4 +39,3 @@
   r: 5;
   transition: fill 1s;
 }
- 

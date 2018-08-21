@@ -53,10 +53,6 @@ const FAQ = () => (
   <div className="contact-section" id="faq-container">
     <h4>FAQs:</h4>
     <FAQitem
-      question="How can I participate further in the community?"
-      answer="Our newsletter is the best way to engage with us. By subscribing you get access to rewards made with love for our loyal fans."
-    />
-    <FAQitem
       question="Is Public Works strictly 21 and over?"
       answer="Yes."
     />
@@ -83,6 +79,10 @@ const FAQ = () => (
     <FAQitem
       question="When do you stop serving alcohol?"
       answer="California state law requires acohol service to stop at 2am regarless of event end time."
+    />
+    <FAQitem
+      question="How can I participate further in the community?"
+      answer="Our newsletter is the best way to engage with us. By subscribing you get access to rewards made with love for our loyal fans."
     />
   </div>
 )

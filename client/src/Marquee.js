@@ -1,36 +1,19 @@
 import React, {Component} from 'react'
-import eventURL from './eventURL'
 
 import './styles/Marquee.css'
 
 class Marquee extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      justAnnounced: ''
-    }
-  }
-
   render() {
     return(
       <div id="marquee">
         <h1 className="marquee-text" id="marquee-text-1">
-          {this.props.text + this.state.justAnnounced}
+          {this.props.text}
         </h1>
         <h1 className="marquee-text" id="marquee-text-2">
-          {this.props.text + this.state.justAnnounced}
+          {this.props.text}
         </h1>
       </div>
     )
-  }
-
-  getEvents(i) {
-   fetch(eventURL.base + eventURL.token)
-    .then(res => res.json())
-    .then(resJSON => resJSON.events[0].name.text)
-    .then((name) => {
-      this.setState({ justAnnounced: `${name}` });
-    });
   }
 
   rotate() {

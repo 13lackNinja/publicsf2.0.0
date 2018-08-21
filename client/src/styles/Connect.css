@@ -4,37 +4,38 @@
 }
 
 #newsletter-text {
-  background: #ededed;
+  background: #111111;
   padding: 40px auto;
   overflow: hidden;
 }
 
 #newsletter-text h1 {
-  color: #111111;
+  margin: 40px;
+  color: #ededed;
 }
 
 #newsletter-text p {
   display: block;
-  color: #111111;
+  color: #ededed;
   font-family: 'Rajdhani';
   font-size: 18px;
   font-weight: 600;
-  text-align: center;
+  text-align: left;
   width: 60%;
   margin: 20px auto;
-  background: #ededed;
+  background: #111111;
 }
 
 #newsletter-text input {
   display: block;
-  margin: 20px auto;
-  width: 400px;
+  margin: 40px auto;
+  width: 300px;
   height: 30px;
-  border: 1px #111111 solid;
+  border: 1px #ededed solid;
   background: none;
   text-align: center;
   font-family: 'Rajdhani';
   text-transform: uppercase;
   font-size: 18px;
-  color: #111111;
+  color: #ededed;
 }

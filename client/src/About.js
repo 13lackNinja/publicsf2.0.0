@@ -1,6 +1,6 @@
 import React from 'react'
 import HeroImage from './HeroImage.js'
-import Marquee from './Marquee.js'
+// import Marquee from './Marquee.js'
 import NewsletterSignUp from './NewsletterSignUp.js'
 import Grit from './Grit.js'
 import TypeLogo from './TypeLogo.js'
@@ -8,8 +8,8 @@ import TypeLogo from './TypeLogo.js'
 import './styles/About.css'
 
 import djImage from './images/dj6.jpg'
-import corporateImage from './images/info-header.png'
-import crowd3 from './images/crowd3.jpg'
+import corporateImage from './images/corporate1_dark.jpg'
+import blueBoltImage from './images/blue_bolt_dark.jpg'
 
 const ClientLinks = () => (
   <div id="client-links">
@@ -45,8 +45,8 @@ const AboutDescription = () => (
 
 const About = () => (
   <div id="about">
-    <HeroImage text="About Us" image={crowd3}/>
-    <Marquee text="Giving the people what they want"/>
+    <HeroImage text="About Us" image={blueBoltImage}/>
+    {/* <Marquee text="Giving the people what they want"/> */}
     <AboutDescription />
     <ClientLinks />
     <NewsletterSignUp />

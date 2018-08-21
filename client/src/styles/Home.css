@@ -2,7 +2,7 @@
 #about-statement {
   position: relative;
   min-height: 240px;
-  background: #ededed;
+  background: #111111;
   overflow: hidden;
 }
 
@@ -15,7 +15,7 @@
   font-weight: 600;
   max-width: 600px;
   margin: 0px auto 50px auto;
-  color: #111111;
+  color: #ededed;
 }
 
 #about-statement img {
