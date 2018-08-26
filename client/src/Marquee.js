@@ -5,14 +5,16 @@ import './styles/Marquee.css'
 class Marquee extends Component {
   render() {
     return(
-      <div id="marquee">
-        <h1 className="marquee-text" id="marquee-text-1">
-          {this.props.text}
-        </h1>
-        <h1 className="marquee-text" id="marquee-text-2">
-          {this.props.text}
-        </h1>
-      </div>
+      <a href={`intheworks/${this.props.id}`}>
+        <div id="marquee">
+          <h1 className="marquee-text" id="marquee-text-1">
+            {this.props.text}
+          </h1>
+          <h1 className="marquee-text" id="marquee-text-2">
+            {this.props.text}
+          </h1>
+        </div>
+      </a>  
     )
   }
 

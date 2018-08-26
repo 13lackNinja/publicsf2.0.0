@@ -4,19 +4,21 @@ import './styles/index.css'
 import './styles/FeaturedEvents.css'
 
 const FeaturedEvent = (props) => (
-  <div className="featured-event">
-   <div
-     className="featured-event-image"
-     style={{ 'backgroundImage': `url(${props.image})`}}
-   />
-   <div className="featured-event-date">
-     <h3>{props.date}</h3>
+  <a href={`intheworks/${props.id}`}>
+    <div className="featured-event">
+     <div
+       className="featured-event-image"
+       style={{ 'backgroundImage': `url(${props.image})`}}
+     />
+     <div className="featured-event-date">
+       <h3>{props.date}</h3>
+     </div>
+     <div className="featured-event-artists">
+      <h3>{props.name}</h3>
+     </div>
+     <button className="event-button">More Info</button>
    </div>
-   <div className="featured-event-artists">
-    <h3>{props.name}</h3>
-   </div>
-   <button className="event-button">More Info</button>
- </div>
+  </a>
 )
 
 class FeaturedEvents extends Component {

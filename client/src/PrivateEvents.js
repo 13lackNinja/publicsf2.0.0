@@ -1,25 +1,26 @@
 import React from 'react'
 import HeroImage from './HeroImage'
-// import Marquee from './Marquee.js'
 import ContactForm from './ContactForm.js'
 import NewsletterSignUp from './NewsletterSignUp.js'
 import Grit from './Grit.js'
 
 import './styles/PrivateEvents.css'
 
-import mainroomImage from './images/mainroom.png'
+import loftImage from './images/loft.jpg'
 import corporateImage1 from './images/corporate1_dark.jpg'
-// import corporateImage2 from './images/corporate2.jpg'
-// import corporateImage3 from './images/corporate3.jpg'
-import corporateImage4 from './images/corporate4_dark.jpg'
+import outsideImage from './images/outside.jpg'
 
-const PrivateEventsInfo2 = () => (
+const PrivateEventsInfo = () => (
   <div id="private-events-info">
     <h2>Take the 'office' out of your office party</h2>
     <p>
       Public Works has hosted corporate events, galas, birthdays, team outings, film screenings, holiday parties, seminars, retreats and more ranging from 15 to 800 people. You can rent the loft or the entire venue, and our dedicated in-house support team will work with you to create an event your attendees will never forget.
     </p>
-    <img src={mainroomImage} alt="corporate1.jpg"/>
+    <div
+      className="private-events-image"
+      style={{ 'background-image': `url(${outsideImage})`}}
+    >
+    </div>
     <h2>Our venue Features:</h2>
     <ul>
       <li>
@@ -53,7 +54,11 @@ const PrivateEventsInfo2 = () => (
         Secure on-site bike parking
       </li>
     </ul>
-    <img src={corporateImage4} alt="corporate2.jpg"/>
+    <div
+      className="private-events-image"
+      style={{ 'background-image': `url(${loftImage})`}}
+    >
+    </div>
   </div>
 )
 
@@ -76,8 +81,7 @@ const FinalNote = () => (
 const PrivateEvents = () => (
   <div id="private-events">
     <HeroImage image={corporateImage1} text="Private Events"/>
-    {/* <Marquee text="Take the 'office' out of your office party" /> */}
-    <PrivateEventsInfo2/>
+    <PrivateEventsInfo/>
     <FormInstructions />
     <ContactForm />
     <FinalNote />

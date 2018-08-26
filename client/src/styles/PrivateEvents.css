@@ -24,23 +24,24 @@
   display: block;
   width: 60%;
   margin: 40px auto;
+  text-align: center;
 }
 
 #private-events-info li {
   font-family: arial;
   font-size: 16px;
   margin-left: 15px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #ededed;
   line-height: 2em;
+  list-style: none;
 }
 
-#private-events-info img {
-  display: block;
-  margin: auto;
-  border: 3px #ededed solid;
-  border-radius: 5px;
-  width: 60%;
+.private-events-image {
+  background-position: center;
+  background-size: cover;
+  height: 50vw;
+  opacity: .75;
 }
 
 /* FormInstructions */

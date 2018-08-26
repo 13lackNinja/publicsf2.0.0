@@ -1,0 +1,58 @@
+#staff {
+  background: #111111;
+  overflow: hidden;
+  min-height: calc(100vh - 50px);
+  padding-top: 80px;
+}
+
+#staff h1 {
+  margin: 40px;
+}
+
+#staff button {
+  display: block;
+  margin: 40px auto;
+}
+
+#carousel-image-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.image-chooser {
+  margin: 0px 20px 80px 20px;
+  width: 300px;
+  height: 250px;
+}
+
+.image-chooser img {
+  display: block;
+  width: 100%;
+  background: salmon;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  border: 2px #ededed solid;
+}
+
+.image-chooser label {
+  font-family: 'Oswald';
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin: 20px;
+}
+
+.image-chooser input {
+  display: none;
+}
+
+.image-chooser button {
+  margin-top: 80px;
+}
+
+#submit-button-staff {
+  font-size: 24px;
+}

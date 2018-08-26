@@ -32,9 +32,8 @@ class Circle extends Component {
 
 class Carousel extends Component {
   constructor(props) {
-    super(props)
-    this.state = { position: 1 }
-    this.images = props.images
+    super(props);
+    this.state = { position: 1 };
   }
 
   componentDidMount() {
@@ -67,9 +66,10 @@ class Carousel extends Component {
   }
 
   render() {
+    console.log(this.props.images);
     return (
       <div id="carousel-container">
-      <Slide image={this.images[this.state.position - 1]} />
+      <Slide image={this.props.images[this.state.position - 1]} />
         <div id="circle-container">
           <Circle index={1} position={this.state.position}/>
           <Circle index={2} position={this.state.position}/>

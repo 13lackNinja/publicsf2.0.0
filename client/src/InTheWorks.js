@@ -10,25 +10,19 @@ import Grit from './Grit'
 
 import './styles/InTheWorks.css'
 
-import eightYearImage from './images/8yr.jpg'
-import event1Image from './images/event1.jpg'
-import event2Image from './images/event2.jpg'
-
-const AllEvents = (props) => (
-  <React.Fragment>
-    <Carousel
-      images={[
-        event2Image,
-        eightYearImage,
-        event1Image
-      ]}
-    />
-    {/* <Marquee text="In the Works"/> */}
-    <EventList events={props.events}/>
-    <NewsletterSignUp />
-    <Grit />
-  </React.Fragment>
-)
+const AllEvents = (props) => {
+  const images = props.eventData.slice(0, 3).map((e) => {
+    return e.logo.original.url
+  })
+  return(
+    <React.Fragment>
+      <Carousel images={images}/>
+      <EventList events={props.events}/>
+      <NewsletterSignUp />
+      <Grit />
+    </React.Fragment>
+  )
+}
 
 class InTheWorks extends Component {
   constructor(props) {
@@ -105,7 +99,10 @@ class InTheWorks extends Component {
         <Switch>
           <Route exact path='/intheworks' render={
             () => (
-              <AllEvents events={this.state.displayedEvents}/>
+              <AllEvents
+                eventData={this.state.eventData}
+                events={this.state.displayedEvents}
+              />
             )
           }/>
           <Route path='/intheworks/:eventId' render={

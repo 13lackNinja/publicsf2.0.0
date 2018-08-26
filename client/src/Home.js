@@ -10,9 +10,6 @@ import eventRequest from './eventRequest'
 import './styles/Home.css'
 
 import manholeImage from './images/pw_manhole.png'
-import pwhomeImage from './images/pwhome.jpg'
-import scan22 from './images/scan22.jpg'
-import scan20 from './images/scan20.jpg'
 
 const AboutStatement = () => (
   <div id="about-statement">
@@ -28,7 +25,8 @@ class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstEventText: null,
+      firstEventName: null,
+      firstEventId: null,
       featuredEvents: null
     }
   }
@@ -38,7 +36,8 @@ class Home extends Component {
       .then(res => res.json())
       .then((resJSON) => {
         this.setState({
-          firstEventText: resJSON.events[0].name.text,
+          firstEventName: resJSON.events[0].name.text,
+          firstEventId: resJSON.events[0].id,
           featuredEvents: resJSON.events.slice(0, 3)
         });
       }).catch((err) => console.log(err.message));
@@ -49,13 +48,16 @@ class Home extends Component {
       <div id="home">
         <Carousel
           images={[
-            scan22,
-            scan20,
-            pwhomeImage
+            'http://localhost:8090/api/carousel/images/1',
+            'http://localhost:8090/api/carousel/images/2',
+            'http://localhost:8090/api/carousel/images/3'
           ]}
         />
         <AboutStatement />
-        <Marquee text={`Just Announced: ${this.state.firstEventText}`}/>
+        <Marquee
+          text={`Just Announced: ${this.state.firstEventName}`}
+          id={this.state.firstEventId}
+        />
         <FeaturedEvents events={this.state.featuredEvents}/>
         <NewsletterSignUp />
         <Grit />
