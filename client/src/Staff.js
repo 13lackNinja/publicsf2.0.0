@@ -10,7 +10,7 @@ class CarouselImageChooser extends Component {
     selectedFiles: [null, null, null]
   }
 
-  url = 'http://localhost:8090/api/carousel/images/'
+  url = '/api/carousel/images/'
 
   fileSelectedHandler = (e, i) => {
     let selectedFiles = this.state.selectedFiles;
@@ -28,7 +28,7 @@ class CarouselImageChooser extends Component {
         formData.append(`image${i + 1}`, file, file.name);
       }
     });
-    axios.post('http://localhost:8090/api/carousel/upload', formData)
+    axios.post('/api/carousel/upload', formData)
       .then(res => {
         console.log(res);
       }).catch(err => console.log(err.message));
