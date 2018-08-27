@@ -17,8 +17,8 @@ const Footer = () => (
     <div className="footer-box" id="footer-nav">
       <h5 className="footer-title">Information</h5>
       <a className="footer-link" href="./connect">Connect</a>
-      <a className="footer-link" href="./connect">FAQ</a>
-      <a className="footer-link" href="./connect">Booking</a>
+      <a className="footer-link" href="./connect#faq">FAQ</a>
+      <a className="footer-link" href="./connect#contact-form-section">Booking</a>
       <a className="footer-link" href="./specs">Specs</a>
     </div>
     <div className="footer-box" id="footer-socials">

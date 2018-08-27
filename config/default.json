@@ -1,0 +1,7 @@
+{
+  "carousel": [
+    "http://localhost:8090/api/carousel/images/1",
+    "http://localhost:8090/api/carousel/images/2",
+    "http://localhost:8090/api/carousel/images/3"
+  ]
+}

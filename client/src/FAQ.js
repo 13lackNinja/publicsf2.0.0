@@ -50,7 +50,7 @@ class FAQitem extends Component {
 
 
 const FAQ = () => (
-  <div className="contact-section" id="faq-container">
+  <div className="contact-section" id="faq">
     <h4>FAQs:</h4>
     <FAQitem
       question="Is Public Works strictly 21 and over?"

@@ -48,9 +48,9 @@ class Home extends Component {
       <div id="home">
         <Carousel
           images={[
-            'http://localhost:8090/api/carousel/images/1',
-            'http://localhost:8090/api/carousel/images/2',
-            'http://localhost:8090/api/carousel/images/3'
+            '/api/carousel/images/1',
+            '/api/carousel/images/2',
+            '/api/carousel/images/3'
           ]}
         />
         <AboutStatement />

@@ -1,4 +1,4 @@
-#faq-container {
+#faq {
   display: block;
   position: relative;
   margin: 20px auto;
@@ -6,7 +6,7 @@
   margin-bottom: 50px;
 }
 
-#faq-container h4 {
+#faq h4 {
   font-family: 'Oswald';
   font-size: 22px;
   margin: 10px 0;
