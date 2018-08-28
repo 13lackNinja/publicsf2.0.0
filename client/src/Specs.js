@@ -16,43 +16,55 @@ const SpecsInfo = () => (
     <h4>Video</h4>
 
     <ul>
-      <li>(3) Viewsonic PJL7211 2.2k lumen projectors (1024×768 native resolution) [covering side & rear walls of the venue]</li>
-      <li>(1) Panasonic D5600U 5k lumen projector (1024×768 native resolution, support up to 1080i) [rear wall coverage only]</li>
-      <li>(1) Extron 8×8 VGA Switcher</li>
-      <li>(1) Matrox Triplehead (feeds the (3) PJL7211s projectors to create a continuous 3072×768
-      projection covering rear & side walls)</li>
-      <li>(2) LG Blu-Ray Players (capable of DVD, Blu-Ray, MP2, MP4, JPEG playback via optical disc
-      & USB)</li>
-      <li>(1) custom built PC video server running Windows 7, Resolume Arena 4, Nvidia GTX 750
-      (capable of ~45 FPS @ 3072×768)</li>
-      <li>XLR stereo audio feed, adapters available</li>
-      <li>various HDMI, VGA, DVI, mini-DisplayPort, and composite video converters/adapters
-      Main Room Video Matrix Connection Diagram:</li>
+      <div>
+        <li>(3) Viewsonic PJL7211 2.2k lumen projectors (1024×768 native resolution) [covering side & rear walls of the venue]</li>
+        <li>(1) Panasonic D5600U 5k lumen projector (1024×768 native resolution, support up to 1080i) [rear wall coverage only]</li>
+        <li>(1) Extron 8×8 VGA Switcher</li>
+        <li>(1) Matrox Triplehead (feeds the (3) PJL7211s projectors to create a continuous 3072×768
+        projection covering rear & side walls)</li>
+      </div>
+      <div>
+        <li>(2) LG Blu-Ray Players (capable of DVD, Blu-Ray, MP2, MP4, JPEG playback via optical disc
+        & USB)</li>
+        <li>(1) custom built PC video server running Windows 7, Resolume Arena 4, Nvidia GTX 750
+        (capable of ~45 FPS @ 3072×768)</li>
+        <li>XLR stereo audio feed, adapters available</li>
+        <li>various HDMI, VGA, DVI, mini-DisplayPort, and composite video converters/adapters
+        Main Room Video Matrix Connection Diagram:</li>
+      </div>
     </ul>
 
 
     <h4>Outputs</h4>
 
     <ul>
-      <li>Stage VGA</li>
-      <li>Desk VGA</li>
-      <li>Desk HDMI</li>
-      <li>HDMI 2</li>
-      <li>Triplehead #1</li>
-      <li>Triplehead #2</li>
-      <li>Triplehead #3</li>
-      <li>Loft Out</li>
+      <div>
+        <li>Stage VGA</li>
+        <li>Desk VGA</li>
+        <li>Desk HDMI</li>
+        <li>HDMI 2</li>
+      </div>
+      <div>
+        <li>Triplehead #1</li>
+        <li>Triplehead #2</li>
+        <li>Triplehead #3</li>
+        <li>Loft Out</li>
+      </div>
     </ul>
 
     <h4>Inputs</h4>
 
     <ul>
-      <li>PJL7211 #1</li>
-      <li>PJL7211 #2</li>
-      <li>PJL7211 #3</li>
-      <li>D5600U</li>
-      <li>Loft Matrix In</li>
-      <li>Computer Monitor</li>
+      <div>
+        <li>PJL7211 #1</li>
+        <li>PJL7211 #2</li>
+        <li>PJL7211 #3</li>
+      </div>
+      <div>
+        <li>D5600U</li>
+        <li>Loft Matrix In</li>
+        <li>Computer Monitor</li>
+      </div>
     </ul>
 
 
@@ -62,24 +74,36 @@ const SpecsInfo = () => (
     <h4>Video</h4>
 
     <ul>
-      <li>(2) NEC NP-M300XS 3k lumen projectors (1024×768 native resolution, support up to 1080p)</li>
-      <li>(1) HDMI to VGA adapter – Extron 4×4 VGA Matrix</li>
+      <div>
+        <li>(2) NEC NP-M300XS 3k lumen projectors (1024×768 native resolution, support up to 1080p)</li>
+      </div>
+      <div>
+        <li>(1) HDMI to VGA adapter – Extron 4×4 VGA Matrix</li>
+      </div>
     </ul>
 
     <h4>Outputs</h4>
 
     <ul>
-      <li>Side Wall NP-M300XS</li>
-      <li>Rear Wall NP-M300XS</li>
+      <div>
+        <li>Side Wall NP-M300XS</li>
+      </div>
+      <div>
+        <li>Rear Wall NP-M300XS</li>
+      </div>
     </ul>
 
     <h4>Inputs</h4>
 
     <ul>
-      <li>Main Room Feed</li>
-      <li>LG Blu-Ray Player</li>
-      <li>Aux VGA 1</li>
-      <li>Aux VGA 2</li>
+      <div>
+        <li>Main Room Feed</li>
+        <li>LG Blu-Ray Player</li>
+      </div>
+      <div>
+        <li>Aux VGA 1</li>
+        <li>Aux VGA 2</li>
+      </div>
     </ul>
   </div>
 )

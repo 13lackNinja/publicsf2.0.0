@@ -18,7 +18,7 @@ router.post('/', upload.array(), (req, res) => {
     port: 25,
     auth: {
       user: '13lackcloudtest@gmail.com',
-      pass: `${process.env._PWSF_CONTACT_EMAIL_PASSWORD}`
+      pass: `${process.env.REACT_APP_PWSF_CONTACT_EMAIL_PASSWORD}`
     },
     tls: {
       rejectUnauthorized: false

@@ -17,14 +17,13 @@ class FAQitem extends Component {
     this.setState(
       this.state.isOpen ? { 'isOpen': false } : { 'isOpen': true }
     );
-    console.log(this.state.isOpen);
   }
 
   render() {
     if (!this.state.isOpen) {
       return (
         <div className="faq-item" onClick={this.toggle}>
-          <p>{this.props.question}</p>
+          <p className="faq-question">{this.props.question}</p>
           <img
             className="dropdown-arrow"
             src={downArrow}
@@ -35,7 +34,7 @@ class FAQitem extends Component {
     } else {
         return (
           <div className="faq-item" onClick={this.toggle}>
-            <p>{this.props.question}</p>
+            <p className="faq-question">{this.props.question}</p>
             <p>{this.props.answer}</p>
             <img
               className="dropdown-arrow"

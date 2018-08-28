@@ -1,5 +1,4 @@
 #newsletter-sign-up {
-  height: 180px;
   background: #ededed;
   overflow: hidden;
 }
@@ -8,7 +7,8 @@
   text-align: center;
   font-family: 'Oswald';
   font-weight: 600;
-  font-size: 24px;
+  font-size: 48px;
+  letter-spacing: -2px;
   color: #111111;
   text-transform: uppercase;
   margin-top: 20px;
@@ -17,7 +17,7 @@
 #newsletter-sign-up input {
   display: block;
   margin: 20px auto;
-  width: 300px;
+  width: 60%;
   height: 30px;
   border: 1px #111111 solid;
   background: none;
@@ -26,6 +26,17 @@
   text-transform: uppercase;
   font-size: 18px;
   color: #111111;
+}
+
+@media (max-width: 700px) {
+  #newsletter-sign-up h2 {
+    font-size: 36px;
+  }
+
+  #newsletter-sign-up input {
+    width: calc(100% - 80px);
+    margin: 20px 40px;
+  }
 }
 
 #submit-button-newsletter {

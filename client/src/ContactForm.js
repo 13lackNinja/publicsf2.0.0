@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import ActionButton from './ActionButton'
 
 import './styles/ContactForm.css'
 
@@ -8,8 +7,8 @@ import downArrow from './images/down_arrow.svg'
 const DropdownMenu = (props) => {
   if (!props.isExpanded) {
     return (
-      <div id="dropdown">
-        <button onClick={props.expand}>{props.selected}</button>
+      <div id="dropdown" onClick={props.expand}>
+        <button>{props.selected}</button>
         <img src={downArrow} alt="down_arrow.svg"/>
       </div>
     )
@@ -146,7 +145,7 @@ class ContactForm extends Component {
       if (this.readyState === 4 && this.status === 200) {
         form.lastChild.style.display = 'none';
         dropdown.style.display = 'none';
-        form.innerHTML = '<h1>Message Recieved!</>'
+        form.innerHTML = '<h2>Message Recieved!</h2>'
       }
     }
 
@@ -158,21 +157,27 @@ class ContactForm extends Component {
     return (
       <div id='contact-form-section'>
         <div id="contact-form-container">
-          <h1>Contact</h1>
-          <DropdownMenu
-            isExpanded={this.state.isMenuOpen}
-            selected={this.state.selected}
-            expand={this.expand}
-            select={this.select}
-          />
-          <form id="contact-form" action="">
-            <Fields show={this.state.formType}/>
-            <ActionButton
-              submit={() => this.submit(this.state.selected)}
-              text='submit'
-              color='white'
+          <div id="contact-form-header">
+            <h1>Contact</h1>
+          </div>
+          <div id='contact-form-body'>
+            <DropdownMenu
+              isExpanded={this.state.isMenuOpen}
+              selected={this.state.selected}
+              expand={this.expand}
+              select={this.select}
             />
-          </form>
+            <form id="contact-form" action="">
+              <Fields show={this.state.formType}/>
+              <button
+                id="contact-form-submit-button"
+                onClick={() => this.submit(this.state.formType)}
+              >
+                submit
+              </button>
+            </form>
+          </div>
+
         </div>
       </div>
     )

@@ -66,7 +66,6 @@ class Carousel extends Component {
   }
 
   render() {
-    console.log(this.props.images);
     return (
       <div id="carousel-container">
       <Slide image={this.props.images[this.state.position - 1]} />

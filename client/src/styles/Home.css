@@ -8,20 +8,27 @@
 
 #about-statement p {
   display: block;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
   font-family: 'Rajdhani';
-  font-size: 16px;
+  font-size: 24px;
   text-transform: uppercase;
   font-weight: 600;
-  max-width: 600px;
-  margin: 0px auto 50px auto;
+  max-width: 900px;
+  padding: 0px 40px;
+  margin: 0px auto 20px auto;
   color: #ededed;
+  line-height: 150%;
+}
+
+@media (max-width: 700px) {
+  #about-statement p {
+    font-size: 18px;
+  }
 }
 
 #about-statement img {
-  position: absolute;
-  left: 50%;
-  bottom: 10px;
-  transform: translateX(-50%);
-  width: 40px;
+  display: block;
+  margin: 40px auto;
+  width: 100px;
 }

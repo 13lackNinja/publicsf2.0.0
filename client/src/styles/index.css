@@ -6,15 +6,22 @@
 
 h1 {
   font-family: 'Oswald';
-  font-size: 50px;
+  font-size: 90px;
   font-weight: 600;
   color: #ededed;
+  letter-spacing: -4px;
   text-transform: uppercase;
   text-align: center;
 }
 
 h2 {
   color: #ededed;
+  line-height: 120%
+}
+
+h3 {
+  font-size: 20px;
+
 }
 
 h4 {

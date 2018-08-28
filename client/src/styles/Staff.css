@@ -9,6 +9,13 @@
   margin: 40px;
 }
 
+@media (max-width: 700px) {
+  #staff h1 {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+}
+
 #staff button {
   display: block;
   margin: 40px auto;

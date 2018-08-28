@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { production, development } from './config/config.js'
 import Carousel from './Carousel'
 import Marquee from './Marquee'
 import FeaturedEvents from './FeaturedEvents'
@@ -9,7 +10,7 @@ import eventRequest from './eventRequest'
 
 import './styles/Home.css'
 
-import manholeImage from './images/pw_manhole.png'
+import manholeImage from './images/pw_manhole_white.png'
 
 const AboutStatement = () => (
   <div id="about-statement">
@@ -17,7 +18,7 @@ const AboutStatement = () => (
     <p>
       Located in the heart of San Francisco's Mission District, Public Works is a community-minded nightclub and event space dedicated to "Giving the People What They Want." With a Funktion One sound system and a clean, utilitarian aesthetic, Public Works is a blank canvas of creativity that welcomes international DJs, underground artists, rising talent, and the myriad arts and music communities that call San Francisco Home.
     </p>
-    <img src={manholeImage} alt="pw_manhole.png"/>
+    <img src={manholeImage} alt="pw_manhole_white.png"/>
   </div>
 )
 
@@ -44,14 +45,18 @@ class Home extends Component {
   }
 
   render() {
+    let images = null;
+
+    if (process.env.NODE_ENV === 'development') {
+      images = development.carouselImages;
+    } else {
+      images = production.carouselImages;
+    }
+
     return (
       <div id="home">
         <Carousel
-          images={[
-            '/api/carousel/images/1',
-            '/api/carousel/images/2',
-            '/api/carousel/images/3'
-          ]}
+          images={images}
         />
         <AboutStatement />
         <Marquee

@@ -4,9 +4,9 @@ const path = require('path');
 const app = express();
 
 const carouselRouter = require('./routes/carousel');
-const contactRouter = require('./routes/contact')
+const contactRouter = require('./routes/contact');
 
-app.use('/api/carousel', carouselRouter);
+app.use('/staff/carousel', carouselRouter);
 app.use('/api/contact', contactRouter);
 
 app.use(express.static(path.join(__dirname, 'build')));

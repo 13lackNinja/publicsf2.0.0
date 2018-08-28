@@ -10,8 +10,6 @@ class CarouselImageChooser extends Component {
     selectedFiles: [null, null, null]
   }
 
-  url = '/api/carousel/images/'
-
   fileSelectedHandler = (e, i) => {
     let selectedFiles = this.state.selectedFiles;
     selectedFiles.splice(i, 1, e.target.files[0]);
@@ -35,6 +33,14 @@ class CarouselImageChooser extends Component {
   }
 
   render() {
+    let url = null;
+
+    if (process.env.NODE_ENV === 'development') {
+      url = 'http://localhost:8090/staff/carousel/images/'
+    } else {
+      url = '/staff/carousel/images/'
+    }
+
     return (
       <React.Fragment>
         <h1>Carousel Image Chooser</h1>
@@ -42,7 +48,7 @@ class CarouselImageChooser extends Component {
           id='carousel-image-form' action="/api/carousel">
           <div id='image-chooser-1' className='image-chooser'>
             <label htmlFor="image1">Image 1</label>
-            <img src={this.url + '1'} alt=""/>
+            <img src={url + '1'} alt=""/>
             <input
               name="image1"
               type="file"
@@ -61,7 +67,7 @@ class CarouselImageChooser extends Component {
           </div>
           <div className="image-chooser">
             <label htmlFor="image2">Image 2</label>
-            <img src={this.url + '2'} alt=""/>
+            <img src={url + '2'} alt=""/>
             <input
               name="image2"
               type="file"
@@ -80,7 +86,7 @@ class CarouselImageChooser extends Component {
           </div>
           <div className="image-chooser">
             <label htmlFor="image3">Image 3</label>
-            <img src={this.url + '3'} alt=""/>
+            <img src={url + '3'} alt=""/>
             <input
               name="image3"
               type="file"

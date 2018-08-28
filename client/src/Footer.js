@@ -12,7 +12,8 @@ const Footer = () => (
   <div id="footer">
     <div className="footer-box" id="footer-about">
       <TypeLogo type="footer" />
-      <p className="footer-text" id="footer-address">161 Erie St<br />San Francisco, CA 94103</p>
+      <p className="footer-text" id="footer-address">161 Erie St<br/>
+      (Btween 14th and Division) <br/>San Francisco, CA 94103</p>
     </div>
     <div className="footer-box" id="footer-nav">
       <h5 className="footer-title">Information</h5>
@@ -41,7 +42,8 @@ const Footer = () => (
     </div>
     <div id="footer-byline">
       <p id="copyright">PW &copy; 2018</p>
-      <a id="by" href="http://13lackcloud.com">Developed by Jonathan Crawford</a>
+      <a className="by" href="http://rhomasormsby.com">Designed by Ryan Ormbsy</a><br/>
+      <a className="by" href="https://jonathancrawford.us">Developed by Jonathan Crawford</a>
     </div>
   </div>
 )

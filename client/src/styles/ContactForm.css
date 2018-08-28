@@ -7,15 +7,38 @@
 #contact-form-container {
   position: relative;
   width: 60%;
-  border: 2px #ededed solid;
-  border-radius: 5px;
+  border: 2px #e75e26 solid;
   margin: auto;
+}
+
+@media (max-width: 700px) {
+  #contact-form-container {
+    width: calc(100% - 80px);
+    margin: auto 40px;
+  }
+}
+
+#contact-form-header {
+  background: #e75e26;
+}
+
+#contact-form-body {
   padding: 20px;
 }
 
 #contact-form-container h1 {
-  font-size: 22px;
-  text-align: left;
+  font-size: 48px;
+  color: #111111;
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+#contact-form-container h2 {
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  font-size: 36px;
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -23,6 +46,8 @@
 #dropdown {
   position: relative;
   margin-bottom: 20px;
+  border: 1px #ededed solid;
+  padding: 10px;
 }
 
 #dropdown button, #dropdown a {
@@ -30,7 +55,7 @@
   width: 100%;
   background: none;
   border: none;
-  font-family: arial;
+  font-family: 'Rajdhani';
   color: #ededed;
   text-align: left;
   text-transform: uppercase;
@@ -45,14 +70,13 @@
 
 #dropdown img {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   width: 20px;
 }
 
 /* Form */
 form {
-  font-family: arial;
   font-size: 14px;
   color: #ededed;
 }
@@ -62,8 +86,12 @@ form input, textarea {
   background: none;
   color: #ededed;
   border: 1px #ededed solid;
-  border-radius: 5px;
   width: 100%;
+}
+
+form label {
+  font-family: 'Rajdhani';
+  text-transform: uppercase;
 }
 
 form input {
@@ -73,7 +101,26 @@ form input {
   color: #ededed;
 }
 
-form button {
+form input::placeholder {
+  color: #111111;
+  opacity: 1;
+}
+
+#contact-form-submit-button {
   display: block;
   margin: 20px auto;
+  height: 30px;
+  width: 100%;
+  background: #e75e26;
+  border: none;
+  font-family: 'Rajdhani';
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: background-color .3s, color .7s;
+}
+
+#contact-form-body button:hover {
+  background: #111111;
+  color: #e75e26;
 }

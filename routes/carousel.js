@@ -26,7 +26,6 @@ const uploadImages = upload.fields([
   { name: 'image3', maxCount: 1 }
 ]);
 
-
 router.get('/images/:index', (req, res) => {
   const options = {
     root: path.join(__dirname, '/../uploads')
