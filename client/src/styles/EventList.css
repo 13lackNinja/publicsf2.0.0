@@ -1,3 +1,12 @@
+#event-list {
+  padding-top: 80px;
+}
+
+#event-list h1 {
+  margin: 0px auto 80px auto;
+  text-shadow: 0 0 3px #ededed;
+}
+
 #load-moar-events {
   display: block;
   text-align: center;

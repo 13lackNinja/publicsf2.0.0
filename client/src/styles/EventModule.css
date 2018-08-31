@@ -1,64 +1,99 @@
-
-/* Container */
+/* Positioning */
 .event-module-container {
-  display: flex;
-  flex-direction: column;
-  width: 70%;
-  margin: 100px auto;
-  background: #111111;
-  cursor: pointer;
-}
-
-@media (max-width: 700px) {
-  .event-module-container {
-    width: calc(100% - 80px);
-    margin: 100px 40px;
-  }
-}
-
-/* Top */
-.event-module-top {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 200px 1fr 100px;
+  grid-column-gap: 20px;
+  height: 200px;
+  width: 100%;
+  padding: 0px 80px;
+  margin: 0px 0px;
 }
 
 .event-module-image {
-  width: 100%;
-  margin-right: 20px;
+  position: relative;
+  /* bottom: 40px; */
 }
 
+.event-module-image img {
+  width: 100%;
+}
+
+.event-module-button {
+  text-align: right;
+}
+
+.event-module-button button {
+  padding: 0px 20px;
+}
+
+/* Text Formatting */
 .event-module-text {
-  margin: 20px 0px;
+  margin: 0px;
   color: #ededed;
 }
 
 .event-module-date {
+  color: #ededed;
   font-family: 'Oswald';
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.event-module-date-mobile {
+  display: none;
 }
 
 .event-module-promoter {
   font-family: 'Rajdhani';
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
 .event-module-artists {
   font-family: 'Oswald';
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
 }
 
-/* Bottom */
-.event-module-bottom {
-  position: relative;
-  height: 20px;
-  grid-row: 2 / 3;
-}
-
-/* Misc */
 .event-module-link {
   text-decoration: none;
+}
+
+/* Responsive Design */
+
+@media (max-width: 800px) {
+  .event-module-container {
+    grid-template-columns: 100px 2fr 100px;
+    padding: 0px 20px;
+  }
+
+  .event-module-image {
+    grid-column: 1 / 3;
+  }
+
+  .event-module-text {
+    grid-column: 1 / 3;
+  }
+
+  .event-module-image img {
+    display: none;
+  }
+
+  .event-module-date {
+    display: none;
+  }
+
+  .event-module-artists {
+    font-size: 20px;
+  }
+
+  .event-module-date-mobile {
+    display: block;
+    color: #ededed;
+    font-family: 'Oswald';
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
 }

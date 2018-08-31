@@ -58,11 +58,11 @@ class Home extends Component {
         <Carousel
           images={images}
         />
-        <AboutStatement />
         <Marquee
           text={`Just Announced: ${this.state.firstEventName}`}
           id={this.state.firstEventId}
         />
+        <AboutStatement />
         <FeaturedEvents events={this.state.featuredEvents}/>
         <NewsletterSignUp />
         <Grit />

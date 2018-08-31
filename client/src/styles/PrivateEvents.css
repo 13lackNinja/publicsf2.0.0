@@ -116,8 +116,15 @@
 
 /* FinalNote */
 #final-note {
-  width: 60%;
+  width: 75%;
   margin: 80px auto;
+}
+
+@media (max-width: 500px) {
+  #final-note {
+    width: 100%;
+    padding: 0px 40px;
+  }
 }
 
 #final-note h2 {

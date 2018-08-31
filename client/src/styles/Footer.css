@@ -23,9 +23,16 @@
 }
 
 #footer-nav a {
-  display: block;
+  text-transform: uppercase;
+  display: inline-block;
   font-size: 12px;
   font-weight: bold;
+  border: 1px solid #111111;
+  transition: border .3s;
+}
+
+#footer-nav a:hover {
+  border-bottom: 1px solid #e75e26;
 }
 
 #footer-socials {

@@ -18,7 +18,7 @@ class Circle extends Component {
 
   render() {
     return (
-      <svg className="circle-svg">
+      <svg className="circle-svg" onClick={this.props.onClick}>
         <circle
           fill={
             this.props.index === this.props.position ?
@@ -33,11 +33,12 @@ class Circle extends Component {
 class Carousel extends Component {
   constructor(props) {
     super(props);
+    this.jump = this.jump.bind(this);
     this.state = { position: 1 };
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.rotate(), 16000);
+    this.timerID = setInterval(() => this.rotate(), 32000);
   }
 
   componentWillUnmount() {
@@ -65,14 +66,18 @@ class Carousel extends Component {
 
   }
 
+  jump(index) {
+    this.setState({ position: index });
+  }
+
   render() {
     return (
       <div id="carousel-container">
       <Slide image={this.props.images[this.state.position - 1]} />
         <div id="circle-container">
-          <Circle index={1} position={this.state.position}/>
-          <Circle index={2} position={this.state.position}/>
-          <Circle index={3} position={this.state.position}/>
+          <Circle index={1} position={this.state.position} onClick={() => this.jump(1)}/>
+          <Circle index={2} position={this.state.position} onClick={() => this.jump(2)}/>
+          <Circle index={3} position={this.state.position} onClick={() => this.jump(3)}/>
         </div>
       </div>
     )

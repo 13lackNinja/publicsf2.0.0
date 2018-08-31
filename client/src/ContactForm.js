@@ -15,6 +15,10 @@ const DropdownMenu = (props) => {
   } else {
     return (
       <div id="dropdown">
+        <img
+          className="reverse"
+          src={downArrow}
+          alt="down_arrow.svg"/>
         <button onClick={() => props.select('General', 'general')}>
           General
         </button>
@@ -107,8 +111,8 @@ class ContactForm extends Component {
     this.select = this.select.bind(this);
     this.submit = this.submit.bind(this);
     this.state = {
-      selected: 'General',
-      formType: 'general',
+      selected: this.props.initialSelection,
+      formType: this.props.initialFormType,
       isMenuOpen: false
     }
   }
@@ -171,7 +175,7 @@ class ContactForm extends Component {
               <Fields show={this.state.formType}/>
               <button
                 id="contact-form-submit-button"
-                onClick={() => this.submit(this.state.formType)}
+                onClick={() => this.submit(this.state.selected)}
               >
                 submit
               </button>

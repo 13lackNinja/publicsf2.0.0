@@ -7,7 +7,7 @@
 #contact-form-container {
   position: relative;
   width: 60%;
-  border: 2px #e75e26 solid;
+  border: 2px #ededed solid;
   margin: auto;
 }
 
@@ -19,7 +19,7 @@
 }
 
 #contact-form-header {
-  background: #e75e26;
+  background: #ededed;
 }
 
 #contact-form-body {
@@ -63,6 +63,10 @@
   text-decoration: none;
 }
 
+#dropdown img.reverse {
+  transform: rotate(180deg);
+}
+
 #dropdown button:hover, #dropdown a:hover {
   background: #e75e26;
   color: #111111;
@@ -99,6 +103,10 @@ form input {
   margin-top: 10px;
   margin-bottom: 40px;
   color: #ededed;
+}
+
+form textarea {
+  margin-top: 10px;
 }
 
 form input::placeholder {

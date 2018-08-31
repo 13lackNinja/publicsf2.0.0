@@ -10,14 +10,6 @@
   transition: background-color .3s, color .7s;
 }
 
-.buy-button-module {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  flex-grow: 1;
-}
-
 .buy-button:hover {
   background: #111111;
   color: #e75e26;

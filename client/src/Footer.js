@@ -13,13 +13,16 @@ const Footer = () => (
     <div className="footer-box" id="footer-about">
       <TypeLogo type="footer" />
       <p className="footer-text" id="footer-address">161 Erie St<br/>
-      (Btween 14th and Division) <br/>San Francisco, CA 94103</p>
+      (Between 14th and Division) <br/>San Francisco, CA 94103</p>
     </div>
     <div className="footer-box" id="footer-nav">
       <h5 className="footer-title">Information</h5>
       <a className="footer-link" href="./connect">Connect</a>
+      <br/>
       <a className="footer-link" href="./connect#faq">FAQ</a>
+      <br/>
       <a className="footer-link" href="./connect#contact-form-section">Booking</a>
+      <br/>
       <a className="footer-link" href="./specs">Specs</a>
     </div>
     <div className="footer-box" id="footer-socials">

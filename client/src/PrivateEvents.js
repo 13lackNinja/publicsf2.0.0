@@ -59,6 +59,7 @@ const PrivateEventsInfo = () => (
         </li>
       </div>
     </ul>
+    <FinalNote/>
     <div
       className="private-events-image"
       style={{ 'background-image': `url(${loftImage})`}}
@@ -89,8 +90,10 @@ const PrivateEvents = () => (
     <HeroImage image={corporateImage1} text="Private Events"/>
     <PrivateEventsInfo/>
     <FormInstructions />
-    <ContactForm />
-    <FinalNote />
+    <ContactForm
+      initialSelection='Private Events'
+      initialFormType='privateevents'
+    />
     <NewsletterSignUp />
     <Grit />
   </div>

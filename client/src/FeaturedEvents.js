@@ -1,34 +1,15 @@
 import React, { Component } from 'react'
-import EventModule from './EventModule'
+import FeaturedEventModule from './FeaturedEventModule'
 
 import './styles/index.css'
 import './styles/FeaturedEvents.css'
 
-// const FeaturedEvent = (props) => (
-//   <a href={`intheworks/${props.id}`}>
-//     <div className="featured-event">
-//      <div
-//        className="featured-event-image"
-//        style={{ 'backgroundImage': `url(${props.image})`}}
-//      />
-//      <div className="featured-event-date">
-//        <h3>{props.date}</h3>
-//      </div>
-//      <div className="featured-event-artists">
-//       <h3>{props.name}</h3>
-//      </div>
-//      <button className="event-button">More Info</button>
-//    </div>
-//   </a>
-// )
-
 class FeaturedEvents extends Component {
   render() {
-
     if (this.props.events) {
         const featuredEvents = this.props.events.map((e) => {
         return (
-          <EventModule
+          <FeaturedEventModule
             key={e.id}
             id={e.id}
             name={e.name.text}

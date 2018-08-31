@@ -5,7 +5,8 @@
 #view-all-events {
   display: block;
   text-align: center;
-  margin: 40px auto;
+  font-size: 36px;
+  margin: 40px auto 80px auto;
 }
 
 /* FeaturedEvent */
