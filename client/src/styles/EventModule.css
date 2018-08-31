@@ -1,17 +1,17 @@
 /* Positioning */
 .event-module-container {
   display: grid;
-  grid-template-columns: 200px 1fr 100px;
+  grid-template-columns: 300px 1fr 100px;
   grid-column-gap: 20px;
   height: 200px;
   width: 100%;
   padding: 0px 80px;
-  margin: 0px 0px;
+  margin: 40px 0px;
 }
 
 .event-module-image {
   position: relative;
-  /* bottom: 40px; */
+  bottom: 40px;
 }
 
 .event-module-image img {
@@ -62,7 +62,7 @@
 
 /* Responsive Design */
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .event-module-container {
     grid-template-columns: 100px 2fr 100px;
     padding: 0px 20px;
