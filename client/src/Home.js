@@ -8,6 +8,10 @@ import Grit from './Grit'
 import TypeLogo from './TypeLogo'
 import eventRequest from './eventRequest'
 
+import crowd4Image from './images/crowd4.jpg'
+import scan22Image from './images/scan22.jpg'
+import pwhomeImage from './images/pwhome.jpg'
+
 import './styles/Home.css'
 
 import manholeImage from './images/pw_manhole_white.png'
@@ -45,13 +49,11 @@ class Home extends Component {
   }
 
   render() {
-    let images = null;
-
-    if (process.env.NODE_ENV === 'development') {
-      images = config.development.carouselImages;
-    } else {
-      images = config.production.carouselImages;
-    }
+    let images = [
+      crowd4Image,
+      scan22Image,
+      pwhomeImage
+    ];
 
     return (
       <div id="home">

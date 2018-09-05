@@ -3,11 +3,8 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-const staffRouter = require('./routes/staff');
 const contactRouter = require('./routes/contact');
 
-app.use('/staff', staffRouter);
-app.post('/staff', staffRouter);
 app.use('/api/contact', contactRouter);
 
 

@@ -7,6 +7,11 @@ const dotenv = require('dotenv').config();
 const bodyParser = require('body-parser');
 
 router.use(bodyParser.json());
+router.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+})
 
 router.post('/', upload.array(), (req, res) => {
   let html;

@@ -8,10 +8,12 @@ class FeaturedEventModule extends React.Component {
     return (
       <div className="featured-event-module-container">
         <div className="featured-event-module-top">
+          <a href={`intheworks/${this.props.id}`}>
           <img
             className="featured-event-module-image"
             src={this.props.image}
             alt="event_image"/>
+          </a>
           <div className="featured-event-module-text">
             <a href={`intheworks/${this.props.id}`}>
               <h3 className="event-module-date">

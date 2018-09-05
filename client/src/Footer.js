@@ -37,10 +37,6 @@ const Footer = () => (
         <a href="https://www.instagram.com/publicworkssf/?hl=en">
           <img width="25px" className="social-icon" id="instagram-icon" src={instagramIcon} alt="instagram_icon.svg" />
         </a>
-        <a href="">
-          <img width="25px" className="social-icon" id="email-icon" src={emailIcon} alt="email_icon.svg" />
-        </a>
-
       </div>
     </div>
     <div id="footer-byline">
