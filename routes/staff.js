@@ -87,13 +87,8 @@ router.get('/carousel/images/:index', (req, res) => {
   res.sendFile(`carousel_image${i}.jpg`, options);
 });
 
-router.post('/carousel/upload', (req, res) => {
-  if (!req.session.user) {
-    uploadImages();
-    res.end();
-  } else {
-    res.send('permission denied');
-  }
+router.post('/carousel/upload', uploadImages, (req, res) => {
+  res.end();
 });
 
 module.exports = router;
