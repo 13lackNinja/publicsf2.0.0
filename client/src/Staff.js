@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import ActionButton from './ActionButton'
 import Grit from './Grit'
+import config from './config/config'
 
 import './styles/Staff.css'
 
@@ -20,13 +21,23 @@ class CarouselImageChooser extends Component {
 
   fileUploadHandler = () => {
     const formData = new FormData();
+
+    let uploadUrl = null;
+
+    if (process.env.NODE_ENV === 'development') {
+      uploadUrl = config.development.carouselUploadUrl;
+    } else {
+      uploadUrl = config.production.carouselUploadUrl;
+    }
+
     const selectedFiles = this.state.selectedFiles;
     selectedFiles.forEach((file, i) => {
       if (file) {
         formData.append(`image${i + 1}`, file, file.name);
       }
     });
-    axios.post('/api/carousel/upload', formData)
+
+    axios.post(uploadUrl, formData)
       .then(res => {
         console.log(res);
       }).catch(err => console.log(err.message));
@@ -36,16 +47,16 @@ class CarouselImageChooser extends Component {
     let url = null;
 
     if (process.env.NODE_ENV === 'development') {
-      url = 'http://localhost:8090/staff/carousel/images/'
+      url = config.development.carouselUrl;
     } else {
-      url = '/staff/carousel/images/'
+      url = config.production.carouselUrl;
     }
 
     return (
       <React.Fragment>
         <h1>Carousel Image Chooser</h1>
         <form
-          id='carousel-image-form' action="/api/carousel">
+          id='carousel-image-form'>
           <div id='image-chooser-1' className='image-chooser'>
             <label htmlFor="image1">Image 1</label>
             <img src={url + '1'} alt=""/>

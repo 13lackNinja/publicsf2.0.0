@@ -26,8 +26,9 @@
   text-transform: uppercase;
   font-size: 24px;
   font-weight: 600;
-  text-align: center;
-  width: 75%;
+  text-align: justify;
+  text-align-last: center;
+  width: 60%;
   line-height: 115%;
   letter-spacing: -1px;
   margin: 20px auto;
@@ -44,7 +45,7 @@
 #newsletter-text input {
   display: block;
   margin: 40px auto;
-  width: 75%;
+  width: 60%;
   height: 30px;
   border: 1px #111111 solid;
   background: none;
@@ -64,7 +65,7 @@
   display: block;
   margin: 20px auto 80px auto;
   height: 30px;
-  width: 75%;
+  width: 60%;
   background: #111111;
   color: #e75e26;
   border: none;

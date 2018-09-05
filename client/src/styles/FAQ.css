@@ -1,9 +1,8 @@
 #faq {
   display: block;
   position: relative;
-  margin: 20px auto;
+  margin: 80px auto;
   width: 60%;
-  margin-bottom: 50px;
 }
 
 @media (max-width: 700px) {

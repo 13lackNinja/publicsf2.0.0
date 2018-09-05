@@ -3,11 +3,13 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-const carouselRouter = require('./routes/carousel');
+const staffRouter = require('./routes/staff');
 const contactRouter = require('./routes/contact');
 
-app.use('/staff/carousel', carouselRouter);
+app.use('/staff', staffRouter);
+app.post('/staff', staffRouter);
 app.use('/api/contact', contactRouter);
+
 
 app.use(express.static(path.join(__dirname, 'build')));
 

@@ -11,7 +11,7 @@ class EventModule extends React.Component {
           <h3 className="event-module-date">
             {this.props.date}
           </h3>
-          <img src={this.props.image} alt="event module image"/>
+          <img src={this.props.image} alt="event"/>
         </div>
         <div className="event-module-text">
           <a href={`intheworks/${this.props.id}`}>

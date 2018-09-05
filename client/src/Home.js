@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { production, development } from './config/config.js'
+import config from './config/config'
 import Carousel from './Carousel'
 import Marquee from './Marquee'
 import FeaturedEvents from './FeaturedEvents'
@@ -48,9 +48,9 @@ class Home extends Component {
     let images = null;
 
     if (process.env.NODE_ENV === 'development') {
-      images = development.carouselImages;
+      images = config.development.carouselImages;
     } else {
-      images = production.carouselImages;
+      images = config.production.carouselImages;
     }
 
     return (

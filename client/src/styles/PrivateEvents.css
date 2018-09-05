@@ -129,10 +129,12 @@
 
 #final-note h2 {
   font-family: 'Oswald';
-  font-size: 18px;
+  font-size: 24px;
   line-height: 175%;
   text-transform: uppercase;
-  text-align: center;
+  text-align: justify;
+  text-align-last: center;
+  letter-spacing: 0;
 }
 
 #final-note a {

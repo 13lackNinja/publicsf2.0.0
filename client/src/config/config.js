@@ -1,17 +1,24 @@
-const development = {
-  'carouselImages': [
-    'http://localhost:8090/staff/carousel/images/1',
-    'http://localhost:8090/staff/carousel/images/2',
-    'http://localhost:8090/staff/carousel/images/3'
-  ]
+const config = {
+  development: {
+      'carouselImages': [
+        'http://localhost:8090/staff/carousel/images/1',
+        'http://localhost:8090/staff/carousel/images/2',
+        'http://localhost:8090/staff/carousel/images/3'
+      ],
+      'carouselUrl': 'http://localhost:8090/staff/carousel/images/',
+      'carouselUploadUrl': 'http://localhost:8090/staff/carousel/upload',
+      'loginEndpoint': 'http://localhost:8090/staff/login',
+  },
+  production: {
+    'carouselImages': [
+      '/staff/carousel/images/1',
+      '/staff/carousel/images/2',
+      '/staff/carousel/images/3'
+    ],
+    'carouselUrl': '/staff/carousel/images/',
+    'carouselUploadUrl': '/staff/carousel/upload',
+    'loginEndpoint': '/staff/login/'
+  }
 }
 
-const production = {
-  'carouselImages': [
-    '/staff/carousel/images/1',
-    '/staff/carousel/images/2',
-    '/staff/carousel/images/3'
-  ]
-}
-
-export { development, production }
+export default config

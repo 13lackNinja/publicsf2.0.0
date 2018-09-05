@@ -28,6 +28,7 @@ const Connect = () => (
   <div id="connect">
     <HeroImage text="Connect" image={blueboltImage} />
     <NewsletterText />
+    <div id="map"></div>
     <FAQ />
     <ContactForm
       initialSelection='General'
@@ -36,5 +37,6 @@ const Connect = () => (
     <Grit />
   </div>
 )
+
 
 export default Connect
