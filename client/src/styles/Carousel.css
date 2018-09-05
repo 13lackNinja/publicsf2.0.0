@@ -7,7 +7,7 @@
 
 #image-container {
   position: relative;
-  height: calc(100vw / (16 / 9));
+  height: calc(100vw / (16 / 9) - 190px);
   background-position: center;
   background-size: cover;
   opacity: 1;
@@ -38,4 +38,9 @@
   cy: 10;
   r: 5;
   transition: fill 1s;
+}
+
+#down-arrow {
+  position: absolute;
+  top: 50px;
 }
