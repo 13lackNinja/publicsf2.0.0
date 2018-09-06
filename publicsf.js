@@ -5,7 +5,7 @@ const app = express();
 
 const contactRouter = require('./routes/contact');
 
-app.use('/api/contact', contactRouter);
+app.post('/api/contact', contactRouter);
 
 app.use(express.static(path.join(__dirname, 'build')));
 
