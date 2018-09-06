@@ -157,7 +157,7 @@ class ContactForm extends Component {
       }
     }
 
-    xhttp.open('POST', '/api/contact');
+    xhttp.open('POST', 'http://localhost:8090/api/contact');
     xhttp.send(formData);
   }
 
