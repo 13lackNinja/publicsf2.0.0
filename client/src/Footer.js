@@ -20,7 +20,7 @@ const Footer = () => (
       <br/>
       <a className="footer-link" href="./connect#faq">FAQ</a>
       <br/>
-      <a className="footer-link" href="./connect#contact-form-section">Booking</a>
+      <a className="footer-link" href="./booking">Booking</a>
       <br/>
       <a className="footer-link" href="./specs">Specs</a>
     </div>
