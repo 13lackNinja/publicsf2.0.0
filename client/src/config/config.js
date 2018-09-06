@@ -8,6 +8,7 @@ const config = {
       'carouselUrl': 'http://localhost:8090/staff/carousel/images/',
       'carouselUploadUrl': 'http://localhost:8090/staff/carousel/upload',
       'loginEndpoint': 'http://localhost:8090/staff/login',
+      'contactUrl': 'http://localhost:8090/api/contact'
   },
   production: {
     'carouselImages': [
@@ -17,7 +18,8 @@ const config = {
     ],
     'carouselUrl': '/staff/carousel/images/',
     'carouselUploadUrl': '/staff/carousel/upload',
-    'loginEndpoint': '/staff/login/'
+    'loginEndpoint': '/staff/login/',
+    'contactUrl': '/api/contact'
   }
 }
 

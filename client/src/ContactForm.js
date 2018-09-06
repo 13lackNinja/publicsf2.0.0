@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import config from './config/config'
 
 import './styles/ContactForm.css'
 
@@ -147,6 +148,13 @@ class ContactForm extends Component {
     const formData = new FormData(form);
     formData.append('formSelected', selected);
 
+    let contactUrl = null;
+    if (process.env.NODE_ENV === 'development') {
+      contactUrl = config.development.contactUrl;
+    } else {
+      contactUrl = config.production.contactUrl;
+    }
+
     const xhttp = new XMLHttpRequest();
 
     xhttp.onreadystatechange = function() {
@@ -157,7 +165,7 @@ class ContactForm extends Component {
       }
     }
 
-    xhttp.open('POST', 'http://localhost:8090/api/contact');
+    xhttp.open('POST', contactUrl);
     xhttp.send(formData);
   }
 
