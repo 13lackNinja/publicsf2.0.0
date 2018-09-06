@@ -8,6 +8,7 @@
   color: #111111;
   font-size: 48px;
   line-height: 230px;
+  text-align: center;
 }
 
 #newsletter-sign-up h2 {
@@ -27,7 +28,7 @@
   font-family: 'Rajdhani';
   font-size: 22px;
   font-weight: 600;
-  margin: 4px 0px 10px 0px;
+  margin: 4px 40px 10px 40px;
   text-transform: uppercase;
 }
 

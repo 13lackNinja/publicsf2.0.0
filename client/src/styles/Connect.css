@@ -56,6 +56,13 @@
   color: #111111;
 }
 
+@media (max-width: 700px) {
+  #newsletter-text input {
+    width: calc(100% - 80px);
+    margin: 40px 40px;
+  }
+}
+
 #newsletter-text input::placeholder {
   font-weight: 600;
   opacity: .5;
@@ -74,6 +81,13 @@
   font-weight: 600;
   text-transform: uppercase;
   transition: background-color .3s, color .7s;
+}
+
+@media (max-width: 700px) {
+  #newsletter-text form button {
+    width: calc(100% - 80px);
+    margin: 20px 40px 80px 40px;
+  }
 }
 
 #newsletter-text button {
