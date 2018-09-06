@@ -76,12 +76,8 @@ const FAQ = () => (
       answer="Yes. There are numerous restarants and cafes within walking distance of Public Works."
     />
     <FAQitem
-      question="When do you stop serving alcohol?"
-      answer="California state law requires acohol service to stop at 2am regarless of event end time."
-    />
-    <FAQitem
-      question="How can I participate further in the community?"
-      answer="Our newsletter is the best way to engage with us. By subscribing you get access to rewards made with love for our loyal fans."
+      question="What are the club hours?"
+      answer="Club hours vary by event, but last call is always at 1:45am"
     />
   </div>
 )

@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import config from './config/config'
 import Carousel from './Carousel'
 import Marquee from './Marquee'
 import FeaturedEvents from './FeaturedEvents'

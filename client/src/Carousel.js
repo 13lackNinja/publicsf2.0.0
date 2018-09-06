@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 
 import './styles/Carousel.css'
 
-
-import downArrowImage from './images/down_arrow.svg'
-
 const Slide = (props) => (
   <div
     id="image-container"

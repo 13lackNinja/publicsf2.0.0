@@ -91,6 +91,13 @@
   font-size: 14px;
 }
 
+/* Map */
+#footer-map {
+  width: 100px;
+  height: 100px;
+}
+
+
 /* Byline */
 #footer-byline {
   font-family: 'Rajdhani';

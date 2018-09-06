@@ -15,7 +15,7 @@ const PrivateEventsInfo = () => (
   <div id="private-events-info">
     <h2>Take the 'office' out of your office party</h2>
     <p>
-      Public Works has hosted corporate events, galas, birthdays, team outings, film screenings, holiday parties, seminars, retreats and more ranging from 15 to 800 people. You can rent the loft or the entire venue, and our dedicated in-house support team will work with you to create an event your attendees will never forget.
+      Public Works has hosted corporate events, galas, birthdays, team outings, film screenings, holiday parties, seminars, retreats and more ranging from 15 to 1200 people. You can rent one room or the entire venue, and our dedicated in-house support team will work with you to create an event your attendees will never forget.
     </p>
     <div
       className="private-events-image"
@@ -29,16 +29,13 @@ const PrivateEventsInfo = () => (
           Professional and experienced event staff
         </li>
         <li>
-          Top of the line audio and visual production including our world-class Funktion One sound system
+          Top of the line A/V including our world-class Funktion One sound system
         </li>
         <li>
-          Multiple bars with skilled mixologists at your disposal (non-alcohol options available)
+          Multiple bars with skilled mixologists at your disposal (plenty of non-alcoholic options available)
         </li>
         <li>
           Vibrant interior design featuring artisan-made furniture and modern artwork by local artists
-        </li>
-        <li>
-          Sprung hardwood floors – great for dancing
         </li>
       </div>
       <div>
@@ -52,10 +49,7 @@ const PrivateEventsInfo = () => (
           Art direction, entertainment options, and design services to fully customize your event
         </li>
         <li>
-          Shuttle or party bus to/from anywhere in the Bay Area
-        </li>
-        <li>
-          Secure on-site bike parking
+          Sprung hardwood floors – great for dancing
         </li>
       </div>
     </ul>

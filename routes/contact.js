@@ -11,7 +11,7 @@ router.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
   next();
-})
+});
 
 router.post('/', upload.array(), (req, res) => {
   let html;
@@ -23,7 +23,7 @@ router.post('/', upload.array(), (req, res) => {
     port: 25,
     auth: {
       user: '13lackcloudtest@gmail.com',
-      pass: `${process.env.REACT_APP_PWSF_CONTACT_EMAIL_PASSWORD}`
+      pass: `${process.env.PWSF_CONTACT_EMAIL_PASSWORD}`
     },
     tls: {
       rejectUnauthorized: false
@@ -41,6 +41,8 @@ router.post('/', upload.array(), (req, res) => {
     `
   } else if (formType === 'Private Events') {
     html = `
+      <p><b>Event Date:</b></p>
+      <p>${req.body.date}</p>
       <p><b>Event Type:</b></p>
       <p>${req.body.eventType}</p>
       <p><b>Attendance:</b></p>
@@ -51,8 +53,6 @@ router.post('/', upload.array(), (req, res) => {
       <p>${req.body.food}</p>
       <p><b>Audio Visual:</b></p>
       <p>${req.body.audioVisual}</p>
-      <p><b>Decorations:</b></p>
-      <p>${req.body.decorations}</p>
     `
   } else if (formType === 'Booking') {
     html = `
@@ -67,7 +67,12 @@ router.post('/', upload.array(), (req, res) => {
     `
   } else if (formType === 'Roll Up Gallery') {
     html = `
-      <p><b>${req.body.message}</b></p>
+    <p><b>Date:</b></p>
+    <p>${req.body.date}</p>
+    <p><b>Attendance:</b></p>
+    <p>${req.body.attendance}</p>
+    <p><b>Message:</b></p>
+    <p>${req.body.message}</p>
     `
   } else if (formType === 'Lost and Found') {
     html = `

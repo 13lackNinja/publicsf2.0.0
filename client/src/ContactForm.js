@@ -54,7 +54,9 @@ const Fields = (props) => {
   } else if (props.show === 'privateevents') {
     return (
       <React.Fragment>
-        <label htmlFor="event-type">What kind of event (breakouts?)</label>
+        <label htmlFor="date">What is the ideal date for your event?</label>
+        <input type="text" id="date" name="date"/>
+        <label htmlFor="event-type">What kind of event (seated or standing?)</label>
         <input type="text" id="event-type" name="eventType"/>
         <label htmlFor="attendance">What is the approximate attendance?</label>
         <input type="text" id="attendance" name="attendance"/>
@@ -64,8 +66,6 @@ const Fields = (props) => {
         <input type="text" id="food" name="food"/>
         <label htmlFor="audio-visual">Will you need A/V?</label>
         <input type="text" id="audio-visual" name="audioVisual"/>
-        <label htmlFor="decorations">Will you need decorations?</label>
-        <input type="text" id="decorations" name="decorations"/>
       </React.Fragment>
     )
   } else if (props.show === 'booking') {
@@ -84,7 +84,11 @@ const Fields = (props) => {
   } else if (props.show === 'rollupgallery') {
     return (
       <React.Fragment>
-        <label htmlFor="message">Interested in our Roll Up Gallery? Let's talk.</label>
+        <label htmlFor="date">What is the ideal date for your event?</label>
+        <input type="text" id="date" name="date"/>
+        <label htmlFor="attendance">What is the approximate attendance?</label>
+        <input type="text" id="attendance" name="attendance"/>
+        <label htmlFor="message">How would you like to utilize the space?</label>
         <input type="text" id="message" name="message"/>
       </React.Fragment>
     )
