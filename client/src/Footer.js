@@ -3,8 +3,6 @@ import TypeLogo from './TypeLogo'
 
 import './styles/Footer.css'
 
-import pwMapImage from './images/pw_map.jpg'
-
 import facebookIcon from './images/facebook_icon.svg'
 import instagramIcon from './images/instagram_icon.svg'
 import twitterIcon from './images/twitter_icon.svg'
