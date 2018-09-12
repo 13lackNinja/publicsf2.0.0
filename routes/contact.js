@@ -22,7 +22,7 @@ router.post('/', upload.array(), (req, res) => {
     secure: false,
     port: 25,
     auth: {
-      user: '13lackcloudtest@gmail.com',
+      user: 'pw.mail.bot@gmail.com',
       pass: `${process.env.PWSF_CONTACT_EMAIL_PASSWORD}`
     },
     tls: {
@@ -88,8 +88,8 @@ router.post('/', upload.array(), (req, res) => {
   }
 
   const mailerOptions = {
-    from: '13lackcloudtest@gmail.com',
-    to: 'jonathan.crawford55@gmail.com',
+    from: 'pw.mail.bot@gmail.com',
+    to: 'pwsfinfo@publicsf.com',
     subject: `new ${formType} form submission`,
     html: html
   };

@@ -10,13 +10,24 @@ import blueboltImage from './images/blue_bolt_dark.jpg'
 
 class NewsletterText extends React.Component {
   componentDidMount() {
-    const form = document.getElementById('newsletter-form');
-    form.addEventListener('submit', formHandler, false);
+    const form = document.getElementById('newsletter-signup-form');
+    const signup = document.getElementById('newsletter-sign-up')
+    const url = 'https://www.ticketfly.com/account/emailSignup?orgId=1499';
 
-    function formHandler(e) {
+    form.addEventListener('submit', (e) => {
       e.preventDefault();
-      return false;
-    }
+
+      const formData = new FormData(form);
+
+      const init = {
+        method: 'post',
+        body: formData,
+        mode: 'cors'
+      }
+
+      fetch(url, init)
+        .then(() => { signup.innerHTML = '<h1>Email Recieved!</h1>'})
+    });
   }
 
   render() {
@@ -29,14 +40,12 @@ class NewsletterText extends React.Component {
         <p>
             We send only the best kinds of perks, including free tickets, first pass at some of the hottest shows in town, and clues to mysterious puzzles which unlock further delights!
         </p>
-        <form
-          name="newsletter-form"
-          id="newsletter-form"
-          action="https://www.ticketfly.com/account/emailSignup?orgId=1499"
-          method="post">
-          <input type="text" placeholder="enter email here"/>
-          <button type='submit'>submit</button>
-        </form>
+        <div id="newsletter-sign-up">
+          <form id='newsletter-signup-form'>
+            <input type="text" name="email" placeholder="enter email address"/>
+            <button type='submit'>submit</button>
+          </form>
+        </div>
       </div>
     )
   }
