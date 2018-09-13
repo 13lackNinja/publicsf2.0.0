@@ -5,7 +5,8 @@
   "main": "publicsf.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd client && npm start"
+    "start": "cd client && npm start",
+    "build": "rm -r build && cd client && npm run build && cd ../"
   },
   "author": "Jonathan Crawford",
   "license": "ISC",
