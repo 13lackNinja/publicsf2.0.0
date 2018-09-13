@@ -89,7 +89,7 @@ router.post('/', upload.array(), (req, res) => {
 
   const mailerOptions = {
     from: 'PW Contact Box',
-    to: 'pwsfinfo@publicsf.com',
+    to: 'jonathan@publicsf.com',
     subject: `new ${formType} form submission`,
     html: html
   };
