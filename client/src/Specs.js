@@ -3,6 +3,9 @@ import NewsletterSignUp from './NewsletterSignUp.js'
 
 import './styles/Specs.css'
 
+import soundSpecsDoc from './images/pw_sound_specs.pdf'
+import videoSpecsDoc from './images/pw_video_lighting_specs.pdf'
+
 const SpecsInfo = () => (
   <div id="specs">
     <h1>Specifications</h1>
@@ -135,6 +138,8 @@ const SpecsInfo = () => (
         <li>Aux VGA 2</li>
       </div>
     </ul>
+
+    <p id="specs-download">Download all  <a href={soundSpecsDoc}>sound / stage</a> and <a href={videoSpecsDoc}>video / lighting</a> gear</p>
   </div>
 )
 

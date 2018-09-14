@@ -78,6 +78,16 @@
   left: 40px;
 }
 
+#specs-download {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#specs a {
+  text-decoration: underline;
+  color: #e75e26;
+}
+
 @media (max-width: 900px) {
   #specs > h2 {
     font-size: 36px;
