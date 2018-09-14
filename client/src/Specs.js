@@ -13,63 +13,93 @@ const SpecsInfo = () => (
 
     <h2>Main Room</h2>
 
+    <h4>Audio</h4>
+
+    <ul>
+      <div>
+        <li>(2) Funktion 1 BR 221 Subwoofer</li>
+        <li>(2) Funktion 1 Resolution 3 Full Range</li>
+        <li>(2) Funktion 1 Resolution 2 Full Range fills</li>
+        <li>(2) Funktion 1 F88 Rear fills</li>
+      </div>
+      <div>
+        <li>(2) Funktion 1 F101 Front Fills</li>
+        <li>(4) Funktion 1 F101 Loudspeakers on Balcony</li>
+        <li>* All speakers are discreetly processed and amped.</li>
+      </div>
+    </ul>
+
+    <h4>Monitors</h4>
+
+    <ul>
+      <div>
+        <li>(2) Funktion 1 PSM12 Wedge Monitors</li>
+        <li>(2) Funktion 1 BR118 Subwoofers</li>
+      </div>
+    </ul>
+
     <h4>Video</h4>
 
     <ul>
       <div>
-        <li>(3) Viewsonic PJL7211 2.2k lumen projectors (1024×768 native resolution) [covering side & rear walls of the venue]</li>
-        <li>(1) Panasonic D5600U 5k lumen projector (1024×768 native resolution, support up to 1080i) [rear wall coverage only]</li>
-        <li>(1) Extron 8×8 VGA Switcher</li>
-        <li>(1) Matrox Triplehead (feeds the (3) PJL7211s projectors to create a continuous 3072×768
-        projection covering rear & side walls)</li>
+        <li>(3) Epson 720 WXGA 3.2k lumen projectors (1280x800 res) [covering side & rear walls]</li>
+        <li>(1) 8x8 HDMI Switcher</li>
+        <li>(2) LG Blu-Ray Players (DVD, Blu-Ray, MP2, MP4, JPEG via optical disc & USB)</li>
+        <li>XLR stereo audo feed, adapters available</li>
       </div>
       <div>
-        <li>(2) LG Blu-Ray Players (capable of DVD, Blu-Ray, MP2, MP4, JPEG playback via optical disc
-        & USB)</li>
-        <li>(1) custom built PC video server running Windows 7, Resolume Arena 4, Nvidia GTX 750
-        (capable of ~45 FPS @ 3072×768)</li>
-        <li>XLR stereo audio feed, adapters available</li>
-        <li>various HDMI, VGA, DVI, mini-DisplayPort, and composite video converters/adapters
-        Main Room Video Matrix Connection Diagram:</li>
+        <li>(1) InFocus IN5535 7k lumen projector (12800x800 nativ res, up to 1080i) [rear wall only]</li>
+        <li>(1) Matrox Triplehead (feeds the (3) PJL7211s projectors to create a continuous 3072x800 projection covering rear & side walls)</li>
+        <li>(1) Custom build PC video server running Windows 7, Resolume Arena 4, nVidea GTX 1080</li>
+        <li>Various HDMI, VGA, DVI, mini-DisplayPort, and composite video converters/adapters</li>
       </div>
     </ul>
 
-
-    <h4>Outputs</h4>
+    <h4>Lighting</h4>
 
     <ul>
       <div>
-        <li>Stage VGA</li>
-        <li>Desk VGA</li>
-        <li>Desk HDMI</li>
-        <li>HDMI 2</li>
+        <li>(4) 15w RGBA+UV LED Light (FOH Lights)</li>
+        <li>(11) Tomshine Moving Head Stage Lights</li>
+        <li>(4) American DJ MegaHex RGBWA+UV Parcan (Downstage+Upstage Lights)</li>
+        <li>(2) American DJ Mega Flash DMX (Strobe LIght)</li>
+        <li>(1) PC running MaginQ for DMX control of all lighting</li>
       </div>
       <div>
-        <li>Triplehead #1</li>
-        <li>Triplehead #2</li>
-        <li>Triplehead #3</li>
-        <li>Loft Out</li>
+        <li>(4) Clay Paky 2R Sharpy (Moving Lights)</li>
+        <li>(1) Martin Magnum 2500hz (Hazer)</li>
+        <li>(2) MARQ Gesture beam 400 (Moving light)</li>
+        <li>(2) American DJ Megabar LED</li>
+        <li>Assorted track lighting + fixtures</li>
       </div>
     </ul>
-
-    <h4>Inputs</h4>
-
-    <ul>
-      <div>
-        <li>PJL7211 #1</li>
-        <li>PJL7211 #2</li>
-        <li>PJL7211 #3</li>
-      </div>
-      <div>
-        <li>D5600U</li>
-        <li>Loft Matrix In</li>
-        <li>Computer Monitor</li>
-      </div>
-    </ul>
-
 
     <h2>Loft</h2>
 
+    <h4>Audio</h4>
+
+    <ul>
+      <div>
+        <li>(1) Funktion 1 BR220 Subwoofer</li>
+        <li>(2) PK Sound Klarity 8 Fills</li>
+      </div>
+      <div>
+        <li>(2) Funktion 1 Resolutoin 2 Full Range</li>
+        <li>* All speakers are discreetly processed and amped</li>
+      </div>
+    </ul>
+
+    <h4>Monitors (shared between both rooms)</h4>
+
+    <ul>
+      <div>
+        <li>(2) QSC KW112</li>
+        <li>(2) QSC KSub (Dual12" Subwoofer)</li>
+      </div>
+      <div>
+        <li>(4) QSC K12</li>
+      </div>
+    </ul>
 
     <h4>Video</h4>
 

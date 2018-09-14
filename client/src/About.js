@@ -32,7 +32,7 @@ const AboutDescription = () => (
   <div id="about-description">
     <TypeLogo type="about"/>
     <p>
-      Public Works, at its core, is a space built for the people, by the people. We asked the community what they wanted to see in a nightclub and event space, and they answered. From our sprung, hardwood dance floor to our state-of-the-art Funktion 1 sound system, we literally crowd-sourced public works into existence.
+      Public Works, at its core, is a space built for the people, by the people. We asked the community what they watned to see in a nightclub and event space, and they answered. From our sprung, hardwood dance floor to our state-of-the-art Funktion 1 sound system, we crowd-sourced our venue into existence.
     </p>
     <div
       className="about-description-image"
@@ -40,7 +40,7 @@ const AboutDescription = () => (
     >
     </div>
     <p>
-      As a community gathering spot, public works strives to embrace and support the richly varied landscape of bay area culture. With an emphasis on the creative arts amidst an increasingly technological world, one can find a diverse program of events that include world-class DJ sets and live performances, podcast recordings, comedy shows, and much more. Whether you are looking for a fun night out, an educational experience, or an inspiring meeting place, public works has got you covered.
+      At Public Works, one can find a diverse program of events that includes world-class DJ sets, live performances, podcast recordings, comedy shows, and much more. Whether you are looking for a fun night out, an educational experience, or an inspiring meeting place, Public Works has got you covered.
     </p>
     <div
       className="about-description-image"
@@ -48,7 +48,7 @@ const AboutDescription = () => (
     >
     </div>
     <p>
-      While acting as a hub for the bay area's thriving underground music and arts scenes, public works also serves the community at large. By partnering with local non-profits and offering an eclectic array of events, we are able to directly engage with and give back to the communities that support us. From fundraisers for elementary schools to locally-produced art show, we encourage and empower organizations that have a positive impact on local communities.
+      By partnering with local non-profits and offering and eclectic array of events, we are able to directly engage with and give back to the communities that support us. From fundraisers for elemetary schools to locally produced art shows, we encourage and empower organizations that have a positive impact on our city and beyond.
     </p>
     <img src={pwmanholeImage} alt="pw_manhoe_white.png"/>
   </div>
