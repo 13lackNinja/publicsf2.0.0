@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import config from './config/config'
 
 import './styles/ContactForm.css'
 
@@ -153,11 +154,19 @@ class ContactForm extends Component {
       if (this.readyState === 4 && this.status === 200) {
         form.lastChild.style.display = 'none';
         dropdown.style.display = 'none';
-        form.innerHTML = '<h2>Message Recieved!</h2>'
+        form.innerHTML = '<h2>Message Recieved!</h2>';
+        console.log(this.responseText);
       }
     }
 
-    xhttp.open('POST', '/api/contact');
+    let contactUrl = null;
+    if (process.env.NODE_ENV === 'development') {
+      contactUrl = config.development.contactUrl;
+    } else {
+      contactUrl = config.production.contactUrl;
+    }
+
+    xhttp.open('POST', contactUrl);
     xhttp.send(formData);
   }
 
