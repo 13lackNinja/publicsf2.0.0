@@ -48,7 +48,7 @@ const AboutDescription = () => (
     >
     </div>
     <p>
-      By partnering with local non-profits and offering and eclectic array of events, we are able to directly engage with and give back to the communities that support us. From fundraisers for elemetary schools to locally produced art shows, we encourage and empower organizations that have a positive impact on our city and beyond.
+      We also partner with local non-profits and offer an eclectic array of events so that we can directly engage with and give back to the communities that suport us. From fundraisers for elementary schools to locally produced art shows, we encourage and empower organizations that have a positive impact on our city and beyond.
     </p>
     <img src={pwmanholeImage} alt="pw_manhoe_white.png"/>
   </div>

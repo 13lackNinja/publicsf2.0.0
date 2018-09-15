@@ -40,8 +40,6 @@ const Footer = () => (
     </div>
     <div id="footer-byline">
       <p id="copyright">PW &copy; 2018</p>
-      <a className="by" href="http://rhomasormsby.com">Designed by Ryan Ormbsy</a><br/>
-      <a className="by" href="https://jonathancrawford.us">Developed by Jonathan Crawford</a>
     </div>
   </div>
 )
