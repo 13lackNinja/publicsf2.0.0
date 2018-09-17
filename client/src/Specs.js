@@ -20,14 +20,14 @@ const SpecsInfo = () => (
 
     <ul>
       <div>
-        <li>(2) Funktion 1 BR 221 Subwoofer</li>
-        <li>(2) Funktion 1 Resolution 3 Full Range</li>
-        <li>(2) Funktion 1 Resolution 2 Full Range fills</li>
-        <li>(2) Funktion 1 F88 Rear fills</li>
+        <li>(2) Funktion One BR 221 Subwoofer</li>
+        <li>(2) Funktion One Resolution 3 Full Range</li>
+        <li>(2) Funktion One Resolution 2 Full Range fills</li>
+        <li>(2) Funktion One F88 Rear fills</li>
       </div>
       <div>
-        <li>(2) Funktion 1 F101 Front Fills</li>
-        <li>(4) Funktion 1 F101 Loudspeakers on Balcony</li>
+        <li>(2) Funktion One F101 Front Fills</li>
+        <li>(4) Funktion One F101 Loudspeakers on Balcony</li>
         <li>* All speakers are discreetly processed and amped.</li>
       </div>
     </ul>
@@ -36,8 +36,8 @@ const SpecsInfo = () => (
 
     <ul>
       <div>
-        <li>(2) Funktion 1 PSM12 Wedge Monitors</li>
-        <li>(2) Funktion 1 BR118 Subwoofers</li>
+        <li>(2) Funktion One PSM12 Wedge Monitors</li>
+        <li>(2) Funktion One BR118 Subwoofers</li>
       </div>
     </ul>
 
@@ -83,11 +83,11 @@ const SpecsInfo = () => (
 
     <ul>
       <div>
-        <li>(1) Funktion 1 BR220 Subwoofer</li>
+        <li>(1) Funktion One BR220 Subwoofer</li>
         <li>(2) PK Sound Klarity 8 Fills</li>
       </div>
       <div>
-        <li>(2) Funktion 1 Resolutoin 2 Full Range</li>
+        <li>(2) Funktion One Resolutoin 2 Full Range</li>
         <li>* All speakers are discreetly processed and amped</li>
       </div>
     </ul>

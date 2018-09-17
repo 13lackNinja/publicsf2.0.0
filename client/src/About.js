@@ -32,7 +32,7 @@ const AboutDescription = () => (
   <div id="about-description">
     <TypeLogo type="about"/>
     <p>
-      Public Works, at its core, is a space built for the people, by the people. We asked the community what they watned to see in a nightclub and event space, and they answered. From our sprung, hardwood dance floor to our state-of-the-art Funktion 1 sound system, we crowd-sourced our venue into existence.
+      Public Works, at its core, is a space built for the people, by the people. We asked the community what they wanted to see in a nightclub and event space, and they answered. From our sprung, hardwood dance floor to our state-of-the-art Funktion One sound system, we crowd-sourced our venue into existence.
     </p>
     <div
       className="about-description-image"
@@ -48,7 +48,7 @@ const AboutDescription = () => (
     >
     </div>
     <p>
-      We also partner with local non-profits and offer an eclectic array of events so that we can directly engage with and give back to the communities that suport us. From fundraisers for elementary schools to locally produced art shows, we encourage and empower organizations that have a positive impact on our city and beyond.
+      We also partner with local non-profits and offer an eclectic array of events so that we can directly engage with and give back to the communities that support us. From fundraisers for elementary schools to locally produced art shows, we encourage and empower organizations that have a positive impact on our city and beyond.
     </p>
     <img src={pwmanholeImage} alt="pw_manhoe_white.png"/>
   </div>
