@@ -32,7 +32,7 @@ const AboutDescription = () => (
   <div id="about-description">
     <TypeLogo type="about"/>
     <p>
-      Public Works, at its core, is a space built for the people, by the people. We asked the community what they wanted to see in a nightclub and event space, and they answered. From our sprung, hardwood dance floor to our state-of-the-art Funktion One sound system, we crowd-sourced our venue into existence.
+      Public Works, at its core, is a space built for the people, by the people. We asked the community what they wanted to see in a nightclub and event space, and they answered. From our sprung, hardwood dance floor to our state-of-the-art Funktion-One sound system, we crowd-sourced our venue into existence.
     </p>
     <div
       className="about-description-image"
@@ -40,7 +40,7 @@ const AboutDescription = () => (
     >
     </div>
     <p>
-      At Public Works, one can find a diverse program of events that includes world-class DJ sets, live performances, podcast recordings, comedy shows, and much more. Whether you are looking for a fun night out, an educational experience, or an inspiring meeting place, Public Works has got you covered.
+      Whether you are looking to dance, learn, or need an off site meeting place, public works has got you covered. From world-class DJ sets and live performances to story slams, comedy shows, and art exhibits, there's something for everyone each week.
     </p>
     <div
       className="about-description-image"

@@ -7,9 +7,9 @@ import Grit from './Grit'
 import TypeLogo from './TypeLogo'
 import eventRequest from './eventRequest'
 
-import crowd4Image from './images/crowd4.jpg'
-import scan22Image from './images/scan22.jpg'
-import pwhomeImage from './images/pwhome.jpg'
+import image1 from './images/pw_djhands.jpg'
+import image2 from './images/pw_mainroomparty.jpg'
+import image3 from './images/pwhome.jpg'
 
 import './styles/Home.css'
 
@@ -19,7 +19,7 @@ const AboutStatement = () => (
   <div id="about-statement">
     <TypeLogo type="about" />
     <p>
-      Located in the heart of San Francisco's Mission District, Public Works is a community-minded nightclub and event space dedicated to "Giving the People What They Want." With a Funktion One sound system and a clean, utilitarian aesthetic, Public Works is a blank canvas of creativity that welcomes international DJs, underground artists, rising talent, and the myriad of arts and music communities that call San Francisco Home.
+      Located in the heart of San Francisco's Mission District, Public Works is a community-minded nightclub and event space dedicated to "Giving the People What They Want." With a Funktion-One sound system and a clean, utilitarian aesthetic, Public Works is a blank canvas of creativity that welcomes international DJs, underground artists, rising talent, and the myriad of arts and music communities that call San Francisco Home.
     </p>
     <img src={manholeImage} alt="pw_manhole_white.png"/>
   </div>
@@ -49,9 +49,9 @@ class Home extends Component {
 
   render() {
     let images = [
-      crowd4Image,
-      scan22Image,
-      pwhomeImage
+      image1,
+      image2,
+      image3
     ];
 
     return (
