@@ -29,7 +29,7 @@ class FeaturedEventModule extends React.Component {
           </div>
         </div>
         <div className="featured-event-module-bottom">
-          <BuyButton class={'buy-button buy-button-module'} id={this.props.id}/>
+          <BuyButton class={'buy-button buy-button-module'} id={this.props.id} url={this.props.url}/>
         </div>
       </div>
     )

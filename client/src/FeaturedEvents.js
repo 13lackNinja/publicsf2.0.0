@@ -17,6 +17,7 @@ class FeaturedEvents extends Component {
               new Date(e.start.local).toDateString()
             }
             image={e.logo.original.url}
+            url={e.url}
           />
         )
       });
