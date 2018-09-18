@@ -43,6 +43,8 @@ router.post('/', upload.array(), (req, res) => {
     html = `
       <p><b>Event Date:</b></p>
       <p>${req.body.date}</p>
+      <p><b>Event Hours:</b></p>
+      <p>${req.body.hours}</p>
       <p><b>Event Type:</b></p>
       <p>${req.body.eventType}</p>
       <p><b>Attendance:</b></p>
@@ -58,6 +60,8 @@ router.post('/', upload.array(), (req, res) => {
     html = `
       <p><b>Date:</b></p>
       <p>${req.body.date}</p>
+      <p><b>Event Hours:</b></p>
+      <p>${req.body.hours}</p>
       <p><b>Type:</b></p>
       <p>${req.body.type}</p>
       <p><b>Acts:</b></p>
@@ -69,6 +73,8 @@ router.post('/', upload.array(), (req, res) => {
     html = `
     <p><b>Date:</b></p>
     <p>${req.body.date}</p>
+    <p><b>Event Hours:</b></p>
+    <p>${req.body.hours}</p>
     <p><b>Attendance:</b></p>
     <p>${req.body.attendance}</p>
     <p><b>Message:</b></p>

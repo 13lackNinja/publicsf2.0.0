@@ -5,6 +5,7 @@ import './styles/Specs.css'
 
 import soundSpecsDoc from './images/pw_sound_specs.pdf'
 import videoSpecsDoc from './images/pw_video_lighting_specs.pdf'
+import floorplan from './images/pw_floorplan.pdf'
 
 const SpecsInfo = () => (
   <div id="specs">
@@ -20,15 +21,15 @@ const SpecsInfo = () => (
 
     <ul>
       <div>
-        <li>(2) Funktion One BR 221 Subwoofer</li>
-        <li>(2) Funktion One Resolution 3 Full Range</li>
-        <li>(2) Funktion One Resolution 2 Full Range fills</li>
-        <li>(2) Funktion One F88 Rear fills</li>
+        <li>(2) Funktion-One BR 221 Subwoofer</li>
+        <li>(2) Funktion-One Resolution 3 Full Range</li>
+        <li>(2) Funktion-One Resolution 2 Full Range fills</li>
+        <li>(2) Funktion-One F88 Rear fills</li>
       </div>
       <div>
-        <li>(2) Funktion One F101 Front Fills</li>
-        <li>(4) Funktion One F101 Loudspeakers on Balcony</li>
-        <li>* All speakers are discreetly processed and amped.</li>
+        <li>(2) Funktion-One F101 Front Fills</li>
+        <li>(4) Funktion-One F101 Loudspeakers on Balcony</li>
+        <li>All speakers are discreetly processed and amped.</li>
       </div>
     </ul>
 
@@ -36,8 +37,8 @@ const SpecsInfo = () => (
 
     <ul>
       <div>
-        <li>(2) Funktion One PSM12 Wedge Monitors</li>
-        <li>(2) Funktion One BR118 Subwoofers</li>
+        <li>(2) Funktion-One PSM12 Wedge Monitors</li>
+        <li>(2) Funktion-One BR118 Subwoofers</li>
       </div>
     </ul>
 
@@ -48,11 +49,11 @@ const SpecsInfo = () => (
         <li>(3) Epson 720 WXGA 3.2k lumen projectors (1280x800 res) [covering side & rear walls]</li>
         <li>(1) 8x8 HDMI Switcher</li>
         <li>(2) LG Blu-Ray Players (DVD, Blu-Ray, MP2, MP4, JPEG via optical disc & USB)</li>
-        <li>XLR stereo audo feed, adapters available</li>
+        <li>XLR stereo audio feed, adapters available</li>
       </div>
       <div>
         <li>(1) InFocus IN5535 7k lumen projector (12800x800 nativ res, up to 1080i) [rear wall only]</li>
-        <li>(1) Matrox Triplehead (feeds the (3) PJL7211s projectors to create a continuous 3072x800 projection covering rear & side walls)</li>
+        <li>(1) Matrix Triplehead (feeds the (3) PJL7211s projectors to create a continuous 3072x800 projection covering rear & side walls)</li>
         <li>(1) Custom build PC video server running Windows 7, Resolume Arena 4, nVidea GTX 1080</li>
         <li>Various HDMI, VGA, DVI, mini-DisplayPort, and composite video converters/adapters</li>
       </div>
@@ -66,7 +67,7 @@ const SpecsInfo = () => (
         <li>(11) Tomshine Moving Head Stage Lights</li>
         <li>(4) American DJ MegaHex RGBWA+UV Parcan (Downstage+Upstage Lights)</li>
         <li>(2) American DJ Mega Flash DMX (Strobe LIght)</li>
-        <li>(1) PC running MaginQ for DMX control of all lighting</li>
+        <li>(1) PC running MagicQ for DMX control of all lighting</li>
       </div>
       <div>
         <li>(4) Clay Paky 2R Sharpy (Moving Lights)</li>
@@ -83,12 +84,12 @@ const SpecsInfo = () => (
 
     <ul>
       <div>
-        <li>(1) Funktion One BR220 Subwoofer</li>
+        <li>(1) Funktion-One BR220 Subwoofer</li>
         <li>(2) PK Sound Klarity 8 Fills</li>
       </div>
       <div>
-        <li>(2) Funktion One Resolutoin 2 Full Range</li>
-        <li>* All speakers are discreetly processed and amped</li>
+        <li>(2) Funktion-One Resolution 2 Full Range</li>
+        <li>All speakers are discreetly processed and amped</li>
       </div>
     </ul>
 
@@ -97,7 +98,7 @@ const SpecsInfo = () => (
     <ul>
       <div>
         <li>(2) QSC KW112</li>
-        <li>(2) QSC KSub (Dual12" Subwoofer)</li>
+        <li>(2) QSC KSub (Dual 12" Subwoofer)</li>
       </div>
       <div>
         <li>(4) QSC K12</li>
@@ -139,7 +140,8 @@ const SpecsInfo = () => (
       </div>
     </ul>
 
-    <p id="specs-download">Download all  <a href={soundSpecsDoc}>sound / stage</a> and <a href={videoSpecsDoc}>video / lighting</a> gear</p>
+    <p class="download-links">Download all  <a href={soundSpecsDoc}>sound / stage</a> and <a href={videoSpecsDoc}>video / lighting</a> gear</p>
+    <p class="download-links">Download <a href={floorplan}>floorplan</a></p>
   </div>
 )
 

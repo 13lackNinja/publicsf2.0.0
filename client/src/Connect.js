@@ -38,7 +38,7 @@ class NewsletterText extends React.Component {
           Newsletter subscribers are a valued community of true PW fans.
         </p>
         <p>
-            We send only the best kinds of perks, including free tickets, first pass at some of the hottest shows in town, and clues to mysterious puzzles which unlock further delights!
+            We send only the best kinds of perks, including free tickets, first pass at some of the hottest shows in town, and clues to mysterious puzzles which unlock further prizes!
         </p>
         <div id="newsletter-sign-up">
           <form id='newsletter-signup-form'>

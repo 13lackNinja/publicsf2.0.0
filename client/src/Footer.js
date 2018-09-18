@@ -10,7 +10,7 @@ import twitterIcon from './images/twitter_icon.svg'
 const Footer = () => (
   <div id="footer">
     <div className="footer-box" id="footer-about">
-      <TypeLogo type="footer" />
+      <TypeLogo id="footer-logo" type="footer" />
       <p className="footer-text" id="footer-address">161 Erie St<br/>
       (Between 14th and Division) <br/>San Francisco, CA 94103</p>
     </div>

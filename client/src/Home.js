@@ -19,7 +19,7 @@ const AboutStatement = () => (
   <div id="about-statement">
     <TypeLogo type="about" />
     <p>
-      Located in the heart of San Francisco's Mission District, Public Works is a community-minded nightclub and event space dedicated to "Giving the People What They Want." With a Funktion One sound system and a clean, utilitarian aesthetic, Public Works is a blank canvas of creativity that welcomes international DJs, underground artists, rising talent, and the myriad arts and music communities that call San Francisco Home.
+      Located in the heart of San Francisco's Mission District, Public Works is a community-minded nightclub and event space dedicated to "Giving the People What They Want." With a Funktion One sound system and a clean, utilitarian aesthetic, Public Works is a blank canvas of creativity that welcomes international DJs, underground artists, rising talent, and the myriad of arts and music communities that call San Francisco Home.
     </p>
     <img src={manholeImage} alt="pw_manhole_white.png"/>
   </div>
@@ -60,7 +60,7 @@ class Home extends Component {
           images={images}
         />
         <Marquee
-          text={`Just Announced: ${this.state.firstEventName}`}
+          text={`Coming Up! ${this.state.firstEventName}`}
           id={this.state.firstEventId}
         />
         <AboutStatement />

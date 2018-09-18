@@ -78,9 +78,10 @@
   left: 40px;
 }
 
-#specs-download {
+.download-links {
   text-align: center;
   text-transform: uppercase;
+  margin: 20px 0px;
 }
 
 #specs a {

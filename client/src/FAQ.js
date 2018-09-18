@@ -65,7 +65,7 @@ const FAQ = () => (
     />
     <FAQitem
       question="Is Public Works accessible via public transportation?"
-      answer="Yes. There are BART stations within 3 blocks. MUNI buses drop off within 1 block."
+      answer="Yes. Bart's 16th street station is 2.5 blocks away. Muni buses dropp off within 1 block."
     />
     <FAQitem
       question="Do you have a coat check?"
@@ -73,7 +73,7 @@ const FAQ = () => (
     />
     <FAQitem
       question="Is there food nearby?"
-      answer="Yes. There are numerous restarants and cafes within walking distance of Public Works."
+      answer="Yes. There are numerous restaurants and cafes within walking distance of Public Works."
     />
     <FAQitem
       question="What are the club hours?"

@@ -56,13 +56,15 @@ const Fields = (props) => {
       <React.Fragment>
         <label htmlFor="date">What is the ideal date for your event?</label>
         <input type="text" id="date" name="date"/>
+        <label htmlFor="hours">What are your event hours?</label>
+        <input type="text" id="hours" name="hours"/>
         <label htmlFor="event-type">What kind of event (seated or standing?)</label>
         <input type="text" id="event-type" name="eventType"/>
         <label htmlFor="attendance">What is the approximate attendance?</label>
         <input type="text" id="attendance" name="attendance"/>
         <label htmlFor="beverages">Will you need beverages? Alcohol?</label>
         <input type="text" id="beverages" name="beverages"/>
-        <label htmlFor="food">Will you need food? What kind?</label>
+        <label htmlFor="food">Do you have any catering needs?</label>
         <input type="text" id="food" name="food"/>
         <label htmlFor="audio-visual">Will you need A/V?</label>
         <input type="text" id="audio-visual" name="audioVisual"/>
@@ -73,6 +75,8 @@ const Fields = (props) => {
       <React.Fragment>
         <label htmlFor="date">What is the ideal date for your event?</label>
         <input type="text" id="date" name="date"/>
+        <label htmlFor="hours">What are your event hours?</label>
+        <input type="text" id="hours" name="hours"/>
         <label htmlFor="type">What type of event? Concert, dance, sit down, etc...</label>
         <input type="text" id="type" name="type"/>
         <label htmlFor="acts">Which musical acts are you planning to book?</label>
@@ -86,6 +90,8 @@ const Fields = (props) => {
       <React.Fragment>
         <label htmlFor="date">What is the ideal date for your event?</label>
         <input type="text" id="date" name="date"/>
+        <label htmlFor="hours">What are your event hours?</label>
+        <input type="text" id="hours" name="hours"/>
         <label htmlFor="attendance">What is the approximate attendance?</label>
         <input type="text" id="attendance" name="attendance"/>
         <label htmlFor="message">How would you like to utilize the space?</label>
