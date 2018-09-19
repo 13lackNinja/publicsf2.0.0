@@ -44,13 +44,22 @@ class InTheWorks extends Component {
           continuationKey = resJSON.pagination.continuation;
         }
         let eventData = resJSON.events;
-        let eventMarkup = this.collectEvents(resJSON);
-        this.displayEvents(eventMarkup, eventData, continuationKey);
+
+        // Sort event data by date
+        let eventDataSorted = eventData.sort((a, b) => {
+          const dateA = new Date(a.start.utc);
+          const dateB = new Date(b.start.utc);
+
+          return dateA.getTime() - dateB.getTime();
+        });
+
+        let eventMarkup = this.collectEvents(eventDataSorted);
+        this.displayEvents(eventMarkup, eventDataSorted, continuationKey);
       }).catch(err => console.log(err.message));
   }
 
-  collectEvents(resJSON) {
-    let events = resJSON.events.map((e) => {
+  collectEvents(eventDataSorted) {
+    let events = eventDataSorted.map((e) => {
       return (
         <EventModule
           key={e.id}
