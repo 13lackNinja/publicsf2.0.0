@@ -18,6 +18,8 @@ class FeaturedEvents extends Component {
             }
             image={e.logo.original.url}
             url={e.url}
+            backupImage={e.logo.url}
+            description={e.description.text}
           />
         )
       });

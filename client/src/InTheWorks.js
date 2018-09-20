@@ -71,6 +71,7 @@ class InTheWorks extends Component {
           image={e.logo.original.url}
           backupImage={e.logo.url}
           url={e.url}
+          description={e.description.text}
         />
       );
     });

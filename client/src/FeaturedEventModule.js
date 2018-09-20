@@ -3,36 +3,46 @@ import BuyButton from './BuyButton'
 
 import './styles/FeaturedEventModule.css'
 
-class FeaturedEventModule extends React.Component {
-  render() {
-    return (
+const Event = (props) => {
+  return (
+    <a href={props.url} target="_blank">
       <div className="featured-event-module-container">
         <div className="featured-event-module-top">
-          <a href={`intheworks/${this.props.id}`}>
           <img
             className="featured-event-module-image"
-            src={this.props.image}
+            src={props.image}
             alt="event_image"/>
-          </a>
           <div className="featured-event-module-text">
-            <a href={`intheworks/${this.props.id}`}>
               <h3 className="event-module-date">
-                {this.props.date}
+                {props.date}
               </h3>
               <h4 className="featured-event-module-promoter">
                 Public Works Presents
               </h4>
               <h2 className="featured-event-module-artists">
-                {this.props.name.split(' @')[0]}
+                {props.name.split(' @')[0]}
               </h2>
-            </a>
           </div>
         </div>
         <div className="featured-event-module-bottom">
-          <BuyButton class={'buy-button buy-button-module'} id={this.props.id} url={this.props.url}/>
+          <BuyButton class={'buy-button buy-button-module'} id={props.id} url={props.url}/>
         </div>
       </div>
-    )
+    </a>
+  )
+}
+
+class FeaturedEventModule extends React.Component {
+  render() {
+    if (this.props.image && this.props.description.startsWith('http')) {
+      return <Event image={this.props.image} url={this.props.description} date={this.props.date} name={this.props.name} id={this.props.id}/>
+    } else if (!this.props.image && this.props.description.text.startsWith('http')) {
+      return <Event image={this.props.backupImage} url={this.props.description} date={this.props.date} name={this.props.name} id={this.props.id}/>
+    } else if (this.props.image) {
+      return <Event image={this.props.image} url={this.props.url} date={this.props.date} name={this.props.name} id={this.props.id}/>
+    } else {
+      return <Event image={this.props.backupImage} date={this.props.date} name={this.props.name} id={this.props.id}/>
+    }
   }
 }
 
