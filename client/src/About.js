@@ -40,7 +40,7 @@ const AboutDescription = () => (
     >
     </div>
     <p>
-      Whether you are looking to dance, learn, or need an off site meeting place, public works has got you covered. From world-class DJ sets and live performances to story slams, comedy shows, and art exhibits, there's something for everyone each week.
+      Whether you are looking to dance, learn, or need an off site meeting place, public works has got you covered. From world-class DJ sets and live performances, to story slams, comedy shows, and art exhibits, there's something for everyone each week.
     </p>
     <div
       className="about-description-image"
@@ -48,7 +48,7 @@ const AboutDescription = () => (
     >
     </div>
     <p>
-      We also partner with local non-profits and offer an eclectic array of events so that we can directly engage with and give back to the communities that support us. From fundraisers for elementary schools to locally produced art shows, we encourage and empower organizations that have a positive impact on our city and beyond.
+      We also partner with local non-profits and offer an eclectic array of events so that we can directly engage with and give back to the communities that support us. We encourage and empower organizations that have a positive impact on our city and beyond.
     </p>
     <img src={pwmanholeImage} alt="pw_manhoe_white.png"/>
   </div>
