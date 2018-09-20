@@ -39,10 +39,17 @@ class Home extends Component {
     fetch(eventRequest.base, eventRequest.headers)
       .then(res => res.json())
       .then((resJSON) => {
+        const eventData = resJSON.events.sort((a, b) => {
+          const dateA = new Date(a.start.utc);
+          const dateB = new Date(b.start.utc);
+
+          return dateA.getTime() - dateB.getTime();
+        });
+
         this.setState({
-          firstEventName: resJSON.events[0].name.text,
-          firstEventId: resJSON.events[0].id,
-          featuredEvents: resJSON.events.slice(0, 3)
+          firstEventName: eventData[0].name.text,
+          firstEventId: eventData[0].id,
+          featuredEvents: eventData.slice(0, 3)
         });
       }).catch((err) => console.log(err.message));
   }
