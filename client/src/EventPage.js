@@ -11,7 +11,7 @@ const EventPage = (props) => {
         <img src={props.image} alt={props.image}/>
         <h4>{props.date}</h4>
         <p>{props.description}</p>
-        <BuyButton class={'buy-button'} id={props.id}/>
+        <BuyButton class={'buy-button'} id={props.id} url={props.url}/>
       </div>
     )
   } else return (

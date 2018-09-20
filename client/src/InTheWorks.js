@@ -133,6 +133,7 @@ class InTheWorks extends Component {
                       new Date(event.start.local).toDateString()}
                     image={event.logo.original.url}
                     description={event.description.text}
+                    url={event.url}
                   />
                 )
               }
