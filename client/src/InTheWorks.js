@@ -19,7 +19,7 @@ const AllEvents = (props) => {
       <Carousel images={images}/>
       <EventList events={props.events}/>
       <NewsletterSignUp />
-      <Grit />
+      <Grit/>
     </React.Fragment>
   )
 }
@@ -72,6 +72,7 @@ class InTheWorks extends Component {
           backupImage={e.logo.url}
           url={e.url}
           description={e.description.text}
+          time={e.start.local}
         />
       );
     });

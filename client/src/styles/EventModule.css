@@ -40,6 +40,12 @@
   margin-bottom: 10px;
 }
 
+.event-module-time {
+  color: #ededed;
+  font-family: 'Oswald';
+  font-size: 14px;
+}
+
 .event-module-date-mobile {
   display: none;
 }
@@ -54,6 +60,7 @@
   font-family: 'Oswald';
   font-size: 24px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .event-module-link {
