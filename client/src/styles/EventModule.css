@@ -23,7 +23,10 @@
 }
 
 .event-module-button button {
+  display: block;
+  clear: both;
   padding: 0px 20px;
+  margin-bottom: 10px;
 }
 
 /* Text Formatting */
@@ -44,6 +47,15 @@
   color: #ededed;
   font-family: 'Oswald';
   font-size: 14px;
+}
+
+.event-module-price {
+  color: #ededed;
+  font-family: 'Oswald';
+  font-size: 14px;
+  display: block;
+  clear: both;
+  text-transform: uppercase;
 }
 
 .event-module-date-mobile {

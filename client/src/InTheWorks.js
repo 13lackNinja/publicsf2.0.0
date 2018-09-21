@@ -60,14 +60,27 @@ class InTheWorks extends Component {
 
   collectEvents(eventDataSorted) {
     let events = eventDataSorted.map((e) => {
+
+      let price = '';
+
+      if (e.description.text.startsWith('http')) {
+        price = '';
+      } else if (e.ticket_availability.is_sold_out) {
+        price = 'sold out';
+      } else if (e.ticket_availability.has_available_tickets) {
+        const minPrice = e.ticket_availability.minimum_ticket_price.major_value;
+        const maxPrice = e.ticket_availability.maximum_ticket_price.major_value;
+
+        price = `$${parseInt(minPrice, 10)} - $${parseInt(maxPrice, 10)}`;
+      }
+
       return (
         <EventModule
+          price={price}
           key={e.id}
           id={e.id}
           name={e.name.text}
-          date={
-            new Date(e.start.local).toDateString()
-          }
+          date={new Date(e.start.local).toDateString()}
           image={e.logo.original.url}
           backupImage={e.logo.url}
           url={e.url}

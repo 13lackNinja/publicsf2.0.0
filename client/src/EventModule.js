@@ -35,6 +35,7 @@ const Event = (props) => {
       </div>
       <div className="event-module-button">
         <BuyButton class={'buy-button buy-button-module'} id={props.id} url={props.url}/>
+        <p className="event-module-price">{props.price}</p>
       </div>
     </div>
     </a>
@@ -44,13 +45,13 @@ const Event = (props) => {
 class EventModule extends React.Component {
   render() {
     if (this.props.image && this.props.description.startsWith('http')) {
-      return <Event image={this.props.image} url={this.props.description} date={this.props.date} name={this.props.name} id={this.props.id} time={this.props.time}/>
+      return <Event image={this.props.image} url={this.props.description} date={this.props.date} name={this.props.name} id={this.props.id} time={this.props.time} price={this.props.price}/>
     } else if (!this.props.image && this.props.description.text.startsWith('http')) {
-      return <Event image={this.props.backupImage} url={this.props.description} date={this.props.date} name={this.props.name} id={this.props.id} time={this.props.time}/>
+      return <Event image={this.props.backupImage} url={this.props.description} date={this.props.date} name={this.props.name} id={this.props.id} time={this.props.time} price={this.props.price}/>
     } else if (this.props.image) {
-      return <Event image={this.props.image} url={this.props.url} date={this.props.date} name={this.props.name} id={this.props.id} time={this.props.time}/>
+      return <Event image={this.props.image} url={this.props.url} date={this.props.date} name={this.props.name} id={this.props.id} time={this.props.time} price={this.props.price}/>
     } else {
-      return <Event image={this.props.backupImage} date={this.props.date} name={this.props.name} id={this.props.id} time={this.props.time}/>
+      return <Event image={this.props.backupImage} date={this.props.date} name={this.props.name} id={this.props.id} time={this.props.time} price={this.props.price}/>
     }
   }
 }

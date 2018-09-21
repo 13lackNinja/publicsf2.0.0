@@ -18,9 +18,7 @@ const BuyButton = (props) => {
   // });
 
   return (
-    <a href={props.url} target="_blank">
-      <button className={props.class} id={`eventbrite-widget-modal-trigger-${props.id}`} type="button">Tickets</button>
-    </a>
+    <button className={props.class} id={`eventbrite-widget-modal-trigger-${props.id}`} type="button">Tickets</button>
   )
 }
 
