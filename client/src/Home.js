@@ -48,7 +48,7 @@ class Home extends Component {
 
         this.setState({
           firstEventName: eventData[0].name.text,
-          firstEventId: eventData[0].id,
+          firstEventURL: eventData[0].url,
           featuredEvents: eventData.slice(0, 3)
         });
       }).catch((err) => console.log(err.message));
@@ -68,7 +68,7 @@ class Home extends Component {
         />
         <Marquee
           text={`Coming Up! ${this.state.firstEventName}`}
-          id={this.state.firstEventId}
+          url={this.state.firstEventURL}
         />
         <AboutStatement />
         <FeaturedEvents events={this.state.featuredEvents}/>

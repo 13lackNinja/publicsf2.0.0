@@ -16,9 +16,6 @@ const Event = (props) => {
               <h3 className="event-module-date">
                 {props.date}
               </h3>
-              <h4 className="featured-event-module-promoter">
-                Public Works Presents
-              </h4>
               <h2 className="featured-event-module-artists">
                 {props.name.split(' @')[0]}
               </h2>

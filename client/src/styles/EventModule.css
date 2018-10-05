@@ -12,10 +12,12 @@
 .event-module-image {
   position: relative;
   bottom: 40px;
+
 }
 
 .event-module-image img {
-  width: 100%;
+  width: 300px;
+  height: 150px;
 }
 
 .event-module-button {

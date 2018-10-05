@@ -5,7 +5,7 @@ import './styles/Marquee.css'
 class Marquee extends Component {
   render() {
     return(
-      <a href={`intheworks/${this.props.id}`}>
+      <a href={this.props.url} target="_blank">
         <div id="marquee">
           <h1 className="marquee-text" id="marquee-text-1">
             {this.props.text}
@@ -14,7 +14,7 @@ class Marquee extends Component {
             {this.props.text}
           </h1>
         </div>
-      </a>  
+      </a>
     )
   }
 
