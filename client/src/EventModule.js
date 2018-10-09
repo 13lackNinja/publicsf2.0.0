@@ -18,8 +18,7 @@ const Event = (props) => {
     }
 
     time.splice(3, 1);
-    time.splice(1, 1);
-    time.splice(2, 0, ' ');
+    time.splice(3, 0, ' ');
 
     console.log(time);
 
