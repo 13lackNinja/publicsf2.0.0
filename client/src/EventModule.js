@@ -17,9 +17,11 @@ const Event = (props) => {
       time[0] = +time[0] % 12 || 12; // Adjust hours
     }
 
-    time.splice(2, 1);
+    time.splice(3, 1);
     time.splice(1, 1);
     time.splice(2, 0, ' ');
+
+    console.log(time);
 
     return time.join (''); // return adjusted time or original string
   }
