@@ -4,14 +4,28 @@ import BuyButton from './BuyButton'
 import './styles/EventModule.css'
 
 const Event = (props) => {
-  const timeOptions = {
-    hour12: true,
-    hour: '2-digit',
-    minute: '2-digit'
+
+  const startTime = props.time.split('T')[1];
+
+  function tConvert (time) {
+    // Check correct time format and split into components
+    time = time.toString().match(/^([01]\d|2[0-3])(:)([0-5]\d)(:[0-5]\d)?$/) || [time];
+
+    if (time.length > 1) { // If time format correct
+      time = time.slice(1);  // Remove full string match value
+      time[5] = +time[0] < 12 ? 'AM' : 'PM'; // Set AM/PM
+      time[0] = +time[0] % 12 || 12; // Adjust hours
+    }
+
+    time.splice(2, 1);
+    time.splice(1, 1);
+    time.splice(2, 0, ' ');
+
+    return time.join (''); // return adjusted time or original string
   }
 
-  const startDate = new Date(props.time);
-  const timeString = startDate.toLocaleTimeString([], timeOptions);
+  const time = tConvert(startTime);
+
 
   return (
     <a href={props.url} target="_blank">
@@ -30,7 +44,7 @@ const Event = (props) => {
             {props.name.split(' @')[0]}
           </h2>
           <p className="event-module-time">
-            {timeString}
+            {time}
           </p>
       </div>
       <div className="event-module-button">
