@@ -41,6 +41,10 @@ router.post('/', upload.array(), (req, res) => {
     `
   } else if (formType === 'Private Events') {
     html = `
+      <p><b>Name:</b></p>
+      <p>${req.body.name}</p>
+      <p><b>Email:</b></p>
+      <p>${req.body.email}</p>
       <p><b>Event Date:</b></p>
       <p>${req.body.date}</p>
       <p><b>Event Hours:</b></p>
@@ -58,6 +62,10 @@ router.post('/', upload.array(), (req, res) => {
     `
   } else if (formType === 'Booking') {
     html = `
+      <p><b>Name:</b></p>
+      <p>${req.body.name}</p>
+      <p><b>Email:</b></p>
+      <p>${req.body.email}</p>
       <p><b>Date:</b></p>
       <p>${req.body.date}</p>
       <p><b>Event Hours:</b></p>
@@ -71,6 +79,10 @@ router.post('/', upload.array(), (req, res) => {
     `
   } else if (formType === 'Roll Up Gallery') {
     html = `
+    <p><b>Name:</b></p>
+    <p>${req.body.name}</p>
+    <p><b>Email:</b></p>
+    <p>${req.body.email}</p>
     <p><b>Date:</b></p>
     <p>${req.body.date}</p>
     <p><b>Event Hours:</b></p>
@@ -82,6 +94,10 @@ router.post('/', upload.array(), (req, res) => {
     `
   } else if (formType === 'Lost and Found') {
     html = `
+      <p><b>Name:</b></p>
+      <p>${req.body.name}</p>
+      <p><b>Email:</b></p>
+      <p>${req.body.email}</p>
       <p><b>Date Lost:</b></p>
       <p>${req.body.dateLost}</p>
       <p><b>Ticket Number:</b></p>

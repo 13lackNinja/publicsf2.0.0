@@ -54,6 +54,10 @@ const Fields = (props) => {
   } else if (props.show === 'privateevents') {
     return (
       <React.Fragment>
+        <label htmlFor="name">Name</label>
+        <input type="text" id="name" name="name"/>
+        <label htmlFor="email">Email</label>
+        <input type="text" id="email" name="email"/>
         <label htmlFor="date">What is the ideal date for your event?</label>
         <input type="text" id="date" name="date"/>
         <label htmlFor="hours">What are your event hours?</label>
@@ -73,6 +77,10 @@ const Fields = (props) => {
   } else if (props.show === 'booking') {
     return (
       <React.Fragment>
+        <label htmlFor="name">Name</label>
+        <input type="text" id="name" name="name"/>
+        <label htmlFor="email">Email</label>
+        <input type="text" id="email" name="email"/>
         <label htmlFor="date">What is the ideal date for your event?</label>
         <input type="text" id="date" name="date"/>
         <label htmlFor="hours">What are your event hours?</label>
@@ -88,6 +96,10 @@ const Fields = (props) => {
   } else if (props.show === 'rollupgallery') {
     return (
       <React.Fragment>
+        <label htmlFor="name">Name</label>
+        <input type="text" id="name" name="name"/>
+        <label htmlFor="email">Email</label>
+        <input type="text" id="email" name="email"/>
         <label htmlFor="date">What is the ideal date for your event?</label>
         <input type="text" id="date" name="date"/>
         <label htmlFor="hours">What are your event hours?</label>
@@ -101,6 +113,10 @@ const Fields = (props) => {
   } else if (props.show === 'lostandfound') {
     return (
       <React.Fragment>
+        <label htmlFor="name">Name</label>
+        <input type="text" id="name" name="name"/>
+        <label htmlFor="email">Email</label>
+        <input type="text" id="email" name="email"/>
         <label htmlFor="date-lost">At what event was the item lost?</label>
         <input type="text" id="date-lost" name="dateLost"/>
         <label htmlFor="ticket-number">Claim ticket # if applicable</label>
