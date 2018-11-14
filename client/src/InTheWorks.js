@@ -44,7 +44,7 @@ class InTheWorks extends Component {
           continuationKey = resJSON.pagination.continuation;
         }
         let eventData = resJSON.events;
-
+        //
         // Sort event data by date
         let eventDataSorted = eventData.sort((a, b) => {
           const dateA = new Date(a.start.utc);
@@ -52,7 +52,7 @@ class InTheWorks extends Component {
 
           return dateA.getTime() - dateB.getTime();
         });
-
+        //
         let eventMarkup = this.collectEvents(eventDataSorted);
         this.displayEvents(eventMarkup, eventDataSorted, continuationKey);
       }).catch(err => console.log(err.message));
@@ -67,8 +67,8 @@ class InTheWorks extends Component {
         price = '';
       } else if (e.ticket_availability.is_sold_out) {
         price = 'sold out';
-      } else if (e.ticket_availability.has_available_tickets) {
-        const minPrice = e.ticket_availability.minimum_ticket_price.major_value;
+      } else if (e.ticket_availability.has_available_tickets && e.ticket_availability.maximum_ticket_price) {
+        const minPrice = e.ticket_availability.maximum_ticket_price.major_value;
         const maxPrice = e.ticket_availability.maximum_ticket_price.major_value;
 
         price = `$${parseInt(minPrice, 10)} - $${parseInt(maxPrice, 10)}`;

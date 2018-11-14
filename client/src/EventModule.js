@@ -20,8 +20,6 @@ const Event = (props) => {
     time.splice(3, 1);
     time.splice(3, 0, ' ');
 
-    console.log(time);
-
     return time.join (''); // return adjusted time or original string
   }
 
