@@ -68,7 +68,7 @@ class InTheWorks extends Component {
       } else if (e.ticket_availability.is_sold_out) {
         price = 'sold out';
       } else if (e.ticket_availability.has_available_tickets && e.ticket_availability.maximum_ticket_price) {
-        const minPrice = e.ticket_availability.maximum_ticket_price.major_value;
+        const minPrice = e.ticket_availability.minimum_ticket_price.major_value;
         const maxPrice = e.ticket_availability.maximum_ticket_price.major_value;
 
         price = `$${parseInt(minPrice, 10)} - $${parseInt(maxPrice, 10)}`;
