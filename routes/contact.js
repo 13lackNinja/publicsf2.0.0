@@ -110,8 +110,9 @@ router.post('/', upload.array(), (req, res) => {
   }
 
   const mailerOptions = {
-    from: req.body.email,
+    from: `PW Contact Box <${req.body.email}>`,
     to: 'pwsfinfo@publicsf.com',
+    replyTo: req.body.email,
     subject: `new ${formType} form submission: ${new Date().toLocaleString('en-GB')}`,
     html: html
   };
